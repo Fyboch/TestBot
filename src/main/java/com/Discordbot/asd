@@ -1,0 +1,21 @@
+   step2MessageCompInteraction.createImmediateResponder()
+                            .setContent("Я помогу тебе это сделать.\n" + "*Открой браузер Гугл Хром*. Нажми на окошко пользователя в верхнем правом углу. Кликай *Управлять пользователями*.\n")
+                            .respond().join();
+                    step2MessageCompInteraction.createFollowupMessageBuilder()
+                            .addAttachment(new File(path+ "/chromeuser1.png"))
+                            .send().join();
+
+
+
+                    step2MessageCompInteraction.createFollowupMessageBuilder()
+                            .append("Выбери *Добавить пользователя* в нижнем правом углу.\n" +
+                                    "Назови своего пользователя так *ИМЯ_LinkedIn*.\n" + "Добавь аватарку.\n" +
+                                    "Поставь галочку *Создать ярлык этого профиля на рабочем столе*.\n" + "Нажми *Добавить*.")
+
+                            .addAttachment(new File(path+ "/chromeuser3.png"))
+                            .send().join();
+                    step2MessageCompInteraction.createFollowupMessageBuilder()
+                            .append("Подключи рабочую почту, которую ты создал, к Хром-пользователю. \n" + "Вуаля! Новый пользователь ГуглХром готов.\n" +
+                                    "\n" + "_Автоматически откроется новая вкладка Хрома под новым пользователем_.\n" +
+                                    "\n" + "_На рабочем столе появился ярлык для входа именно в этого пользователя_.")
+                            .send();
