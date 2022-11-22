@@ -49,19 +49,7 @@ import java.io.File;
 
 public class Main
 {
-    private static boolean SHOULDSEND = false;
-    static String token = "OTg4NzQxNzc1NzA5NTkzNjYw.GgeQPP.AFPcZGJa1Dv3lq3eige7wqrHleAmo1PoS2yp_E";
-    public static DiscordApi api = new DiscordApiBuilder().setToken(token).login().join();
-    public static Boolean nameRecord = false;
-
-    private static final String APPLICATION_NAME = "GPI Java Quickstart";
-    private static final JsonFactory JSON_FACTORY = GsonFactory.getDefaultInstance();
-    private static final String TOKENS_DIRECTORY_PATH = "tokens";
-
-    public static final String spreadsheetId = "1JEv29lEp3nXdE6l5gONynn5EvuUTD14kRXPUyynnJdA"; //1i4Lfj86Y4ONBb1wvosjpUbRerByuUiw0-aeHt_2KUkw 1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms
-
-
-    public static int stage;
+   
 
 
     /**
@@ -103,25 +91,25 @@ public class Main
               //       .send(user.get());
 
                 new MessageBuilder()
-                        .setContent("Привет!\n" +
-                                "Ты находишься в меню, в котором собраны ответы на популярные вопросы по работе отдела LeadGeneration.\n" +
-                                "\n" +"Выбери категорию своего вопроса:")
+                        .setContent("ГЏГ°ГЁГўГҐГІ!\n" +
+                                "Г’Г» Г­Г ГµГ®Г¤ГЁГёГјГ±Гї Гў Г¬ГҐГ­Гѕ, Гў ГЄГ®ГІГ®Г°Г®Г¬ Г±Г®ГЎГ°Г Г­Г» Г®ГІГўГҐГІГ» Г­Г  ГЇГ®ГЇГіГ«ГїГ°Г­Г»ГҐ ГўГ®ГЇГ°Г®Г±Г» ГЇГ® Г°Г ГЎГ®ГІГҐ Г®ГІГ¤ГҐГ«Г  LeadGeneration.\n" +
+                                "\n" +"Г‚Г»ГЎГҐГ°ГЁ ГЄГ ГІГҐГЈГ®Г°ГЁГѕ Г±ГўГ®ГҐГЈГ® ГўГ®ГЇГ°Г®Г±Г :")
                         .addComponents(
-                                ActionRow.of(Button.primary("google", "Гугл"),
-                                        Button.primary("linked", "Линкедин"),
+                                ActionRow.of(Button.primary("google", "ГѓГіГЈГ«"),
+                                        Button.primary("linked", "Г‹ГЁГ­ГЄГҐГ¤ГЁГ­"),
                                         Button.primary("CRM", "CPM")),
-                                ActionRow.of(Button.primary("calendar", "Календарь"),
-                                        Button.primary("update", "Апдейт"),
-                                        Button.primary("timetrack", "Тайм-треккер")),
-                                ActionRow.of(Button.primary("contacts", "Контакты"),
-                                        Button.primary("bonus", "Бонусы и ЗП"),
-                                        Button.primary("leads","Лиды")),
-                                ActionRow.of(Button.primary("blueprints","Шаблоны"),
-                                        Button.primary("connect","Коннект"),
-                                        Button.primary("followup","Фоллоуап")),
-                                ActionRow.of(Button.primary("country","Страна"),
-                                        Button.primary("status","Статус"),
-                                        Button.primary("more","Ещё")))
+                                ActionRow.of(Button.primary("calendar", "ГЉГ Г«ГҐГ­Г¤Г Г°Гј"),
+                                        Button.primary("update", "ГЂГЇГ¤ГҐГ©ГІ"),
+                                        Button.primary("timetrack", "Г’Г Г©Г¬-ГІГ°ГҐГЄГЄГҐГ°")),
+                                ActionRow.of(Button.primary("contacts", "ГЉГ®Г­ГІГ ГЄГІГ»"),
+                                        Button.primary("bonus", "ГЃГ®Г­ГіГ±Г» ГЁ Г‡ГЏ"),
+                                        Button.primary("leads","Г‹ГЁГ¤Г»")),
+                                ActionRow.of(Button.primary("blueprints","ГГ ГЎГ«Г®Г­Г»"),
+                                        Button.primary("connect","ГЉГ®Г­Г­ГҐГЄГІ"),
+                                        Button.primary("followup","Г”Г®Г«Г«Г®ГіГ ГЇ")),
+                                ActionRow.of(Button.primary("country","Г‘ГІГ°Г Г­Г "),
+                                        Button.primary("status","Г‘ГІГ ГІГіГ±"),
+                                        Button.primary("more","Г…Г№Вё")))
                         .send(channel);
 
             }
@@ -129,8 +117,8 @@ public class Main
             {
                 SHOULDSEND = false;
                 new MessageBuilder()
-                        .setContent("Здравствуйте!")
-                        .addComponents(ActionRow.of(Button.primary("feedback1", "Начнём?")))
+                        .setContent("Г‡Г¤Г°Г ГўГ±ГІГўГіГ©ГІГҐ!")
+                        .addComponents(ActionRow.of(Button.primary("feedback1", "ГЌГ Г·Г­ВёГ¬?")))
                         .send(event.getChannel());
 
             }
@@ -152,25 +140,25 @@ public class Main
 
             event.getInteraction()
                     .createImmediateResponder()
-                    .setContent("Привет!\n" +
-                            "Ты находишься в меню, в котором собраны ответы на популярные вопросы по работе отдела LeadGeneration.\n" +
-                            "\n" +"Выбери категорию своего вопроса:")
+                    .setContent("ГЏГ°ГЁГўГҐГІ!\n" +
+                            "Г’Г» Г­Г ГµГ®Г¤ГЁГёГјГ±Гї Гў Г¬ГҐГ­Гѕ, Гў ГЄГ®ГІГ®Г°Г®Г¬ Г±Г®ГЎГ°Г Г­Г» Г®ГІГўГҐГІГ» Г­Г  ГЇГ®ГЇГіГ«ГїГ°Г­Г»ГҐ ГўГ®ГЇГ°Г®Г±Г» ГЇГ® Г°Г ГЎГ®ГІГҐ Г®ГІГ¤ГҐГ«Г  LeadGeneration.\n" +
+                            "\n" +"Г‚Г»ГЎГҐГ°ГЁ ГЄГ ГІГҐГЈГ®Г°ГЁГѕ Г±ГўГ®ГҐГЈГ® ГўГ®ГЇГ°Г®Г±Г :")
                     .addComponents(
-                            ActionRow.of(Button.primary("google", "Гугл"),
-                                    Button.primary("linked", "Линкедин"),
+                            ActionRow.of(Button.primary("google", "ГѓГіГЈГ«"),
+                                    Button.primary("linked", "Г‹ГЁГ­ГЄГҐГ¤ГЁГ­"),
                                     Button.primary("CRM", "CPM")),
-                            ActionRow.of(Button.primary("calendar", "Календарь"),
-                                    Button.primary("update", "Апдейт"),
-                                    Button.primary("timetrack", "Тайм-треккер")),
-                            ActionRow.of(Button.primary("contacts", "Контакты"),
-                                    Button.primary("bonus", "Бонусы и ЗП"),
-                                    Button.primary("leads","Лиды")),
-                            ActionRow.of(Button.primary("blueprints","Шаблоны"),
-                                    Button.primary("connect","Коннект"),
-                                    Button.primary("followup","Фоллоуап")),
-                            ActionRow.of(Button.primary("country","Страна"),
-                                    Button.primary("status","Статус"),
-                                    Button.primary("more","Ещё")))
+                            ActionRow.of(Button.primary("calendar", "ГЉГ Г«ГҐГ­Г¤Г Г°Гј"),
+                                    Button.primary("update", "ГЂГЇГ¤ГҐГ©ГІ"),
+                                    Button.primary("timetrack", "Г’Г Г©Г¬-ГІГ°ГҐГЄГЄГҐГ°")),
+                            ActionRow.of(Button.primary("contacts", "ГЉГ®Г­ГІГ ГЄГІГ»"),
+                                    Button.primary("bonus", "ГЃГ®Г­ГіГ±Г» ГЁ Г‡ГЏ"),
+                                    Button.primary("leads","Г‹ГЁГ¤Г»")),
+                            ActionRow.of(Button.primary("blueprints","ГГ ГЎГ«Г®Г­Г»"),
+                                    Button.primary("connect","ГЉГ®Г­Г­ГҐГЄГІ"),
+                                    Button.primary("followup","Г”Г®Г«Г«Г®ГіГ ГЇ")),
+                            ActionRow.of(Button.primary("country","Г‘ГІГ°Г Г­Г "),
+                                    Button.primary("status","Г‘ГІГ ГІГіГ±"),
+                                    Button.primary("more","Г…Г№Вё")))
                     .respond();
 
         });
@@ -185,7 +173,7 @@ public class Main
                 .build();
         // Add a listener which answers with "Pong!" if someone writes "!ping"
 
-        //TODO: обавить кнопку "Обратно в меню", к каждому пункту
+        //TODO: Г®ГЎГ ГўГЁГІГј ГЄГ­Г®ГЇГЄГі "ГЋГЎГ°Г ГІГ­Г® Гў Г¬ГҐГ­Гѕ", ГЄ ГЄГ Г¦Г¤Г®Г¬Гі ГЇГіГ­ГЄГІГі
 
 
         api.addMessageComponentCreateListener(event -> {
@@ -218,7 +206,7 @@ public class Main
 
                   /*  messageComponentInteraction.createFollowupMessageBuilder()
                     .addComponents(
-                    ActionRow.of(Button.primary("feedback", "Обратная связь")))
+                    ActionRow.of(Button.primary("feedback", "ГЋГЎГ°Г ГІГ­Г Гї Г±ГўГїГ§Гј")))
                             .send();*/
 
                     System.out.println(stage);
@@ -234,18 +222,18 @@ public class Main
                     messageComponentInteraction.createImmediateResponder()
                             .setContent("Linked In")
                             .respond();
-                    //TODO: Перевести
+                    //TODO: ГЏГҐГ°ГҐГўГҐГ±ГІГЁ
                     messageComponentInteraction.createFollowupMessageBuilder().setContent("")
                             .addComponents(
-                                    ActionRow.of(Button.primary("linkCleanOld", "Чистка старых заявок")),
-                                    ActionRow.of(Button.primary("linkAccBan", "Бан аккаунта")),
-                                    ActionRow.of(Button.primary("linkAccLimits", "Лимиты на аккаунте")),
-                                    ActionRow.of(Button.primary("linkAccCountry", "Как поменять страну")),
-                                    ActionRow.of(Button.primary("feedback", "Обратная связь")))
+                                    ActionRow.of(Button.primary("linkCleanOld", "Г—ГЁГ±ГІГЄГ  Г±ГІГ Г°Г»Гµ Г§Г ГїГўГ®ГЄ")),
+                                    ActionRow.of(Button.primary("linkAccBan", "ГЃГ Г­ Г ГЄГЄГ ГіГ­ГІГ ")),
+                                    ActionRow.of(Button.primary("linkAccLimits", "Г‹ГЁГ¬ГЁГІГ» Г­Г  Г ГЄГЄГ ГіГ­ГІГҐ")),
+                                    ActionRow.of(Button.primary("linkAccCountry", "ГЉГ ГЄ ГЇГ®Г¬ГҐГ­ГїГІГј Г±ГІГ°Г Г­Гі")),
+                                    ActionRow.of(Button.primary("feedback", "ГЋГЎГ°Г ГІГ­Г Гї Г±ГўГїГ§Гј")))
                             .send();
                     break;
                 case "CRM":
-                    //TODO: Перевести
+                    //TODO: ГЏГҐГ°ГҐГўГҐГ±ГІГЁ
                     //stage = 16;
                     stage = 3;
                     SHOULDSEND = true;
@@ -257,22 +245,22 @@ public class Main
 
                     messageComponentInteraction.createImmediateResponder().setContent("")
                             .addComponents(
-                                    ActionRow.of(Button.primary("crmEnter", "Как войти в СРМ")),
-                                    ActionRow.of(Button.primary("crmAccess", "Как получить доступ")),
-                                    ActionRow.of(Button.primary("crmAcc", "Аккаунт для работы в СРМ")),
-                                    ActionRow.of(Button.primary("crmHowToAddLead", "Как добавить лида")),
-                                    ActionRow.of(Button.primary("crmLeads", "Вкладка Leads")))
+                                    ActionRow.of(Button.primary("crmEnter", "ГЉГ ГЄ ГўГ®Г©ГІГЁ Гў Г‘ГђГЊ")),
+                                    ActionRow.of(Button.primary("crmAccess", "ГЉГ ГЄ ГЇГ®Г«ГіГ·ГЁГІГј Г¤Г®Г±ГІГіГЇ")),
+                                    ActionRow.of(Button.primary("crmAcc", "ГЂГЄГЄГ ГіГ­ГІ Г¤Г«Гї Г°Г ГЎГ®ГІГ» Гў Г‘ГђГЊ")),
+                                    ActionRow.of(Button.primary("crmHowToAddLead", "ГЉГ ГЄ Г¤Г®ГЎГ ГўГЁГІГј Г«ГЁГ¤Г ")),
+                                    ActionRow.of(Button.primary("crmLeads", "Г‚ГЄГ«Г Г¤ГЄГ  Leads")))
                                     .respond();
 
                     messageComponentInteraction.createFollowupMessageBuilder().setContent("")
                             .addComponents(
-                                    ActionRow.of(Button.primary("crmLeadReports", "Вкладка Lead Reports")),
-                                    ActionRow.of(Button.primary("feedback", "Обратная связь")))
+                                    ActionRow.of(Button.primary("crmLeadReports", "Г‚ГЄГ«Г Г¤ГЄГ  Lead Reports")),
+                                    ActionRow.of(Button.primary("feedback", "ГЋГЎГ°Г ГІГ­Г Гї Г±ГўГїГ§Гј")))
                             .send();
 
                     break;
                 case "calendar":
-                    //stage = 16; //TODO: Перевести
+                    //stage = 16; //TODO: ГЏГҐГ°ГҐГўГҐГ±ГІГЁ
                     stage = 4;
                     SHOULDSEND = true;
 
@@ -280,16 +268,16 @@ public class Main
 
                     messageComponentInteraction.createImmediateResponder().setContent("")
                             .addComponents(
-                                    ActionRow.of(Button.primary("calEnterMail", "Почта для входа")),
-                                    ActionRow.of(Button.primary("calLeadEvent", "Ивент в календаре лида")),
-                                    ActionRow.of(Button.primary("calNewEvent", "Внести ивент в календарь")),
-                                    ActionRow.of(Button.primary("calGet", "Где взять календарь")),
-                                    ActionRow.of(Button.primary("calFollowUp", "Фоллоу-ап в календаре")))
+                                    ActionRow.of(Button.primary("calEnterMail", "ГЏГ®Г·ГІГ  Г¤Г«Гї ГўГµГ®Г¤Г ")),
+                                    ActionRow.of(Button.primary("calLeadEvent", "Г€ГўГҐГ­ГІ Гў ГЄГ Г«ГҐГ­Г¤Г Г°ГҐ Г«ГЁГ¤Г ")),
+                                    ActionRow.of(Button.primary("calNewEvent", "Г‚Г­ГҐГ±ГІГЁ ГЁГўГҐГ­ГІ Гў ГЄГ Г«ГҐГ­Г¤Г Г°Гј")),
+                                    ActionRow.of(Button.primary("calGet", "ГѓГ¤ГҐ ГўГ§ГїГІГј ГЄГ Г«ГҐГ­Г¤Г Г°Гј")),
+                                    ActionRow.of(Button.primary("calFollowUp", "Г”Г®Г«Г«Г®Гі-Г ГЇ Гў ГЄГ Г«ГҐГ­Г¤Г Г°ГҐ")))
                             .respond();
 
                     messageComponentInteraction.createFollowupMessageBuilder()
                                     .addComponents(
-                                            ActionRow.of(Button.primary("feedback", "Обратная связь")))
+                                            ActionRow.of(Button.primary("feedback", "ГЋГЎГ°Г ГІГ­Г Гї Г±ГўГїГ§Гј")))
                             .send();
                     break;
                 case "update":
@@ -302,16 +290,16 @@ public class Main
 
                     messageComponentInteraction.createImmediateResponder()
                             .addComponents(
-                                    ActionRow.of(Button.primary("updateWhatIs", "Что такое Апдейт")),
-                                    ActionRow.of(Button.primary("updateWhy", "Зачем нужен апдейт")),
-                                    ActionRow.of(Button.primary("updateHowFind", "Как найти апдейтов")),
-                                    ActionRow.of(Button.primary("updateHowMake", "Как сделать Апдейт")),
-                                    ActionRow.of(Button.primary("updateDayNorm", "Норма апдейтов в день")))
+                                    ActionRow.of(Button.primary("updateWhatIs", "Г—ГІГ® ГІГ ГЄГ®ГҐ ГЂГЇГ¤ГҐГ©ГІ")),
+                                    ActionRow.of(Button.primary("updateWhy", "Г‡Г Г·ГҐГ¬ Г­ГіГ¦ГҐГ­ Г ГЇГ¤ГҐГ©ГІ")),
+                                    ActionRow.of(Button.primary("updateHowFind", "ГЉГ ГЄ Г­Г Г©ГІГЁ Г ГЇГ¤ГҐГ©ГІГ®Гў")),
+                                    ActionRow.of(Button.primary("updateHowMake", "ГЉГ ГЄ Г±Г¤ГҐГ«Г ГІГј ГЂГЇГ¤ГҐГ©ГІ")),
+                                    ActionRow.of(Button.primary("updateDayNorm", "ГЌГ®Г°Г¬Г  Г ГЇГ¤ГҐГ©ГІГ®Гў Гў Г¤ГҐГ­Гј")))
                             .respond();
 
                     messageComponentInteraction.createFollowupMessageBuilder()
                             .addComponents(
-                                    ActionRow.of(Button.primary("feedback", "Обратная связь")))
+                                    ActionRow.of(Button.primary("feedback", "ГЋГЎГ°Г ГІГ­Г Гї Г±ГўГїГ§Гј")))
                             .send();
 
                     break;
@@ -325,9 +313,9 @@ public class Main
 
                     messageComponentInteraction.createImmediateResponder().setContent("")
                             .addComponents(
-                                    ActionRow.of(Button.primary("timeTurnOn", "Включить тайм-трекер")),
-                                    ActionRow.of(Button.primary("timeGoogleSetting", "Настройка Google Chrome")),
-                                    ActionRow.of(Button.primary("feedback", "Обратная связь")))
+                                    ActionRow.of(Button.primary("timeTurnOn", "Г‚ГЄГ«ГѕГ·ГЁГІГј ГІГ Г©Г¬-ГІГ°ГҐГЄГҐГ°")),
+                                    ActionRow.of(Button.primary("timeGoogleSetting", "ГЌГ Г±ГІГ°Г®Г©ГЄГ  Google Chrome")),
+                                    ActionRow.of(Button.primary("feedback", "ГЋГЎГ°Г ГІГ­Г Гї Г±ГўГїГ§Гј")))
                             .respond();
                     break;
                 case "contacts":
@@ -337,12 +325,12 @@ public class Main
                     SHOULDSEND = true;
 
                     messageComponentInteraction.createImmediateResponder().setContent("select")
-                            .setContent("Влад Моисеенко(аккаунт-менеджер)\n" + "<@372427478267985930>" +
-                                    "+380981101090\n" +"\n" +"Катя Истомина (Бухгалтерия)\n"+ "<@918433181114454047>" +
-                                    "+380714184225\n" +"\n" +"Юлия Мартынив (Тимлид Sales)\n"+ "<@920656302546513950>" +
-                                    "+380662227034\n" +"\n" +"Мария Бигун (Тимлид LeadGeneration)\n" + "<@921083222077620334>" +
+                            .setContent("Г‚Г«Г Г¤ ГЊГ®ГЁГ±ГҐГҐГ­ГЄГ®(Г ГЄГЄГ ГіГ­ГІ-Г¬ГҐГ­ГҐГ¤Г¦ГҐГ°)\n" + "<@372427478267985930>" +
+                                    "+380981101090\n" +"\n" +"ГЉГ ГІГї Г€Г±ГІГ®Г¬ГЁГ­Г  (ГЃГіГµГЈГ Г«ГІГҐГ°ГЁГї)\n"+ "<@918433181114454047>" +
+                                    "+380714184225\n" +"\n" +"ГћГ«ГЁГї ГЊГ Г°ГІГ»Г­ГЁГў (Г’ГЁГ¬Г«ГЁГ¤ Sales)\n"+ "<@920656302546513950>" +
+                                    "+380662227034\n" +"\n" +"ГЊГ Г°ГЁГї ГЃГЁГЈГіГ­ (Г’ГЁГ¬Г«ГЁГ¤ LeadGeneration)\n" + "<@921083222077620334>" +
                                     "+380634345683")
-                            .addComponents(ActionRow.of(Button.primary("feedback", "Обратная связь")))
+                            .addComponents(ActionRow.of(Button.primary("feedback", "ГЋГЎГ°Г ГІГ­Г Гї Г±ГўГїГ§Гј")))
                             .respond();
                     break;
                 case "bonus":
@@ -353,9 +341,9 @@ public class Main
 
                     messageComponentInteraction.createImmediateResponder().setContent("")
                             .addComponents(
-                                    ActionRow.of(Button.primary("bonusMy", "Мои бонусы")),
-                                    ActionRow.of(Button.primary("bonusWhen", "Когда ЗП")),
-                                    ActionRow.of(Button.primary("feedback", "Обратная связь")))
+                                    ActionRow.of(Button.primary("bonusMy", "ГЊГ®ГЁ ГЎГ®Г­ГіГ±Г»")),
+                                    ActionRow.of(Button.primary("bonusWhen", "ГЉГ®ГЈГ¤Г  Г‡ГЏ")),
+                                    ActionRow.of(Button.primary("feedback", "ГЋГЎГ°Г ГІГ­Г Гї Г±ГўГїГ§Гј")))
                             .respond();
 
                     break;
@@ -367,20 +355,20 @@ public class Main
 
                     messageComponentInteraction.createImmediateResponder().setContent("")
                             .addComponents(
-                                    ActionRow.of(Button.primary("leadWhichLead", "Каких лидов нужно искать")),
-                                    ActionRow.of(Button.primary("leadInfoFrom", "Данные от лида")),
-                                    ActionRow.of(Button.primary("leadAdd", "Добавить лида")),
-                                    ActionRow.of(Button.primary("leadCardFill", "Заполнить карту лида")),
-                                    ActionRow.of(Button.primary("leadWhoFollowUp", "Кому делать фоллоу-ап")))
+                                    ActionRow.of(Button.primary("leadWhichLead", "ГЉГ ГЄГЁГµ Г«ГЁГ¤Г®Гў Г­ГіГ¦Г­Г® ГЁГ±ГЄГ ГІГј")),
+                                    ActionRow.of(Button.primary("leadInfoFrom", "Г„Г Г­Г­Г»ГҐ Г®ГІ Г«ГЁГ¤Г ")),
+                                    ActionRow.of(Button.primary("leadAdd", "Г„Г®ГЎГ ГўГЁГІГј Г«ГЁГ¤Г ")),
+                                    ActionRow.of(Button.primary("leadCardFill", "Г‡Г ГЇГ®Г«Г­ГЁГІГј ГЄГ Г°ГІГі Г«ГЁГ¤Г ")),
+                                    ActionRow.of(Button.primary("leadWhoFollowUp", "ГЉГ®Г¬Гі Г¤ГҐГ«Г ГІГј ГґГ®Г«Г«Г®Гі-Г ГЇ")))
                             .respond();
 
                     messageComponentInteraction.createFollowupMessageBuilder()
                             .addComponents(
-                                    ActionRow.of(Button.primary("leadRight", "Правильные лиды")),
-                                    ActionRow.of(Button.primary("leadHowMuch", "Сколько лидов я сделал")),
-                                    ActionRow.of(Button.primary("leadDayNorm", "Норма лидов в день")),
-                                    ActionRow.of(Button.primary("leadHowFind", "Как найти нужного лида")),
-                                    ActionRow.of(Button.primary("feedback", "Обратная связь")))
+                                    ActionRow.of(Button.primary("leadRight", "ГЏГ°Г ГўГЁГ«ГјГ­Г»ГҐ Г«ГЁГ¤Г»")),
+                                    ActionRow.of(Button.primary("leadHowMuch", "Г‘ГЄГ®Г«ГјГЄГ® Г«ГЁГ¤Г®Гў Гї Г±Г¤ГҐГ«Г Г«")),
+                                    ActionRow.of(Button.primary("leadDayNorm", "ГЌГ®Г°Г¬Г  Г«ГЁГ¤Г®Гў Гў Г¤ГҐГ­Гј")),
+                                    ActionRow.of(Button.primary("leadHowFind", "ГЉГ ГЄ Г­Г Г©ГІГЁ Г­ГіГ¦Г­Г®ГЈГ® Г«ГЁГ¤Г ")),
+                                    ActionRow.of(Button.primary("feedback", "ГЋГЎГ°Г ГІГ­Г Гї Г±ГўГїГ§Гј")))
                             .send();
                     break;
                 case "blueprints":
@@ -392,19 +380,19 @@ public class Main
 
                     messageComponentInteraction.createImmediateResponder()
                             .addComponents(
-                                    ActionRow.of(Button.primary("blueFirstCon", "1-ый коннект с лидом")),
-                                    ActionRow.of(Button.primary("blueSecondCon", "2-ой коннект с лидом")),
-                                    ActionRow.of(Button.primary("blueThirdCon", "3-ий коннект с лидом")),
-                                    ActionRow.of(Button.primary("blueAbout", "О специальностях")),
-                                    ActionRow.of(Button.primary("blueExp", "Об опыте содрудников"))) //blueThirdCon
+                                    ActionRow.of(Button.primary("blueFirstCon", "1-Г»Г© ГЄГ®Г­Г­ГҐГЄГІ Г± Г«ГЁГ¤Г®Г¬")),
+                                    ActionRow.of(Button.primary("blueSecondCon", "2-Г®Г© ГЄГ®Г­Г­ГҐГЄГІ Г± Г«ГЁГ¤Г®Г¬")),
+                                    ActionRow.of(Button.primary("blueThirdCon", "3-ГЁГ© ГЄГ®Г­Г­ГҐГЄГІ Г± Г«ГЁГ¤Г®Г¬")),
+                                    ActionRow.of(Button.primary("blueAbout", "ГЋ Г±ГЇГҐГ¶ГЁГ Г«ГјГ­Г®Г±ГІГїГµ")),
+                                    ActionRow.of(Button.primary("blueExp", "ГЋГЎ Г®ГЇГ»ГІГҐ Г±Г®Г¤Г°ГіГ¤Г­ГЁГЄГ®Гў"))) //blueThirdCon
 
                             .respond();
 
                     messageComponentInteraction.createFollowupMessageBuilder()
                             .addComponents(
-                                    ActionRow.of(Button.primary("blueClientBad", "Клиент не заинтересован")),
-                                    ActionRow.of(Button.primary("blueClientGood","Клиент заинтересован")),
-                                    ActionRow.of(Button.primary("feedback", "Обратная связь")))
+                                    ActionRow.of(Button.primary("blueClientBad", "ГЉГ«ГЁГҐГ­ГІ Г­ГҐ Г§Г ГЁГ­ГІГҐГ°ГҐГ±Г®ГўГ Г­")),
+                                    ActionRow.of(Button.primary("blueClientGood","ГЉГ«ГЁГҐГ­ГІ Г§Г ГЁГ­ГІГҐГ°ГҐГ±Г®ГўГ Г­")),
+                                    ActionRow.of(Button.primary("feedback", "ГЋГЎГ°Г ГІГ­Г Гї Г±ГўГїГ§Гј")))
                             .send();
 
                     break;
@@ -416,11 +404,11 @@ public class Main
 
                     messageComponentInteraction.createImmediateResponder()
                             .addComponents(
-                                    ActionRow.of(Button.primary("conFirstCon", "1-ый коннект с лидом")),
-                                    ActionRow.of(Button.primary("conSecondCon", "2-ой коннект с лидом")),
-                                    ActionRow.of(Button.primary("conThirdCon", "3-ий коннект с лидом")),
-                                    ActionRow.of(Button.primary("conToLead", "Отправить коннект лиду")),
-                                    ActionRow.of(Button.primary("feedback", "Обратная связь")))
+                                    ActionRow.of(Button.primary("conFirstCon", "1-Г»Г© ГЄГ®Г­Г­ГҐГЄГІ Г± Г«ГЁГ¤Г®Г¬")),
+                                    ActionRow.of(Button.primary("conSecondCon", "2-Г®Г© ГЄГ®Г­Г­ГҐГЄГІ Г± Г«ГЁГ¤Г®Г¬")),
+                                    ActionRow.of(Button.primary("conThirdCon", "3-ГЁГ© ГЄГ®Г­Г­ГҐГЄГІ Г± Г«ГЁГ¤Г®Г¬")),
+                                    ActionRow.of(Button.primary("conToLead", "ГЋГІГЇГ°Г ГўГЁГІГј ГЄГ®Г­Г­ГҐГЄГІ Г«ГЁГ¤Гі")),
+                                    ActionRow.of(Button.primary("feedback", "ГЋГЎГ°Г ГІГ­Г Гї Г±ГўГїГ§Гј")))
                             .respond();
                     break;
                 case "followup":
@@ -431,9 +419,9 @@ public class Main
 
                     messageComponentInteraction.createImmediateResponder()
                             .addComponents(
-                                    ActionRow.of(Button.primary("followupWhat", "Что такое фоллу-ап")),
-                                    ActionRow.of(Button.primary("followupCal", "Фоллу-ап в календаре")),
-                                    ActionRow.of(Button.primary("feedback", "Обратная связь")))
+                                    ActionRow.of(Button.primary("followupWhat", "Г—ГІГ® ГІГ ГЄГ®ГҐ ГґГ®Г«Г«Гі-Г ГЇ")),
+                                    ActionRow.of(Button.primary("followupCal", "Г”Г®Г«Г«Гі-Г ГЇ Гў ГЄГ Г«ГҐГ­Г¤Г Г°ГҐ")),
+                                    ActionRow.of(Button.primary("feedback", "ГЋГЎГ°Г ГІГ­Г Гї Г±ГўГїГ§Гј")))
                             .respond();
                     break;
                 case "country":
@@ -444,11 +432,11 @@ public class Main
 
                     messageComponentInteraction.createImmediateResponder()
                             .addComponents(
-                                    ActionRow.of(Button.primary("counIWork", "С какой страной я работаю")),
-                                    ActionRow.of(Button.primary("counCanChange", "Можно ли изменить страну")),
-                                    ActionRow.of(Button.primary("counNotWork", "Страны: НЕ работаем")),
-                                    ActionRow.of(Button.primary("counWork", "Страны: работаем")),
-                                    ActionRow.of(Button.primary("feedback", "Обратная связь")))
+                                    ActionRow.of(Button.primary("counIWork", "Г‘ ГЄГ ГЄГ®Г© Г±ГІГ°Г Г­Г®Г© Гї Г°Г ГЎГ®ГІГ Гѕ")),
+                                    ActionRow.of(Button.primary("counCanChange", "ГЊГ®Г¦Г­Г® Г«ГЁ ГЁГ§Г¬ГҐГ­ГЁГІГј Г±ГІГ°Г Г­Гі")),
+                                    ActionRow.of(Button.primary("counNotWork", "Г‘ГІГ°Г Г­Г»: ГЌГ… Г°Г ГЎГ®ГІГ ГҐГ¬")),
+                                    ActionRow.of(Button.primary("counWork", "Г‘ГІГ°Г Г­Г»: Г°Г ГЎГ®ГІГ ГҐГ¬")),
+                                    ActionRow.of(Button.primary("feedback", "ГЋГЎГ°Г ГІГ­Г Гї Г±ГўГїГ§Гј")))
                             .respond();
                     break;
                 case "status":
@@ -458,28 +446,28 @@ public class Main
 
                     messageComponentInteraction.createImmediateResponder()
                             .addComponents(
-                                    ActionRow.of(Button.primary("statEvent", "Статус о назначении ивента")),
-                                    ActionRow.of(Button.primary("statUpdate", "Статус апдейт")),
-                                    ActionRow.of(Button.primary("statCrm", "Виды статусов в СРМ")),
-                                    ActionRow.of(Button.primary("feedback", "Обратная связь")))
+                                    ActionRow.of(Button.primary("statEvent", "Г‘ГІГ ГІГіГ± Г® Г­Г Г§Г­Г Г·ГҐГ­ГЁГЁ ГЁГўГҐГ­ГІГ ")),
+                                    ActionRow.of(Button.primary("statUpdate", "Г‘ГІГ ГІГіГ± Г ГЇГ¤ГҐГ©ГІ")),
+                                    ActionRow.of(Button.primary("statCrm", "Г‚ГЁГ¤Г» Г±ГІГ ГІГіГ±Г®Гў Гў Г‘ГђГЊ")),
+                                    ActionRow.of(Button.primary("feedback", "ГЋГЎГ°Г ГІГ­Г Гї Г±ГўГїГ§Гј")))
                             .respond();
                     break;
                 case "more":
-                    messageComponentInteraction.createImmediateResponder().setContent("\"Вернуться на старт\" - начать работу с ботом с начала\n" +
-                                    "\"Вернуться назад\" - в меню с ответами на вопросы\n" +"\"Обратная связь\" - если не находишь ответ на свой вопрос")
+                    messageComponentInteraction.createImmediateResponder().setContent("\"Г‚ГҐГ°Г­ГіГІГјГ±Гї Г­Г  Г±ГІГ Г°ГІ\" - Г­Г Г·Г ГІГј Г°Г ГЎГ®ГІГі Г± ГЎГ®ГІГ®Г¬ Г± Г­Г Г·Г Г«Г \n" +
+                                    "\"Г‚ГҐГ°Г­ГіГІГјГ±Гї Г­Г Г§Г Г¤\" - Гў Г¬ГҐГ­Гѕ Г± Г®ГІГўГҐГІГ Г¬ГЁ Г­Г  ГўГ®ГЇГ°Г®Г±Г»\n" +"\"ГЋГЎГ°Г ГІГ­Г Гї Г±ГўГїГ§Гј\" - ГҐГ±Г«ГЁ Г­ГҐ Г­Г ГµГ®Г¤ГЁГёГј Г®ГІГўГҐГІ Г­Г  Г±ГўГ®Г© ГўГ®ГЇГ°Г®Г±")
                             .addComponents(
-                                    ActionRow.of(Button.primary("moreStart", "Вернутся на старт")),
-                                    ActionRow.of(Button.primary("moreBack", "Вернуться назад")),
-                                    ActionRow.of(Button.primary("feedback", "Обратная связь")))
+                                    ActionRow.of(Button.primary("moreStart", "Г‚ГҐГ°Г­ГіГІГ±Гї Г­Г  Г±ГІГ Г°ГІ")),
+                                    ActionRow.of(Button.primary("moreBack", "Г‚ГҐГ°Г­ГіГІГјГ±Гї Г­Г Г§Г Г¤")),
+                                    ActionRow.of(Button.primary("feedback", "ГЋГЎГ°Г ГІГ­Г Гї Г±ГўГїГ§Гј")))
                             .respond();
                     break;
 
                 case "moreStart":
-                  messageComponentInteraction.createImmediateResponder().setContent("Продолжаем")
+                  messageComponentInteraction.createImmediateResponder().setContent("ГЏГ°Г®Г¤Г®Г«Г¦Г ГҐГ¬")
                         .addComponents(
-                                ActionRow.of(Button.primary("employeeNew","Новый сотрудник")),
-                                ActionRow.of(Button.primary("employeeOld","Уже работаешь с нами")),
-                                ActionRow.of(Button.primary("feedback", "Вернуться назад")))
+                                ActionRow.of(Button.primary("employeeNew","ГЌГ®ГўГ»Г© Г±Г®ГІГ°ГіГ¤Г­ГЁГЄ")),
+                                ActionRow.of(Button.primary("employeeOld","Г“Г¦ГҐ Г°Г ГЎГ®ГІГ ГҐГёГј Г± Г­Г Г¬ГЁ")),
+                                ActionRow.of(Button.primary("feedback", "Г‚ГҐГ°Г­ГіГІГјГ±Гї Г­Г Г§Г Г¤")))
                           .respond();
 
                     break;
@@ -490,18 +478,18 @@ public class Main
 
 
 
-        String googleSearchBig = "Поиск по должностям\n" +"site:(адрес сайта) пробел ( должности )\n" +
-                "Пример – site:linkedin.com\n" +"CEO – Такой запрос в гугле выдаст Вам все страницы на сайте линкедина упоминающие должности гендиректоров.\n" +
-                "OR ( заглавными буквами между словами, через пробел )\n" +
-                "пример: site:linkedin.com CEO OR Founder OR Director\n" +
-                "(Минус) –\n" +"пример: site:linkedin.com CEO OR Founder OR Director -news -Institute -become -jobs -wewwork -amazon -netflix -million\n" +
-                "Поиск по компаниям\n" +"– (тире ставятся между цифрами 2-50)\n" +
-                "пример: site:linkedin.com Company size: 2-50 employees\n" +
-                "Используем именно такие размеры компаний, потому что они прописаны в шаблонах самого LinkedIn – 2-50, 51-200, 201-500 и т.д.\n" +
-                "AND ( совмещает оба запроса в поисковой выдаче )\n" +"пример: site:linkedin.com Founded: 2005..2019 AND Company size: 51-200 employees\n" +
-                "“…” (Кавычки) – фразовый оператор, используется для того, чтобы искать именно фразу, а не каждое слово по отдельности\n" +
-                "пример: site:linkedin.com “Specialties: Email Marketing”\n" + "* (звездочка)\n" +"site:linkedin.com “Specialties: Email Marketing”*\n" +
-                "\n" +"Headquarters: (локация)\n" +"пример: site:linkedin.com Founded: 2005..2019 AND Company size: 51-200 employees OR Headquarters: France\n";
+        String googleSearchBig = "ГЏГ®ГЁГ±ГЄ ГЇГ® Г¤Г®Г«Г¦Г­Г®Г±ГІГїГ¬\n" +"site:(Г Г¤Г°ГҐГ± Г±Г Г©ГІГ ) ГЇГ°Г®ГЎГҐГ« ( Г¤Г®Г«Г¦Г­Г®Г±ГІГЁ )\n" +
+                "ГЏГ°ГЁГ¬ГҐГ° В– site:linkedin.com\n" +"CEO В– Г’Г ГЄГ®Г© Г§Г ГЇГ°Г®Г± Гў ГЈГіГЈГ«ГҐ ГўГ»Г¤Г Г±ГІ Г‚Г Г¬ ГўГ±ГҐ Г±ГІГ°Г Г­ГЁГ¶Г» Г­Г  Г±Г Г©ГІГҐ Г«ГЁГ­ГЄГҐГ¤ГЁГ­Г  ГіГЇГ®Г¬ГЁГ­Г ГѕГ№ГЁГҐ Г¤Г®Г«Г¦Г­Г®Г±ГІГЁ ГЈГҐГ­Г¤ГЁГ°ГҐГЄГІГ®Г°Г®Гў.\n" +
+                "OR ( Г§Г ГЈГ«Г ГўГ­Г»Г¬ГЁ ГЎГіГЄГўГ Г¬ГЁ Г¬ГҐГ¦Г¤Гі Г±Г«Г®ГўГ Г¬ГЁ, Г·ГҐГ°ГҐГ§ ГЇГ°Г®ГЎГҐГ« )\n" +
+                "ГЇГ°ГЁГ¬ГҐГ°: site:linkedin.com CEO OR Founder OR Director\n" +
+                "(ГЊГЁГ­ГіГ±) В–\n" +"ГЇГ°ГЁГ¬ГҐГ°: site:linkedin.com CEO OR Founder OR Director -news -Institute -become -jobs -wewwork -amazon -netflix -million\n" +
+                "ГЏГ®ГЁГ±ГЄ ГЇГ® ГЄГ®Г¬ГЇГ Г­ГЁГїГ¬\n" +"В– (ГІГЁГ°ГҐ Г±ГІГ ГўГїГІГ±Гї Г¬ГҐГ¦Г¤Гі Г¶ГЁГґГ°Г Г¬ГЁ 2-50)\n" +
+                "ГЇГ°ГЁГ¬ГҐГ°: site:linkedin.com Company size: 2-50 employees\n" +
+                "Г€Г±ГЇГ®Г«ГјГ§ГіГҐГ¬ ГЁГ¬ГҐГ­Г­Г® ГІГ ГЄГЁГҐ Г°Г Г§Г¬ГҐГ°Г» ГЄГ®Г¬ГЇГ Г­ГЁГ©, ГЇГ®ГІГ®Г¬Гі Г·ГІГ® Г®Г­ГЁ ГЇГ°Г®ГЇГЁГ±Г Г­Г» Гў ГёГ ГЎГ«Г®Г­Г Гµ Г±Г Г¬Г®ГЈГ® LinkedIn В– 2-50, 51-200, 201-500 ГЁ ГІ.Г¤.\n" +
+                "AND ( Г±Г®ГўГ¬ГҐГ№Г ГҐГІ Г®ГЎГ  Г§Г ГЇГ°Г®Г±Г  Гў ГЇГ®ГЁГ±ГЄГ®ГўГ®Г© ГўГ»Г¤Г Г·ГҐ )\n" +"ГЇГ°ГЁГ¬ГҐГ°: site:linkedin.com Founded: 2005..2019 AND Company size: 51-200 employees\n" +
+                "В“В…В” (ГЉГ ГўГ»Г·ГЄГЁ) В– ГґГ°Г Г§Г®ГўГ»Г© Г®ГЇГҐГ°Г ГІГ®Г°, ГЁГ±ГЇГ®Г«ГјГ§ГіГҐГІГ±Гї Г¤Г«Гї ГІГ®ГЈГ®, Г·ГІГ®ГЎГ» ГЁГ±ГЄГ ГІГј ГЁГ¬ГҐГ­Г­Г® ГґГ°Г Г§Гі, Г  Г­ГҐ ГЄГ Г¦Г¤Г®ГҐ Г±Г«Г®ГўГ® ГЇГ® Г®ГІГ¤ГҐГ«ГјГ­Г®Г±ГІГЁ\n" +
+                "ГЇГ°ГЁГ¬ГҐГ°: site:linkedin.com В“Specialties: Email MarketingВ”\n" + "* (Г§ГўГҐГ§Г¤Г®Г·ГЄГ )\n" +"site:linkedin.com В“Specialties: Email MarketingВ”*\n" +
+                "\n" +"Headquarters: (Г«Г®ГЄГ Г¶ГЁГї)\n" +"ГЇГ°ГЁГ¬ГҐГ°: site:linkedin.com Founded: 2005..2019 AND Company size: 51-200 employees OR Headquarters: France\n";
 
 
         api.addMessageComponentCreateListener(event -> {
@@ -513,58 +501,58 @@ public class Main
             switch (ChosenInteraction)
             {//Google Responses________________________________________________________
                 case "notyet3":
-                case "googChromeUserCreate": //Создание нового пользователя Хрома
+                case "googChromeUserCreate": //Г‘Г®Г§Г¤Г Г­ГЁГҐ Г­Г®ГўГ®ГЈГ® ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гї Г•Г°Г®Г¬Г 
 
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Я помогу тебе это сделать.\n" + "*Открой браузер Гугл Хром*. Нажми на окошко пользователя в верхнем правом углу. Кликай *Управлять пользователями*.\n")
+                            .setContent("Гџ ГЇГ®Г¬Г®ГЈГі ГІГҐГЎГҐ ГЅГІГ® Г±Г¤ГҐГ«Г ГІГј.\n" + "*ГЋГІГЄГ°Г®Г© ГЎГ°Г ГіГ§ГҐГ° ГѓГіГЈГ« Г•Г°Г®Г¬*. ГЌГ Г¦Г¬ГЁ Г­Г  Г®ГЄГ®ГёГЄГ® ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гї Гў ГўГҐГ°ГµГ­ГҐГ¬ ГЇГ°Г ГўГ®Г¬ ГіГЈГ«Гі. ГЉГ«ГЁГЄГ Г© *Г“ГЇГ°Г ГўГ«ГїГІГј ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«ГїГ¬ГЁ*.\n")
                             .respond();
                     step2MessageCompInteraction.createFollowupMessageBuilder()
                             .addAttachment(new File(path+ "/chromeuser1.png"))
-                            .addComponents(ActionRow.of(Button.primary("goog1", "Дальше.")))
+                            .addComponents(ActionRow.of(Button.primary("goog1", "Г„Г Г«ГјГёГҐ.")))
                             .send().join();
 
 
                     step2MessageCompInteraction.createFollowupMessageBuilder()
-                            .setContent("Выбери *Добавить пользователя* в нижнем правом углу.\n" +
-                                    "Назови своего пользователя так *ИМЯ_LinkedIn*.\n" + "Добавь аватарку.\n" +
-                                    "Поставь галочку *Создать ярлык этого профиля на рабочем столе*.\n" + "Нажми *Добавить*.")
+                            .setContent("Г‚Г»ГЎГҐГ°ГЁ *Г„Г®ГЎГ ГўГЁГІГј ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гї* Гў Г­ГЁГ¦Г­ГҐГ¬ ГЇГ°Г ГўГ®Г¬ ГіГЈГ«Гі.\n" +
+                                    "ГЌГ Г§Г®ГўГЁ Г±ГўГ®ГҐГЈГ® ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гї ГІГ ГЄ *Г€ГЊГџ_LinkedIn*.\n" + "Г„Г®ГЎГ ГўГј Г ГўГ ГІГ Г°ГЄГі.\n" +
+                                    "ГЏГ®Г±ГІГ ГўГј ГЈГ Г«Г®Г·ГЄГі *Г‘Г®Г§Г¤Г ГІГј ГїГ°Г«Г»ГЄ ГЅГІГ®ГЈГ® ГЇГ°Г®ГґГЁГ«Гї Г­Г  Г°Г ГЎГ®Г·ГҐГ¬ Г±ГІГ®Г«ГҐ*.\n" + "ГЌГ Г¦Г¬ГЁ *Г„Г®ГЎГ ГўГЁГІГј*.")
                             .send().join();
 
                     step2MessageCompInteraction.createFollowupMessageBuilder()
                             .addAttachment(new File(path+ "/chromeuser3.png"))
-                            .addComponents(ActionRow.of(Button.primary("goog2","Дальше")))
+                            .addComponents(ActionRow.of(Button.primary("goog2","Г„Г Г«ГјГёГҐ")))
                             .send().join();
 
 
                     step2MessageCompInteraction.createFollowupMessageBuilder()
-                            .append("Подключи рабочую почту, которую ты создал, к Хром-пользователю. \n" + "Вуаля! Новый пользователь ГуглХром готов.\n" +
-                                    "\n" + "_Автоматически откроется новая вкладка Хрома под новым пользователем_.\n" +
-                                    "\n" + "_На рабочем столе появился ярлык для входа именно в этого пользователя_.")
+                            .append("ГЏГ®Г¤ГЄГ«ГѕГ·ГЁ Г°Г ГЎГ®Г·ГіГѕ ГЇГ®Г·ГІГі, ГЄГ®ГІГ®Г°ГіГѕ ГІГ» Г±Г®Г§Г¤Г Г«, ГЄ Г•Г°Г®Г¬-ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гѕ. \n" + "Г‚ГіГ Г«Гї! ГЌГ®ГўГ»Г© ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гј ГѓГіГЈГ«Г•Г°Г®Г¬ ГЈГ®ГІГ®Гў.\n" +
+                                    "\n" + "_ГЂГўГІГ®Г¬Г ГІГЁГ·ГҐГ±ГЄГЁ Г®ГІГЄГ°Г®ГҐГІГ±Гї Г­Г®ГўГ Гї ГўГЄГ«Г Г¤ГЄГ  Г•Г°Г®Г¬Г  ГЇГ®Г¤ Г­Г®ГўГ»Г¬ ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«ГҐГ¬_.\n" +
+                                    "\n" + "_ГЌГ  Г°Г ГЎГ®Г·ГҐГ¬ Г±ГІГ®Г«ГҐ ГЇГ®ГїГўГЁГ«Г±Гї ГїГ°Г«Г»ГЄ Г¤Г«Гї ГўГµГ®Г¤Г  ГЁГ¬ГҐГ­Г­Г® Гў ГЅГІГ®ГЈГ® ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гї_.")
                             .send().join();
 
                     break;
-                case "googleFindCol": //Нахождение коллег
+                case "googleFindCol": //ГЌГ ГµГ®Г¦Г¤ГҐГ­ГЁГҐ ГЄГ®Г«Г«ГҐГЈ
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Чтобы *найти своих коллег с помощью Гугл-поиска и добавить из в друзья на Линкедин*, в строке поиска вбей оператор:\n" +
+                            .setContent("Г—ГІГ®ГЎГ» *Г­Г Г©ГІГЁ Г±ГўГ®ГЁГµ ГЄГ®Г«Г«ГҐГЈ Г± ГЇГ®Г¬Г®Г№ГјГѕ ГѓГіГЈГ«-ГЇГ®ГЁГ±ГЄГ  ГЁ Г¤Г®ГЎГ ГўГЁГІГј ГЁГ§ Гў Г¤Г°ГіГ§ГјГї Г­Г  Г‹ГЁГ­ГЄГҐГ¤ГЁГ­*, Гў Г±ГІГ°Г®ГЄГҐ ГЇГ®ГЁГ±ГЄГ  ГўГЎГҐГ© Г®ГЇГҐГ°Г ГІГ®Г°:\n" +
                                     "\n" +
                                     "site:linkedin.com remote helpers")
                             .respond();
                     break;
-                case "googleCalendar":// Гугл календарь
+                case "googleCalendar":// ГѓГіГЈГ« ГЄГ Г«ГҐГ­Г¤Г Г°Гј
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Где взять *Гугл-календарь*:\n" + "\n" +"Открой новую вкладку в браузере гугл-хром.\n" +
-                                    "\n" +"*В правом верхнем углу, нажми на меню *(в виде точек).\n" +
-                                    "Откроется меню расширений Гугл.\n" +"\n" +"*Выбери Календарь*\n" +"\n" + "_Если тебе нужно назначить ивент, открой календарь с корпоративной почты info@rh-s.com_.")
+                            .setContent("ГѓГ¤ГҐ ГўГ§ГїГІГј *ГѓГіГЈГ«-ГЄГ Г«ГҐГ­Г¤Г Г°Гј*:\n" + "\n" +"ГЋГІГЄГ°Г®Г© Г­Г®ГўГіГѕ ГўГЄГ«Г Г¤ГЄГі Гў ГЎГ°Г ГіГ§ГҐГ°ГҐ ГЈГіГЈГ«-ГµГ°Г®Г¬.\n" +
+                                    "\n" +"*Г‚ ГЇГ°Г ГўГ®Г¬ ГўГҐГ°ГµГ­ГҐГ¬ ГіГЈГ«Гі, Г­Г Г¦Г¬ГЁ Г­Г  Г¬ГҐГ­Гѕ *(Гў ГўГЁГ¤ГҐ ГІГ®Г·ГҐГЄ).\n" +
+                                    "ГЋГІГЄГ°Г®ГҐГІГ±Гї Г¬ГҐГ­Гѕ Г°Г Г±ГёГЁГ°ГҐГ­ГЁГ© ГѓГіГЈГ«.\n" +"\n" +"*Г‚Г»ГЎГҐГ°ГЁ ГЉГ Г«ГҐГ­Г¤Г Г°Гј*\n" +"\n" + "_Г…Г±Г«ГЁ ГІГҐГЎГҐ Г­ГіГ¦Г­Г® Г­Г Г§Г­Г Г·ГЁГІГј ГЁГўГҐГ­ГІ, Г®ГІГЄГ°Г®Г© ГЄГ Г«ГҐГ­Г¤Г Г°Гј Г± ГЄГ®Г°ГЇГ®Г°Г ГІГЁГўГ­Г®Г© ГЇГ®Г·ГІГ» info@rh-s.com_.")
                             .respond();
                     break;
-                case "googleSearch"://Операторы поиска в гугле
+                case "googleSearch"://ГЋГЇГҐГ°Г ГІГ®Г°Г» ГЇГ®ГЁГ±ГЄГ  Гў ГЈГіГЈГ«ГҐ
                     step2MessageCompInteraction.createImmediateResponder()
                             .setContent(googleSearchBig).respond();
                     break;
-                case "googleUsefulAddons": //"полезные аддоны
+                case "googleUsefulAddons": //"ГЇГ®Г«ГҐГ§Г­Г»ГҐ Г Г¤Г¤Г®Г­Г»
 
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Полезные *расширения в гугл* для работы:" +"\n")
+                            .setContent("ГЏГ®Г«ГҐГ§Г­Г»ГҐ *Г°Г Г±ГёГЁГ°ГҐГ­ГЁГї Гў ГЈГіГЈГ«* Г¤Г«Гї Г°Г ГЎГ®ГІГ»:" +"\n")
                             .respond();
                     step2MessageCompInteraction.createFollowupMessageBuilder()
                             .setContent("\"https://chrome.google.com/webstore/detail/find-anyones-email-contac/jjdemeiffadmmjhkbbpglgnlgeafomjo" +"\n" +
@@ -574,353 +562,353 @@ public class Main
                     break;
 
 
-                //тут начинается LinkedIN________________________________________________________
+                //ГІГіГІ Г­Г Г·ГЁГ­Г ГҐГІГ±Гї LinkedIN________________________________________________________
                 case "linkCleanOld":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Зайди на свой рабочий аккаунт на Линкедин.")
+                            .setContent("Г‡Г Г©Г¤ГЁ Г­Г  Г±ГўГ®Г© Г°Г ГЎГ®Г·ГЁГ© Г ГЄГЄГ ГіГ­ГІ Г­Г  Г‹ГЁГ­ГЄГҐГ¤ГЁГ­.")
                             .respond();
                     step2MessageCompInteraction.createFollowupMessageBuilder()
-                            .setContent("Вверху перейди на *вкладку My Network*, справа нажми на *вкладку Manage*.\n" +
-                                    "Тебе откроется вкладка с исходящими и входящими приглашениями.\n" +
-                                    "\n" +"Перейди на *вкладку Sent*. Ты видишь список заявок, которые были отправлены лидам.\n" +
-                                    "*Нажми на кнопку Withdraw* и удали старый коннект.\n" + "\n" +"Удали все заявки которые были отосланы 2 и более недель назад.Если за это время лид не одобрил коннект, он будет висеть пока ты его не удалишь.\n" +
-                                    "\n" +"Проводи такую чистку на всех своих рабочих аккаунтах.")
+                            .setContent("Г‚ГўГҐГ°ГµГі ГЇГҐГ°ГҐГ©Г¤ГЁ Г­Г  *ГўГЄГ«Г Г¤ГЄГі My Network*, Г±ГЇГ°Г ГўГ  Г­Г Г¦Г¬ГЁ Г­Г  *ГўГЄГ«Г Г¤ГЄГі Manage*.\n" +
+                                    "Г’ГҐГЎГҐ Г®ГІГЄГ°Г®ГҐГІГ±Гї ГўГЄГ«Г Г¤ГЄГ  Г± ГЁГ±ГµГ®Г¤ГїГ№ГЁГ¬ГЁ ГЁ ГўГµГ®Г¤ГїГ№ГЁГ¬ГЁ ГЇГ°ГЁГЈГ«Г ГёГҐГ­ГЁГїГ¬ГЁ.\n" +
+                                    "\n" +"ГЏГҐГ°ГҐГ©Г¤ГЁ Г­Г  *ГўГЄГ«Г Г¤ГЄГі Sent*. Г’Г» ГўГЁГ¤ГЁГёГј Г±ГЇГЁГ±Г®ГЄ Г§Г ГїГўГ®ГЄ, ГЄГ®ГІГ®Г°Г»ГҐ ГЎГ»Г«ГЁ Г®ГІГЇГ°Г ГўГ«ГҐГ­Г» Г«ГЁГ¤Г Г¬.\n" +
+                                    "*ГЌГ Г¦Г¬ГЁ Г­Г  ГЄГ­Г®ГЇГЄГі Withdraw* ГЁ ГіГ¤Г Г«ГЁ Г±ГІГ Г°Г»Г© ГЄГ®Г­Г­ГҐГЄГІ.\n" + "\n" +"Г“Г¤Г Г«ГЁ ГўГ±ГҐ Г§Г ГїГўГЄГЁ ГЄГ®ГІГ®Г°Г»ГҐ ГЎГ»Г«ГЁ Г®ГІГ®Г±Г«Г Г­Г» 2 ГЁ ГЎГ®Г«ГҐГҐ Г­ГҐГ¤ГҐГ«Гј Г­Г Г§Г Г¤.Г…Г±Г«ГЁ Г§Г  ГЅГІГ® ГўГ°ГҐГ¬Гї Г«ГЁГ¤ Г­ГҐ Г®Г¤Г®ГЎГ°ГЁГ« ГЄГ®Г­Г­ГҐГЄГІ, Г®Г­ ГЎГіГ¤ГҐГІ ГўГЁГ±ГҐГІГј ГЇГ®ГЄГ  ГІГ» ГҐГЈГ® Г­ГҐ ГіГ¤Г Г«ГЁГёГј.\n" +
+                                    "\n" +"ГЏГ°Г®ГўГ®Г¤ГЁ ГІГ ГЄГіГѕ Г·ГЁГ±ГІГЄГі Г­Г  ГўГ±ГҐГµ Г±ГўГ®ГЁГµ Г°Г ГЎГ®Г·ГЁГµ Г ГЄГЄГ ГіГ­ГІГ Гµ.")
                             .send();
                     break;
-                case "linkAccBan"://Бан аккаунта в Линкед Ин________________________________________________________
+                case "linkAccBan"://ГЃГ Г­ Г ГЄГЄГ ГіГ­ГІГ  Гў Г‹ГЁГ­ГЄГҐГ¤ Г€Г­________________________________________________________
 
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("*Как избежать попадания в бан на Линкедин*")
-                            .respond();
-
-                    step2MessageCompInteraction.createFollowupMessageBuilder()
-                            .setContent("1) Делай *паузы между повторяющимися действиями* (коннект, копирование инфы, рассылка и т.д.);\n" + "\n" +
-                                    "2) C 10-ю коннектами не стучись в друзья к президенту;\n" + "\n"+
-                                    "3) *Не спамить, вести себя максимально естественно*. Общение должно быть живым, хоть и построено в деловом стиле.\n" + "\n"+
-                                    "4) Пользоваться *отдельным юзером Гугл Хрома для входа в свой Линкедин*.\n" + "\n"+
-                                    "5) *Раздели работу на части*. Например, минут 10-15 добавляешь людей (каждые 30 секунд), потом переключаешься на рассылку писем по почте. И так несколько подходов.\n" + "\n"+
-                                    "6) В идеале веди профиль. Максимально заполни аккаунт информацией, фото, постами. Это привлекает внимание потенциальных клиентов, которые САМИ захотят связаться с тобой. Система соцсети не подумает, что здесь что-то не так. Нужно также делать репосты из группы нашей компании, лайкай посты контактов")
-                            .send();
-                    break;
-                case "linkAccLimits": // Лимит на аккаунт в Линкед Ин
-                    step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Если появился *лимит на аккаунте* Линкедин, *обратись к аккаунт-менеджеру*")
+                            .setContent("*ГЉГ ГЄ ГЁГ§ГЎГҐГ¦Г ГІГј ГЇГ®ГЇГ Г¤Г Г­ГЁГї Гў ГЎГ Г­ Г­Г  Г‹ГЁГ­ГЄГҐГ¤ГЁГ­*")
                             .respond();
 
                     step2MessageCompInteraction.createFollowupMessageBuilder()
-                            .setContent("Влад\n" + "+380981101090\n")
+                            .setContent("1) Г„ГҐГ«Г Г© *ГЇГ ГіГ§Г» Г¬ГҐГ¦Г¤Гі ГЇГ®ГўГІГ®Г°ГїГѕГ№ГЁГ¬ГЁГ±Гї Г¤ГҐГ©Г±ГІГўГЁГїГ¬ГЁ* (ГЄГ®Г­Г­ГҐГЄГІ, ГЄГ®ГЇГЁГ°Г®ГўГ Г­ГЁГҐ ГЁГ­ГґГ», Г°Г Г±Г±Г»Г«ГЄГ  ГЁ ГІ.Г¤.);\n" + "\n" +
+                                    "2) C 10-Гѕ ГЄГ®Г­Г­ГҐГЄГІГ Г¬ГЁ Г­ГҐ Г±ГІГіГ·ГЁГ±Гј Гў Г¤Г°ГіГ§ГјГї ГЄ ГЇГ°ГҐГ§ГЁГ¤ГҐГ­ГІГі;\n" + "\n"+
+                                    "3) *ГЌГҐ Г±ГЇГ Г¬ГЁГІГј, ГўГҐГ±ГІГЁ Г±ГҐГЎГї Г¬Г ГЄГ±ГЁГ¬Г Г«ГјГ­Г® ГҐГ±ГІГҐГ±ГІГўГҐГ­Г­Г®*. ГЋГЎГ№ГҐГ­ГЁГҐ Г¤Г®Г«Г¦Г­Г® ГЎГ»ГІГј Г¦ГЁГўГ»Г¬, ГµГ®ГІГј ГЁ ГЇГ®Г±ГІГ°Г®ГҐГ­Г® Гў Г¤ГҐГ«Г®ГўГ®Г¬ Г±ГІГЁГ«ГҐ.\n" + "\n"+
+                                    "4) ГЏГ®Г«ГјГ§Г®ГўГ ГІГјГ±Гї *Г®ГІГ¤ГҐГ«ГјГ­Г»Г¬ ГѕГ§ГҐГ°Г®Г¬ ГѓГіГЈГ« Г•Г°Г®Г¬Г  Г¤Г«Гї ГўГµГ®Г¤Г  Гў Г±ГўГ®Г© Г‹ГЁГ­ГЄГҐГ¤ГЁГ­*.\n" + "\n"+
+                                    "5) *ГђГ Г§Г¤ГҐГ«ГЁ Г°Г ГЎГ®ГІГі Г­Г  Г·Г Г±ГІГЁ*. ГЌГ ГЇГ°ГЁГ¬ГҐГ°, Г¬ГЁГ­ГіГІ 10-15 Г¤Г®ГЎГ ГўГ«ГїГҐГёГј Г«ГѕГ¤ГҐГ© (ГЄГ Г¦Г¤Г»ГҐ 30 Г±ГҐГЄГіГ­Г¤), ГЇГ®ГІГ®Г¬ ГЇГҐГ°ГҐГЄГ«ГѕГ·Г ГҐГёГјГ±Гї Г­Г  Г°Г Г±Г±Г»Г«ГЄГі ГЇГЁГ±ГҐГ¬ ГЇГ® ГЇГ®Г·ГІГҐ. Г€ ГІГ ГЄ Г­ГҐГ±ГЄГ®Г«ГјГЄГ® ГЇГ®Г¤ГµГ®Г¤Г®Гў.\n" + "\n"+
+                                    "6) Г‚ ГЁГ¤ГҐГ Г«ГҐ ГўГҐГ¤ГЁ ГЇГ°Г®ГґГЁГ«Гј. ГЊГ ГЄГ±ГЁГ¬Г Г«ГјГ­Г® Г§Г ГЇГ®Г«Г­ГЁ Г ГЄГЄГ ГіГ­ГІ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГҐГ©, ГґГ®ГІГ®, ГЇГ®Г±ГІГ Г¬ГЁ. ГќГІГ® ГЇГ°ГЁГўГ«ГҐГЄГ ГҐГІ ГўГ­ГЁГ¬Г Г­ГЁГҐ ГЇГ®ГІГҐГ­Г¶ГЁГ Г«ГјГ­Г»Гµ ГЄГ«ГЁГҐГ­ГІГ®Гў, ГЄГ®ГІГ®Г°Г»ГҐ Г‘ГЂГЊГ€ Г§Г ГµГ®ГІГїГІ Г±ГўГїГ§Г ГІГјГ±Гї Г± ГІГ®ГЎГ®Г©. Г‘ГЁГ±ГІГҐГ¬Г  Г±Г®Г¶Г±ГҐГІГЁ Г­ГҐ ГЇГ®Г¤ГіГ¬Г ГҐГІ, Г·ГІГ® Г§Г¤ГҐГ±Гј Г·ГІГ®-ГІГ® Г­ГҐ ГІГ ГЄ. ГЌГіГ¦Г­Г® ГІГ ГЄГ¦ГҐ Г¤ГҐГ«Г ГІГј Г°ГҐГЇГ®Г±ГІГ» ГЁГ§ ГЈГ°ГіГЇГЇГ» Г­Г ГёГҐГ© ГЄГ®Г¬ГЇГ Г­ГЁГЁ, Г«Г Г©ГЄГ Г© ГЇГ®Г±ГІГ» ГЄГ®Г­ГІГ ГЄГІГ®Гў")
+                            .send();
+                    break;
+                case "linkAccLimits": // Г‹ГЁГ¬ГЁГІ Г­Г  Г ГЄГЄГ ГіГ­ГІ Гў Г‹ГЁГ­ГЄГҐГ¤ Г€Г­
+                    step2MessageCompInteraction.createImmediateResponder()
+                            .setContent("Г…Г±Г«ГЁ ГЇГ®ГїГўГЁГ«Г±Гї *Г«ГЁГ¬ГЁГІ Г­Г  Г ГЄГЄГ ГіГ­ГІГҐ* Г‹ГЁГ­ГЄГҐГ¤ГЁГ­, *Г®ГЎГ°Г ГІГЁГ±Гј ГЄ Г ГЄГЄГ ГіГ­ГІ-Г¬ГҐГ­ГҐГ¤Г¦ГҐГ°Гі*")
+                            .respond();
+
+                    step2MessageCompInteraction.createFollowupMessageBuilder()
+                            .setContent("Г‚Г«Г Г¤\n" + "+380981101090\n")
                             .send();
                     break;
 
-                case "linkAccCountry": //Смена страны аккаунта на Ликед Ин
+                case "linkAccCountry": //Г‘Г¬ГҐГ­Г  Г±ГІГ°Г Г­Г» Г ГЄГЄГ ГіГ­ГІГ  Г­Г  Г‹ГЁГЄГҐГ¤ Г€Г­
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("_Твой аккаунт Линкедин закреплен за определенной страной. Эти данные может заменить только аккаунт-менеджер_\n")
+                            .setContent("_Г’ГўГ®Г© Г ГЄГЄГ ГіГ­ГІ Г‹ГЁГ­ГЄГҐГ¤ГЁГ­ Г§Г ГЄГ°ГҐГЇГ«ГҐГ­ Г§Г  Г®ГЇГ°ГҐГ¤ГҐГ«ГҐГ­Г­Г®Г© Г±ГІГ°Г Г­Г®Г©. ГќГІГЁ Г¤Г Г­Г­Г»ГҐ Г¬Г®Г¦ГҐГІ Г§Г Г¬ГҐГ­ГЁГІГј ГІГ®Г«ГјГЄГ® Г ГЄГЄГ ГіГ­ГІ-Г¬ГҐГ­ГҐГ¤Г¦ГҐГ°_\n")
                             .respond();
                     break;
 
-                case "linkFindLeads": //Нахождение лидов
+                case "linkFindLeads": //ГЌГ ГµГ®Г¦Г¤ГҐГ­ГЁГҐ Г«ГЁГ¤Г®Гў
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("*Зайди* на свою страницу в Линкедин, затем *во вкладку My Network*, расположенную на верхней панели сайта.\n" +
-                                    "\n" + "Внизу страницы ты найдешь все профили (connections), которые могут быть тебе полезны.")
+                            .setContent("*Г‡Г Г©Г¤ГЁ* Г­Г  Г±ГўГ®Гѕ Г±ГІГ°Г Г­ГЁГ¶Гі Гў Г‹ГЁГ­ГЄГҐГ¤ГЁГ­, Г§Г ГІГҐГ¬ *ГўГ® ГўГЄГ«Г Г¤ГЄГі My Network*, Г°Г Г±ГЇГ®Г«Г®Г¦ГҐГ­Г­ГіГѕ Г­Г  ГўГҐГ°ГµГ­ГҐГ© ГЇГ Г­ГҐГ«ГЁ Г±Г Г©ГІГ .\n" +
+                                    "\n" + "Г‚Г­ГЁГ§Гі Г±ГІГ°Г Г­ГЁГ¶Г» ГІГ» Г­Г Г©Г¤ГҐГёГј ГўГ±ГҐ ГЇГ°Г®ГґГЁГ«ГЁ (connections), ГЄГ®ГІГ®Г°Г»ГҐ Г¬Г®ГЈГіГІ ГЎГ»ГІГј ГІГҐГЎГҐ ГЇГ®Г«ГҐГ§Г­Г».")
                             .respond();
                     break;
 
-                //Тут начинается СРМ________________________________________________________
+                //Г’ГіГІ Г­Г Г·ГЁГ­Г ГҐГІГ±Гї Г‘ГђГЊ________________________________________________________
 
                 case "crmEnter":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Зайди в СРМ." +"\n" + "https://crm.rh-s.com/" + "\n" +"Используй доступы, которые выдал тебе наш аккаунт-менеджер.")
+                            .setContent("Г‡Г Г©Г¤ГЁ Гў Г‘ГђГЊ." +"\n" + "https://crm.rh-s.com/" + "\n" +"Г€Г±ГЇГ®Г«ГјГ§ГіГ© Г¤Г®Г±ГІГіГЇГ», ГЄГ®ГІГ®Г°Г»ГҐ ГўГ»Г¤Г Г« ГІГҐГЎГҐ Г­Г Гё Г ГЄГЄГ ГіГ­ГІ-Г¬ГҐГ­ГҐГ¤Г¦ГҐГ°.")
                             .respond();
                     break;
                 case "crmAccess":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Влад" + "\n" + "+380981101090" + "\n"+ "Доступы к СРМ и рабочим аккаунтам выдает аккаунт-менеджер. Напиши ему.")
+                            .setContent("Г‚Г«Г Г¤" + "\n" + "+380981101090" + "\n"+ "Г„Г®Г±ГІГіГЇГ» ГЄ Г‘ГђГЊ ГЁ Г°Г ГЎГ®Г·ГЁГ¬ Г ГЄГЄГ ГіГ­ГІГ Г¬ ГўГ»Г¤Г ГҐГІ Г ГЄГЄГ ГіГ­ГІ-Г¬ГҐГ­ГҐГ¤Г¦ГҐГ°. ГЌГ ГЇГЁГёГЁ ГҐГ¬Гі.")
                             .respond();
                 case "crmAcc":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Зайди в свою СРМ.\n" +"\n" +"Нажми вкладку *Add new lead*\n" +
-                                    "\n" + "*Выбери Линкедин-аккаунт, который закреплен за тобой* (аккаунт, который тебе выдал аккаунт-менеджер специально для работы)")
+                            .setContent("Г‡Г Г©Г¤ГЁ Гў Г±ГўГ®Гѕ Г‘ГђГЊ.\n" +"\n" +"ГЌГ Г¦Г¬ГЁ ГўГЄГ«Г Г¤ГЄГі *Add new lead*\n" +
+                                    "\n" + "*Г‚Г»ГЎГҐГ°ГЁ Г‹ГЁГ­ГЄГҐГ¤ГЁГ­-Г ГЄГЄГ ГіГ­ГІ, ГЄГ®ГІГ®Г°Г»Г© Г§Г ГЄГ°ГҐГЇГ«ГҐГ­ Г§Г  ГІГ®ГЎГ®Г©* (Г ГЄГЄГ ГіГ­ГІ, ГЄГ®ГІГ®Г°Г»Г© ГІГҐГЎГҐ ГўГ»Г¤Г Г« Г ГЄГЄГ ГіГ­ГІ-Г¬ГҐГ­ГҐГ¤Г¦ГҐГ° Г±ГЇГҐГ¶ГЁГ Г«ГјГ­Г® Г¤Г«Гї Г°Г ГЎГ®ГІГ»)")
                             .respond();
                     break;
                 case "crmHowToAddLead":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Чтобы *добавить лида в СРМ*:\n" +
-                                    "1) Открой СРМ\n" +
-                                    "2) Перейди на *вкладку Leads*, в правом верхнем углу нажми на *кнопку Add new lead*.\n" +
-                                    "3) Заполни необходимую информацию о лиде.\n" +
-                                    "Поля помеченые красной звездочкой* обязательно должны быть заполнены, иначе новый лид не будет сохранен.\n" +
-                                    "4) Поля, которые *заполняются автоматически: LG Manager, Lead Source, Lead Status и Country*.\n" +
-                                    "5) В *поле Linkedin accounts* выбери аккаунт на котором сейчас работаешь.\n" +
-                                    "6) В *поле Company* добавь компанию лида.\n" +
-                                    "7) В *Company Size, Industry и Position* выбери подходящий вариант из выпадающего списка.\n" +
-                                    "8) Нажми *Save*.")
+                            .setContent("Г—ГІГ®ГЎГ» *Г¤Г®ГЎГ ГўГЁГІГј Г«ГЁГ¤Г  Гў Г‘ГђГЊ*:\n" +
+                                    "1) ГЋГІГЄГ°Г®Г© Г‘ГђГЊ\n" +
+                                    "2) ГЏГҐГ°ГҐГ©Г¤ГЁ Г­Г  *ГўГЄГ«Г Г¤ГЄГі Leads*, Гў ГЇГ°Г ГўГ®Г¬ ГўГҐГ°ГµГ­ГҐГ¬ ГіГЈГ«Гі Г­Г Г¦Г¬ГЁ Г­Г  *ГЄГ­Г®ГЇГЄГі Add new lead*.\n" +
+                                    "3) Г‡Г ГЇГ®Г«Г­ГЁ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬ГіГѕ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ Г® Г«ГЁГ¤ГҐ.\n" +
+                                    "ГЏГ®Г«Гї ГЇГ®Г¬ГҐГ·ГҐГ­Г»ГҐ ГЄГ°Г Г±Г­Г®Г© Г§ГўГҐГ§Г¤Г®Г·ГЄГ®Г©* Г®ГЎГїГ§Г ГІГҐГ«ГјГ­Г® Г¤Г®Г«Г¦Г­Г» ГЎГ»ГІГј Г§Г ГЇГ®Г«Г­ГҐГ­Г», ГЁГ­Г Г·ГҐ Г­Г®ГўГ»Г© Г«ГЁГ¤ Г­ГҐ ГЎГіГ¤ГҐГІ Г±Г®ГµГ°Г Г­ГҐГ­.\n" +
+                                    "4) ГЏГ®Г«Гї, ГЄГ®ГІГ®Г°Г»ГҐ *Г§Г ГЇГ®Г«Г­ГїГѕГІГ±Гї Г ГўГІГ®Г¬Г ГІГЁГ·ГҐГ±ГЄГЁ: LG Manager, Lead Source, Lead Status ГЁ Country*.\n" +
+                                    "5) Г‚ *ГЇГ®Г«ГҐ Linkedin accounts* ГўГ»ГЎГҐГ°ГЁ Г ГЄГЄГ ГіГ­ГІ Г­Г  ГЄГ®ГІГ®Г°Г®Г¬ Г±ГҐГ©Г·Г Г± Г°Г ГЎГ®ГІГ ГҐГёГј.\n" +
+                                    "6) Г‚ *ГЇГ®Г«ГҐ Company* Г¤Г®ГЎГ ГўГј ГЄГ®Г¬ГЇГ Г­ГЁГѕ Г«ГЁГ¤Г .\n" +
+                                    "7) Г‚ *Company Size, Industry ГЁ Position* ГўГ»ГЎГҐГ°ГЁ ГЇГ®Г¤ГµГ®Г¤ГїГ№ГЁГ© ГўГ Г°ГЁГ Г­ГІ ГЁГ§ ГўГ»ГЇГ Г¤Г ГѕГ№ГҐГЈГ® Г±ГЇГЁГ±ГЄГ .\n" +
+                                    "8) ГЌГ Г¦Г¬ГЁ *Save*.")
                             .respond();
                     break;
 
                 case "crmLeads":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("*Всех лидов ты можешь просмотреть во вкладке Leads в своей СРМ*.\n" +
-                                    "Для того, чтобы найти конкретного лида, используй фильтры.")
+                            .setContent("*Г‚Г±ГҐГµ Г«ГЁГ¤Г®Гў ГІГ» Г¬Г®Г¦ГҐГёГј ГЇГ°Г®Г±Г¬Г®ГІГ°ГҐГІГј ГўГ® ГўГЄГ«Г Г¤ГЄГҐ Leads Гў Г±ГўГ®ГҐГ© Г‘ГђГЊ*.\n" +
+                                    "Г„Г«Гї ГІГ®ГЈГ®, Г·ГІГ®ГЎГ» Г­Г Г©ГІГЁ ГЄГ®Г­ГЄГ°ГҐГІГ­Г®ГЈГ® Г«ГЁГ¤Г , ГЁГ±ГЇГ®Г«ГјГ§ГіГ© ГґГЁГ«ГјГІГ°Г».")
                             .respond();
                     break;
                 case "crmLeadReports":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("На *вкладке Lead Reports* ты можешь просмотреть всех лидов, которых ты внес в СРМ.\n" +
-                                    "Для удобства используй фильтры.\n" +"\n" +"Напоминаем - *норма 40-50 лидов в день*.")
+                            .setContent("ГЌГ  *ГўГЄГ«Г Г¤ГЄГҐ Lead Reports* ГІГ» Г¬Г®Г¦ГҐГёГј ГЇГ°Г®Г±Г¬Г®ГІГ°ГҐГІГј ГўГ±ГҐГµ Г«ГЁГ¤Г®Гў, ГЄГ®ГІГ®Г°Г»Гµ ГІГ» ГўГ­ГҐГ± Гў Г‘ГђГЊ.\n" +
+                                    "Г„Г«Гї ГіГ¤Г®ГЎГ±ГІГўГ  ГЁГ±ГЇГ®Г«ГјГ§ГіГ© ГґГЁГ«ГјГІГ°Г».\n" +"\n" +"ГЌГ ГЇГ®Г¬ГЁГ­Г ГҐГ¬ - *Г­Г®Г°Г¬Г  40-50 Г«ГЁГ¤Г®Гў Гў Г¤ГҐГ­Гј*.")
                             .respond();
                     break;
 
 
-                //ТУТ начинается Календарь________________________________________________________
+                //Г’Г“Г’ Г­Г Г·ГЁГ­Г ГҐГІГ±Гї ГЉГ Г«ГҐГ­Г¤Г Г°Гј________________________________________________________
                 case "calEnterMail":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Зайди в Гугл Календарь с корпоративной почты info@rh-s.com")
+                            .setContent("Г‡Г Г©Г¤ГЁ Гў ГѓГіГЈГ« ГЉГ Г«ГҐГ­Г¤Г Г°Гј Г± ГЄГ®Г°ГЇГ®Г°Г ГІГЁГўГ­Г®Г© ГЇГ®Г·ГІГ» info@rh-s.com")
                             .respond();
                     break;
 
                 case "calLeadEvent":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("_Когда лид соглашается на звонок и сбрасывает ссылку на свой календарь, в нем нужно забронировать встречу в удобное и для нас, и для него время_")
+                            .setContent("_ГЉГ®ГЈГ¤Г  Г«ГЁГ¤ Г±Г®ГЈГ«Г ГёГ ГҐГІГ±Гї Г­Г  Г§ГўГ®Г­Г®ГЄ ГЁ Г±ГЎГ°Г Г±Г»ГўГ ГҐГІ Г±Г±Г»Г«ГЄГі Г­Г  Г±ГўГ®Г© ГЄГ Г«ГҐГ­Г¤Г Г°Гј, Гў Г­ГҐГ¬ Г­ГіГ¦Г­Г® Г§Г ГЎГ°Г®Г­ГЁГ°Г®ГўГ ГІГј ГўГ±ГІГ°ГҐГ·Гі Гў ГіГ¤Г®ГЎГ­Г®ГҐ ГЁ Г¤Г«Гї Г­Г Г±, ГЁ Г¤Г«Гї Г­ГҐГЈГ® ГўГ°ГҐГ¬Гї_")
                             .respond();
 
                     step2MessageCompInteraction.createFollowupMessageBuilder()
-                            .setContent("*Перейди по ссылке, которую он отправил*.\n" +"\n" +"*Открой наш календарь. Здесь найди свободное время для звонка. Вернись в календарь лида и выбери дату и время, которые нам подходят*.\n" +
-                                    "\n" +"Внизу *выбери наш часовой пояс (GMT +3)*. Время переводить не нужно, поскольку мы выбираем часы по киевскому времени.\n" +
-                                    "\n" +"После того как ты *выбрал дату и время, нажми confirm*.\n" +"Заполни *название ивента, добавь почту sales@rh-s.com. В комментариях обязательно добавь описание ивента*.\n" +
-                                    "\n" +"Нажми *кнопку add guests, и добавь почту info@rh-s.com*.\n" +"\n" +"Подтверди и сохрани наш ивент в календаре клиента.\n" +"\n" +"*Зайди в наш календарь с почты info@rh-s.com*. Найди этот ивент, открой его и добавь всю необходимую информацию о клиенте, которая есть у тебя (сайты компаний, комментарий, имя менеджера и тд).")
+                            .setContent("*ГЏГҐГ°ГҐГ©Г¤ГЁ ГЇГ® Г±Г±Г»Г«ГЄГҐ, ГЄГ®ГІГ®Г°ГіГѕ Г®Г­ Г®ГІГЇГ°Г ГўГЁГ«*.\n" +"\n" +"*ГЋГІГЄГ°Г®Г© Г­Г Гё ГЄГ Г«ГҐГ­Г¤Г Г°Гј. Г‡Г¤ГҐГ±Гј Г­Г Г©Г¤ГЁ Г±ГўГ®ГЎГ®Г¤Г­Г®ГҐ ГўГ°ГҐГ¬Гї Г¤Г«Гї Г§ГўГ®Г­ГЄГ . Г‚ГҐГ°Г­ГЁГ±Гј Гў ГЄГ Г«ГҐГ­Г¤Г Г°Гј Г«ГЁГ¤Г  ГЁ ГўГ»ГЎГҐГ°ГЁ Г¤Г ГІГі ГЁ ГўГ°ГҐГ¬Гї, ГЄГ®ГІГ®Г°Г»ГҐ Г­Г Г¬ ГЇГ®Г¤ГµГ®Г¤ГїГІ*.\n" +
+                                    "\n" +"Г‚Г­ГЁГ§Гі *ГўГ»ГЎГҐГ°ГЁ Г­Г Гё Г·Г Г±Г®ГўГ®Г© ГЇГ®ГїГ± (GMT +3)*. Г‚Г°ГҐГ¬Гї ГЇГҐГ°ГҐГўГ®Г¤ГЁГІГј Г­ГҐ Г­ГіГ¦Г­Г®, ГЇГ®Г±ГЄГ®Г«ГјГЄГі Г¬Г» ГўГ»ГЎГЁГ°Г ГҐГ¬ Г·Г Г±Г» ГЇГ® ГЄГЁГҐГўГ±ГЄГ®Г¬Гі ГўГ°ГҐГ¬ГҐГ­ГЁ.\n" +
+                                    "\n" +"ГЏГ®Г±Г«ГҐ ГІГ®ГЈГ® ГЄГ ГЄ ГІГ» *ГўГ»ГЎГ°Г Г« Г¤Г ГІГі ГЁ ГўГ°ГҐГ¬Гї, Г­Г Г¦Г¬ГЁ confirm*.\n" +"Г‡Г ГЇГ®Г«Г­ГЁ *Г­Г Г§ГўГ Г­ГЁГҐ ГЁГўГҐГ­ГІГ , Г¤Г®ГЎГ ГўГј ГЇГ®Г·ГІГі sales@rh-s.com. Г‚ ГЄГ®Г¬Г¬ГҐГ­ГІГ Г°ГЁГїГµ Г®ГЎГїГ§Г ГІГҐГ«ГјГ­Г® Г¤Г®ГЎГ ГўГј Г®ГЇГЁГ±Г Г­ГЁГҐ ГЁГўГҐГ­ГІГ *.\n" +
+                                    "\n" +"ГЌГ Г¦Г¬ГЁ *ГЄГ­Г®ГЇГЄГі add guests, ГЁ Г¤Г®ГЎГ ГўГј ГЇГ®Г·ГІГі info@rh-s.com*.\n" +"\n" +"ГЏГ®Г¤ГІГўГҐГ°Г¤ГЁ ГЁ Г±Г®ГµГ°Г Г­ГЁ Г­Г Гё ГЁГўГҐГ­ГІ Гў ГЄГ Г«ГҐГ­Г¤Г Г°ГҐ ГЄГ«ГЁГҐГ­ГІГ .\n" +"\n" +"*Г‡Г Г©Г¤ГЁ Гў Г­Г Гё ГЄГ Г«ГҐГ­Г¤Г Г°Гј Г± ГЇГ®Г·ГІГ» info@rh-s.com*. ГЌГ Г©Г¤ГЁ ГЅГІГ®ГІ ГЁГўГҐГ­ГІ, Г®ГІГЄГ°Г®Г© ГҐГЈГ® ГЁ Г¤Г®ГЎГ ГўГј ГўГ±Гѕ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬ГіГѕ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ Г® ГЄГ«ГЁГҐГ­ГІГҐ, ГЄГ®ГІГ®Г°Г Гї ГҐГ±ГІГј Гі ГІГҐГЎГї (Г±Г Г©ГІГ» ГЄГ®Г¬ГЇГ Г­ГЁГ©, ГЄГ®Г¬Г¬ГҐГ­ГІГ Г°ГЁГ©, ГЁГ¬Гї Г¬ГҐГ­ГҐГ¤Г¦ГҐГ°Г  ГЁ ГІГ¤).")
                             .send();
                     break;
 
                 case "calNewEvent":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("\n" +"*Зайди в Гугл Календарь с корпоративной почты* info@rh-s.com .\n" +
-                                    "\n" +"*Выбери дату и время*, на которые вы договорились с клиентом.\n" +
-                                    "\n" +"*Учитывай часовые пояса* при назначении звонка. В календаре стоит Киевское время (GMT+2). Чтобы не считать время и быть точно уверенным в правильности, используй запрос в гугле: EST to Ukraine time. Гугл выдаст тебе ссылки на онлайн конверторы времени.\n" +
-                                    "\n" +"*AM* – это ночное и утреннее время (с полночи 12am до полудня 12pm), *PM* – наоборот дневное и вечернее время (с полудня 12pm до полночи 12am).\n" +
-                                    "\n" +"Звонки вноси в календарь с ПН по ПТ, с 9:00 до 18:00. Любое другое время необходимо согласовать с Sales-отделом.\n")
+                            .setContent("\n" +"*Г‡Г Г©Г¤ГЁ Гў ГѓГіГЈГ« ГЉГ Г«ГҐГ­Г¤Г Г°Гј Г± ГЄГ®Г°ГЇГ®Г°Г ГІГЁГўГ­Г®Г© ГЇГ®Г·ГІГ»* info@rh-s.com .\n" +
+                                    "\n" +"*Г‚Г»ГЎГҐГ°ГЁ Г¤Г ГІГі ГЁ ГўГ°ГҐГ¬Гї*, Г­Г  ГЄГ®ГІГ®Г°Г»ГҐ ГўГ» Г¤Г®ГЈГ®ГўГ®Г°ГЁГ«ГЁГ±Гј Г± ГЄГ«ГЁГҐГ­ГІГ®Г¬.\n" +
+                                    "\n" +"*Г“Г·ГЁГІГ»ГўГ Г© Г·Г Г±Г®ГўГ»ГҐ ГЇГ®ГїГ±Г * ГЇГ°ГЁ Г­Г Г§Г­Г Г·ГҐГ­ГЁГЁ Г§ГўГ®Г­ГЄГ . Г‚ ГЄГ Г«ГҐГ­Г¤Г Г°ГҐ Г±ГІГ®ГЁГІ ГЉГЁГҐГўГ±ГЄГ®ГҐ ГўГ°ГҐГ¬Гї (GMT+2). Г—ГІГ®ГЎГ» Г­ГҐ Г±Г·ГЁГІГ ГІГј ГўГ°ГҐГ¬Гї ГЁ ГЎГ»ГІГј ГІГ®Г·Г­Г® ГіГўГҐГ°ГҐГ­Г­Г»Г¬ Гў ГЇГ°Г ГўГЁГ«ГјГ­Г®Г±ГІГЁ, ГЁГ±ГЇГ®Г«ГјГ§ГіГ© Г§Г ГЇГ°Г®Г± Гў ГЈГіГЈГ«ГҐ: EST to Ukraine time. ГѓГіГЈГ« ГўГ»Г¤Г Г±ГІ ГІГҐГЎГҐ Г±Г±Г»Г«ГЄГЁ Г­Г  Г®Г­Г«Г Г©Г­ ГЄГ®Г­ГўГҐГ°ГІГ®Г°Г» ГўГ°ГҐГ¬ГҐГ­ГЁ.\n" +
+                                    "\n" +"*AM* В– ГЅГІГ® Г­Г®Г·Г­Г®ГҐ ГЁ ГіГІГ°ГҐГ­Г­ГҐГҐ ГўГ°ГҐГ¬Гї (Г± ГЇГ®Г«Г­Г®Г·ГЁ 12am Г¤Г® ГЇГ®Г«ГіГ¤Г­Гї 12pm), *PM* В– Г­Г Г®ГЎГ®Г°Г®ГІ Г¤Г­ГҐГўГ­Г®ГҐ ГЁ ГўГҐГ·ГҐГ°Г­ГҐГҐ ГўГ°ГҐГ¬Гї (Г± ГЇГ®Г«ГіГ¤Г­Гї 12pm Г¤Г® ГЇГ®Г«Г­Г®Г·ГЁ 12am).\n" +
+                                    "\n" +"Г‡ГўГ®Г­ГЄГЁ ГўГ­Г®Г±ГЁ Гў ГЄГ Г«ГҐГ­Г¤Г Г°Гј Г± ГЏГЌ ГЇГ® ГЏГ’, Г± 9:00 Г¤Г® 18:00. Г‹ГѕГЎГ®ГҐ Г¤Г°ГіГЈГ®ГҐ ГўГ°ГҐГ¬Гї Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® Г±Г®ГЈГ«Г Г±Г®ГўГ ГІГј Г± Sales-Г®ГІГ¤ГҐГ«Г®Г¬.\n")
                             .respond();
 
                     step2MessageCompInteraction.createFollowupMessageBuilder()
-                            .setContent("Выбери *кнопку \"More options\"* и перейди в расширенное меню настроек ивента.\n" +
-                                    "Важно - длительность ивента должна быть 30 мин. Обычно дольше разговор не длится.\n" +
+                            .setContent("Г‚Г»ГЎГҐГ°ГЁ *ГЄГ­Г®ГЇГЄГі \"More options\"* ГЁ ГЇГҐГ°ГҐГ©Г¤ГЁ Гў Г°Г Г±ГёГЁГ°ГҐГ­Г­Г®ГҐ Г¬ГҐГ­Гѕ Г­Г Г±ГІГ°Г®ГҐГЄ ГЁГўГҐГ­ГІГ .\n" +
+                                    "Г‚Г Г¦Г­Г® - Г¤Г«ГЁГІГҐГ«ГјГ­Г®Г±ГІГј ГЁГўГҐГ­ГІГ  Г¤Г®Г«Г¦Г­Г  ГЎГ»ГІГј 30 Г¬ГЁГ­. ГЋГЎГ»Г·Г­Г® Г¤Г®Г«ГјГёГҐ Г°Г Г§ГЈГ®ГўГ®Г° Г­ГҐ Г¤Г«ГЁГІГ±Гї.\n" +
                                     "\n" +
-                                    "Заполни пустые поля.\n" +
-                                    "Заголовок *Сompany name - Remote Helpers*\n" +
-                                    "Описание:\n" +
+                                    "Г‡Г ГЇГ®Г«Г­ГЁ ГЇГіГ±ГІГ»ГҐ ГЇГ®Г«Гї.\n" +
+                                    "Г‡Г ГЈГ®Г«Г®ГўГ®ГЄ *Г‘ompany name - Remote Helpers*\n" +
+                                    "ГЋГЇГЁГ±Г Г­ГЁГҐ:\n" +
                                     "We are going to discuss options for partnership in managing human resources for \"Name of the partner-company\" in Ukraine.\n" +
                                     "Website: rh-s.com\n" +
                                     "Website: \"his website\"")
                             .send();
 
                     step2MessageCompInteraction.createFollowupMessageBuilder()
-                            .setContent("Поле *Notifications/Напоминания*.\n" +
-                                    "Рекомендуем ставить 2 напоминания: за 20 мин и за 10 мин.\n" +
-                                    "Если у тебя только одно поле с уведомлением, то нажми add notification, чтобы добавить второе.\n" +
+                            .setContent("ГЏГ®Г«ГҐ *Notifications/ГЌГ ГЇГ®Г¬ГЁГ­Г Г­ГЁГї*.\n" +
+                                    "ГђГҐГЄГ®Г¬ГҐГ­Г¤ГіГҐГ¬ Г±ГІГ ГўГЁГІГј 2 Г­Г ГЇГ®Г¬ГЁГ­Г Г­ГЁГї: Г§Г  20 Г¬ГЁГ­ ГЁ Г§Г  10 Г¬ГЁГ­.\n" +
+                                    "Г…Г±Г«ГЁ Гі ГІГҐГЎГї ГІГ®Г«ГјГЄГ® Г®Г¤Г­Г® ГЇГ®Г«ГҐ Г± ГіГўГҐГ¤Г®Г¬Г«ГҐГ­ГЁГҐГ¬, ГІГ® Г­Г Г¦Г¬ГЁ add notification, Г·ГІГ®ГЎГ» Г¤Г®ГЎГ ГўГЁГІГј ГўГІГ®Г°Г®ГҐ.\n" +
                                     "\n" +
-                                    "*Поле Comments/Комментарий* о заказчике: обязательно пишем имя клиента и ссылку на его линкедин аккаунт, кто ему нужен и зачем (исходя из переписки на линкеде или почте, все что может пригодиться на звонке: инфа о его компании, свободной вакансии; или же он просто сказал, что хочет узнать по какой модели строится наша работа).\n" +
-                                    "Все комментарии писать на английском, чтобы клиент тоже понимал о чем речь.")
+                                    "*ГЏГ®Г«ГҐ Comments/ГЉГ®Г¬Г¬ГҐГ­ГІГ Г°ГЁГ©* Г® Г§Г ГЄГ Г§Г·ГЁГЄГҐ: Г®ГЎГїГ§Г ГІГҐГ«ГјГ­Г® ГЇГЁГёГҐГ¬ ГЁГ¬Гї ГЄГ«ГЁГҐГ­ГІГ  ГЁ Г±Г±Г»Г«ГЄГі Г­Г  ГҐГЈГ® Г«ГЁГ­ГЄГҐГ¤ГЁГ­ Г ГЄГЄГ ГіГ­ГІ, ГЄГІГ® ГҐГ¬Гі Г­ГіГ¦ГҐГ­ ГЁ Г§Г Г·ГҐГ¬ (ГЁГ±ГµГ®Г¤Гї ГЁГ§ ГЇГҐГ°ГҐГЇГЁГ±ГЄГЁ Г­Г  Г«ГЁГ­ГЄГҐГ¤ГҐ ГЁГ«ГЁ ГЇГ®Г·ГІГҐ, ГўГ±ГҐ Г·ГІГ® Г¬Г®Г¦ГҐГІ ГЇГ°ГЁГЈГ®Г¤ГЁГІГјГ±Гї Г­Г  Г§ГўГ®Г­ГЄГҐ: ГЁГ­ГґГ  Г® ГҐГЈГ® ГЄГ®Г¬ГЇГ Г­ГЁГЁ, Г±ГўГ®ГЎГ®Г¤Г­Г®Г© ГўГ ГЄГ Г­Г±ГЁГЁ; ГЁГ«ГЁ Г¦ГҐ Г®Г­ ГЇГ°Г®Г±ГІГ® Г±ГЄГ Г§Г Г«, Г·ГІГ® ГµГ®Г·ГҐГІ ГіГ§Г­Г ГІГј ГЇГ® ГЄГ ГЄГ®Г© Г¬Г®Г¤ГҐГ«ГЁ Г±ГІГ°Г®ГЁГІГ±Гї Г­Г ГёГ  Г°Г ГЎГ®ГІГ ).\n" +
+                                    "Г‚Г±ГҐ ГЄГ®Г¬Г¬ГҐГ­ГІГ Г°ГЁГЁ ГЇГЁГ±Г ГІГј Г­Г  Г Г­ГЈГ«ГЁГ©Г±ГЄГ®Г¬, Г·ГІГ®ГЎГ» ГЄГ«ГЁГҐГ­ГІ ГІГ®Г¦ГҐ ГЇГ®Г­ГЁГ¬Г Г« Г® Г·ГҐГ¬ Г°ГҐГ·Гј.")
                             .send();
 
                     step2MessageCompInteraction.createFollowupMessageBuilder()
-                            .setContent("*Manager: Your name* (это в Ваших интересах, чтобы мы знали кому дать бонус )\n" +
+                            .setContent("*Manager: Your name* (ГЅГІГ® Гў Г‚Г ГёГЁГµ ГЁГ­ГІГҐГ°ГҐГ±Г Гµ, Г·ГІГ®ГЎГ» Г¬Г» Г§Г­Г Г«ГЁ ГЄГ®Г¬Гі Г¤Г ГІГј ГЎГ®Г­ГіГ± )\n" +
                                     "\n" +
-                                    "*Поле Guests* – сюда внеси имейлы всех тех, кого мы хотим видеть на звонке:\n" +
-                                    "- нашу почту sales@rh-s.com,\n" +
-                                    "- почту клиента (с его стороны также может быть несколько почт, если он попросил подключить на звонок к примеру его партнера).\n" +
-                                    "Им придет оповещение о данном звонке на почту, и перед самым звонком появится оповещение из календаря.\n" +
-                                    "\n" + "Нажимаем *SAVE*, и когда появится *Invite external guests, нажимаем YES*.")
+                                    "*ГЏГ®Г«ГҐ Guests* В– Г±ГѕГ¤Г  ГўГ­ГҐГ±ГЁ ГЁГ¬ГҐГ©Г«Г» ГўГ±ГҐГµ ГІГҐГµ, ГЄГ®ГЈГ® Г¬Г» ГµГ®ГІГЁГ¬ ГўГЁГ¤ГҐГІГј Г­Г  Г§ГўГ®Г­ГЄГҐ:\n" +
+                                    "- Г­Г ГёГі ГЇГ®Г·ГІГі sales@rh-s.com,\n" +
+                                    "- ГЇГ®Г·ГІГі ГЄГ«ГЁГҐГ­ГІГ  (Г± ГҐГЈГ® Г±ГІГ®Г°Г®Г­Г» ГІГ ГЄГ¦ГҐ Г¬Г®Г¦ГҐГІ ГЎГ»ГІГј Г­ГҐГ±ГЄГ®Г«ГјГЄГ® ГЇГ®Г·ГІ, ГҐГ±Г«ГЁ Г®Г­ ГЇГ®ГЇГ°Г®Г±ГЁГ« ГЇГ®Г¤ГЄГ«ГѕГ·ГЁГІГј Г­Г  Г§ГўГ®Г­Г®ГЄ ГЄ ГЇГ°ГЁГ¬ГҐГ°Гі ГҐГЈГ® ГЇГ Г°ГІГ­ГҐГ°Г ).\n" +
+                                    "Г€Г¬ ГЇГ°ГЁГ¤ГҐГІ Г®ГЇГ®ГўГҐГ№ГҐГ­ГЁГҐ Г® Г¤Г Г­Г­Г®Г¬ Г§ГўГ®Г­ГЄГҐ Г­Г  ГЇГ®Г·ГІГі, ГЁ ГЇГҐГ°ГҐГ¤ Г±Г Г¬Г»Г¬ Г§ГўГ®Г­ГЄГ®Г¬ ГЇГ®ГїГўГЁГІГ±Гї Г®ГЇГ®ГўГҐГ№ГҐГ­ГЁГҐ ГЁГ§ ГЄГ Г«ГҐГ­Г¤Г Г°Гї.\n" +
+                                    "\n" + "ГЌГ Г¦ГЁГ¬Г ГҐГ¬ *SAVE*, ГЁ ГЄГ®ГЈГ¤Г  ГЇГ®ГїГўГЁГІГ±Гї *Invite external guests, Г­Г Г¦ГЁГ¬Г ГҐГ¬ YES*.")
                             .send();
 
                     step2MessageCompInteraction.createFollowupMessageBuilder()
-                            .setContent("В СРМ измени статус Лида на Event,  добавь дату и время звонка.\n" +
-                                    "\n" +"За 30 мин до звонка, вежливо напомни клиенту, о том, что у нас назначена беседа.\n" +
-                                    "Если возникают какие-то обстоятельства и звонок не состоится, сообщи об этом sales менеджеру.\n" +
-                                    "После звонка, нужно связаться с sales менеджером и поинтересоваться результатами, после чего поставить статус Call.")
+                            .setContent("Г‚ Г‘ГђГЊ ГЁГ§Г¬ГҐГ­ГЁ Г±ГІГ ГІГіГ± Г‹ГЁГ¤Г  Г­Г  Event,  Г¤Г®ГЎГ ГўГј Г¤Г ГІГі ГЁ ГўГ°ГҐГ¬Гї Г§ГўГ®Г­ГЄГ .\n" +
+                                    "\n" +"Г‡Г  30 Г¬ГЁГ­ Г¤Г® Г§ГўГ®Г­ГЄГ , ГўГҐГ¦Г«ГЁГўГ® Г­Г ГЇГ®Г¬Г­ГЁ ГЄГ«ГЁГҐГ­ГІГі, Г® ГІГ®Г¬, Г·ГІГ® Гі Г­Г Г± Г­Г Г§Г­Г Г·ГҐГ­Г  ГЎГҐГ±ГҐГ¤Г .\n" +
+                                    "Г…Г±Г«ГЁ ГўГ®Г§Г­ГЁГЄГ ГѕГІ ГЄГ ГЄГЁГҐ-ГІГ® Г®ГЎГ±ГІГ®ГїГІГҐГ«ГјГ±ГІГўГ  ГЁ Г§ГўГ®Г­Г®ГЄ Г­ГҐ Г±Г®Г±ГІГ®ГЁГІГ±Гї, Г±Г®Г®ГЎГ№ГЁ Г®ГЎ ГЅГІГ®Г¬ sales Г¬ГҐГ­ГҐГ¤Г¦ГҐГ°Гі.\n" +
+                                    "ГЏГ®Г±Г«ГҐ Г§ГўГ®Г­ГЄГ , Г­ГіГ¦Г­Г® Г±ГўГїГ§Г ГІГјГ±Гї Г± sales Г¬ГҐГ­ГҐГ¤Г¦ГҐГ°Г®Г¬ ГЁ ГЇГ®ГЁГ­ГІГҐГ°ГҐГ±Г®ГўГ ГІГјГ±Гї Г°ГҐГ§ГіГ«ГјГІГ ГІГ Г¬ГЁ, ГЇГ®Г±Г«ГҐ Г·ГҐГЈГ® ГЇГ®Г±ГІГ ГўГЁГІГј Г±ГІГ ГІГіГ± Call.")
                             .send();
                     break;
 
                 case"calGet":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Открой *новую вкладку в браузере гугл-хром*.\n" +
-                                    "\n" +"В правом верхнем углу, *нажми на меню* (в виде точек).\n" +
-                                    "Откроется меню расширений Гугл.\n" + "\n" +"Выбери *Календарь*.\n" + "\n" +"Для *назначения ивента, открой календарь с корпоративной почты info@rh-s.com*.")
+                            .setContent("ГЋГІГЄГ°Г®Г© *Г­Г®ГўГіГѕ ГўГЄГ«Г Г¤ГЄГі Гў ГЎГ°Г ГіГ§ГҐГ°ГҐ ГЈГіГЈГ«-ГµГ°Г®Г¬*.\n" +
+                                    "\n" +"Г‚ ГЇГ°Г ГўГ®Г¬ ГўГҐГ°ГµГ­ГҐГ¬ ГіГЈГ«Гі, *Г­Г Г¦Г¬ГЁ Г­Г  Г¬ГҐГ­Гѕ* (Гў ГўГЁГ¤ГҐ ГІГ®Г·ГҐГЄ).\n" +
+                                    "ГЋГІГЄГ°Г®ГҐГІГ±Гї Г¬ГҐГ­Гѕ Г°Г Г±ГёГЁГ°ГҐГ­ГЁГ© ГѓГіГЈГ«.\n" + "\n" +"Г‚Г»ГЎГҐГ°ГЁ *ГЉГ Г«ГҐГ­Г¤Г Г°Гј*.\n" + "\n" +"Г„Г«Гї *Г­Г Г§Г­Г Г·ГҐГ­ГЁГї ГЁГўГҐГ­ГІГ , Г®ГІГЄГ°Г®Г© ГЄГ Г«ГҐГ­Г¤Г Г°Гј Г± ГЄГ®Г°ГЇГ®Г°Г ГІГЁГўГ­Г®Г© ГЇГ®Г·ГІГ» info@rh-s.com*.")
                             .respond();
                     break;
 
                 case "callFollowUp":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Открой _Гугл-календарь_. Создай новое напоминание.\n" +
-                                    "*Заголовок* календарного события – *“название компании” FollowUp*\n" +
-                                    "\n" +"*Выбери дату* на которую надо сделать напоминание и продолжительность: *ставь галочку НА ВЕСЬ ДЕНЬ*. Так твои ивенты будут отображаться вверху календаря.\n" +
-                                    "\n" +"Важно: в календаре *выделяем фоллоу-апы ОРАНЖЕВЫМ цветом*.\n" +
-                                    "\n" +"*Заполни карточку напоминания*\n" +"- в описании укажи *описание клиента, его вопросы/ответы, его контакты*.\n" +"- обязательно укажи *Manager* - себя, чтобы мы знали, кто привел лида.\n" +"- в *Guests* - обязательно добавь почту sales@rh-s.com чтобы твое напоминание отобразилось и у ребят, которые непосредственно созваниваются с клиентами.")
+                            .setContent("ГЋГІГЄГ°Г®Г© _ГѓГіГЈГ«-ГЄГ Г«ГҐГ­Г¤Г Г°Гј_. Г‘Г®Г§Г¤Г Г© Г­Г®ГўГ®ГҐ Г­Г ГЇГ®Г¬ГЁГ­Г Г­ГЁГҐ.\n" +
+                                    "*Г‡Г ГЈГ®Г«Г®ГўГ®ГЄ* ГЄГ Г«ГҐГ­Г¤Г Г°Г­Г®ГЈГ® Г±Г®ГЎГ»ГІГЁГї В– *В“Г­Г Г§ГўГ Г­ГЁГҐ ГЄГ®Г¬ГЇГ Г­ГЁГЁВ” FollowUp*\n" +
+                                    "\n" +"*Г‚Г»ГЎГҐГ°ГЁ Г¤Г ГІГі* Г­Г  ГЄГ®ГІГ®Г°ГіГѕ Г­Г Г¤Г® Г±Г¤ГҐГ«Г ГІГј Г­Г ГЇГ®Г¬ГЁГ­Г Г­ГЁГҐ ГЁ ГЇГ°Г®Г¤Г®Г«Г¦ГЁГІГҐГ«ГјГ­Г®Г±ГІГј: *Г±ГІГ ГўГј ГЈГ Г«Г®Г·ГЄГі ГЌГЂ Г‚Г…Г‘Гњ Г„Г…ГЌГњ*. Г’Г ГЄ ГІГўГ®ГЁ ГЁГўГҐГ­ГІГ» ГЎГіГ¤ГіГІ Г®ГІГ®ГЎГ°Г Г¦Г ГІГјГ±Гї ГўГўГҐГ°ГµГі ГЄГ Г«ГҐГ­Г¤Г Г°Гї.\n" +
+                                    "\n" +"Г‚Г Г¦Г­Г®: Гў ГЄГ Г«ГҐГ­Г¤Г Г°ГҐ *ГўГ»Г¤ГҐГ«ГїГҐГ¬ ГґГ®Г«Г«Г®Гі-Г ГЇГ» ГЋГђГЂГЌГ†Г…Г‚Г›ГЊ Г¶ГўГҐГІГ®Г¬*.\n" +
+                                    "\n" +"*Г‡Г ГЇГ®Г«Г­ГЁ ГЄГ Г°ГІГ®Г·ГЄГі Г­Г ГЇГ®Г¬ГЁГ­Г Г­ГЁГї*\n" +"- Гў Г®ГЇГЁГ±Г Г­ГЁГЁ ГіГЄГ Г¦ГЁ *Г®ГЇГЁГ±Г Г­ГЁГҐ ГЄГ«ГЁГҐГ­ГІГ , ГҐГЈГ® ГўГ®ГЇГ°Г®Г±Г»/Г®ГІГўГҐГІГ», ГҐГЈГ® ГЄГ®Г­ГІГ ГЄГІГ»*.\n" +"- Г®ГЎГїГ§Г ГІГҐГ«ГјГ­Г® ГіГЄГ Г¦ГЁ *Manager* - Г±ГҐГЎГї, Г·ГІГ®ГЎГ» Г¬Г» Г§Г­Г Г«ГЁ, ГЄГІГ® ГЇГ°ГЁГўГҐГ« Г«ГЁГ¤Г .\n" +"- Гў *Guests* - Г®ГЎГїГ§Г ГІГҐГ«ГјГ­Г® Г¤Г®ГЎГ ГўГј ГЇГ®Г·ГІГі sales@rh-s.com Г·ГІГ®ГЎГ» ГІГўГ®ГҐ Г­Г ГЇГ®Г¬ГЁГ­Г Г­ГЁГҐ Г®ГІГ®ГЎГ°Г Г§ГЁГ«Г®Г±Гј ГЁ Гі Г°ГҐГЎГїГІ, ГЄГ®ГІГ®Г°Г»ГҐ Г­ГҐГЇГ®Г±Г°ГҐГ¤Г±ГІГўГҐГ­Г­Г® Г±Г®Г§ГўГ Г­ГЁГўГ ГѕГІГ±Гї Г± ГЄГ«ГЁГҐГ­ГІГ Г¬ГЁ.")
                             .respond();
                     break;
 
-                //Тут начинается Апдейт________________________________________________________
+                //Г’ГіГІ Г­Г Г·ГЁГ­Г ГҐГІГ±Гї ГЂГЇГ¤ГҐГ©ГІ________________________________________________________
 
                 case "updateWhatIs":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("*Апдейты* - это лиды, которые уже есть в СРМ, были добавлены тобой или другим менеджером более трех месяцев назад.\n" +
-                                    "\n" +"Таким лидам *мы пишем повторные сообщения и отправляем повторный коннект*.")
+                            .setContent("*ГЂГЇГ¤ГҐГ©ГІГ»* - ГЅГІГ® Г«ГЁГ¤Г», ГЄГ®ГІГ®Г°Г»ГҐ ГіГ¦ГҐ ГҐГ±ГІГј Гў Г‘ГђГЊ, ГЎГ»Г«ГЁ Г¤Г®ГЎГ ГўГ«ГҐГ­Г» ГІГ®ГЎГ®Г© ГЁГ«ГЁ Г¤Г°ГіГЈГЁГ¬ Г¬ГҐГ­ГҐГ¤Г¦ГҐГ°Г®Г¬ ГЎГ®Г«ГҐГҐ ГІГ°ГҐГµ Г¬ГҐГ±ГїГ¶ГҐГў Г­Г Г§Г Г¤.\n" +
+                                    "\n" +"Г’Г ГЄГЁГ¬ Г«ГЁГ¤Г Г¬ *Г¬Г» ГЇГЁГёГҐГ¬ ГЇГ®ГўГІГ®Г°Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї ГЁ Г®ГІГЇГ°Г ГўГ«ГїГҐГ¬ ГЇГ®ГўГІГ®Г°Г­Г»Г© ГЄГ®Г­Г­ГҐГЄГІ*.")
                             .respond();
                     break;
 
                 case "updateWhy":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Эти лидам мы пишем повторные сообщения и отправляем повторный коннект.\n" +
-                                    "\n" +"*Так мы напоминаем потенциальным клиентам о себе и своих услугах. Со временем в компаниях меняются задачи, появляются новые проекты и мы можем предложить сотрудничество в нужный момент для лида.*")
+                            .setContent("ГќГІГЁ Г«ГЁГ¤Г Г¬ Г¬Г» ГЇГЁГёГҐГ¬ ГЇГ®ГўГІГ®Г°Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї ГЁ Г®ГІГЇГ°Г ГўГ«ГїГҐГ¬ ГЇГ®ГўГІГ®Г°Г­Г»Г© ГЄГ®Г­Г­ГҐГЄГІ.\n" +
+                                    "\n" +"*Г’Г ГЄ Г¬Г» Г­Г ГЇГ®Г¬ГЁГ­Г ГҐГ¬ ГЇГ®ГІГҐГ­Г¶ГЁГ Г«ГјГ­Г»Г¬ ГЄГ«ГЁГҐГ­ГІГ Г¬ Г® Г±ГҐГЎГҐ ГЁ Г±ГўГ®ГЁГµ ГіГ±Г«ГіГЈГ Гµ. Г‘Г® ГўГ°ГҐГ¬ГҐГ­ГҐГ¬ Гў ГЄГ®Г¬ГЇГ Г­ГЁГїГµ Г¬ГҐГ­ГїГѕГІГ±Гї Г§Г Г¤Г Г·ГЁ, ГЇГ®ГїГўГ«ГїГѕГІГ±Гї Г­Г®ГўГ»ГҐ ГЇГ°Г®ГҐГЄГІГ» ГЁ Г¬Г» Г¬Г®Г¦ГҐГ¬ ГЇГ°ГҐГ¤Г«Г®Г¦ГЁГІГј Г±Г®ГІГ°ГіГ¤Г­ГЁГ·ГҐГ±ГІГўГ® Гў Г­ГіГ¦Г­Г»Г© Г¬Г®Г¬ГҐГ­ГІ Г¤Г«Гї Г«ГЁГ¤Г .*")
                             .respond();
                     break;
 
                 case "updateHowFind":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Как найти апдейтов:\n" +"\n" +"В своей СРМ открой вкладку Leads.\n" +"Выбери необходимые тебе поля:\n" +"*Country* - страна с которой сейчас  работаешь\n" +"*Lead Status* - все статусы, кроме Call\n" +"Нажми *Apply*.\n" + "Далее откроется список всех лидов, которые были внесены за все время под нужным тебе статусом и страной, с которой ты сейчас работаешь.\n" +
-                                    "\n" + "Листай вниз страницы, и начинай работать с лидами с конце списка, т.е. с самыми старыми - которые были сделаны 3 и более месяцев назад.\n" +
-                                    "\n" + "Проверь дату, когда лид был создан \"CREATED ON\" и дату, когда лиду был сделан последний апдейт UPDATE ON. Обрати внимание на комментарии.")
+                            .setContent("ГЉГ ГЄ Г­Г Г©ГІГЁ Г ГЇГ¤ГҐГ©ГІГ®Гў:\n" +"\n" +"Г‚ Г±ГўГ®ГҐГ© Г‘ГђГЊ Г®ГІГЄГ°Г®Г© ГўГЄГ«Г Г¤ГЄГі Leads.\n" +"Г‚Г»ГЎГҐГ°ГЁ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г»ГҐ ГІГҐГЎГҐ ГЇГ®Г«Гї:\n" +"*Country* - Г±ГІГ°Г Г­Г  Г± ГЄГ®ГІГ®Г°Г®Г© Г±ГҐГ©Г·Г Г±  Г°Г ГЎГ®ГІГ ГҐГёГј\n" +"*Lead Status* - ГўГ±ГҐ Г±ГІГ ГІГіГ±Г», ГЄГ°Г®Г¬ГҐ Call\n" +"ГЌГ Г¦Г¬ГЁ *Apply*.\n" + "Г„Г Г«ГҐГҐ Г®ГІГЄГ°Г®ГҐГІГ±Гї Г±ГЇГЁГ±Г®ГЄ ГўГ±ГҐГµ Г«ГЁГ¤Г®Гў, ГЄГ®ГІГ®Г°Г»ГҐ ГЎГ»Г«ГЁ ГўГ­ГҐГ±ГҐГ­Г» Г§Г  ГўГ±ГҐ ГўГ°ГҐГ¬Гї ГЇГ®Г¤ Г­ГіГ¦Г­Г»Г¬ ГІГҐГЎГҐ Г±ГІГ ГІГіГ±Г®Г¬ ГЁ Г±ГІГ°Г Г­Г®Г©, Г± ГЄГ®ГІГ®Г°Г®Г© ГІГ» Г±ГҐГ©Г·Г Г± Г°Г ГЎГ®ГІГ ГҐГёГј.\n" +
+                                    "\n" + "Г‹ГЁГ±ГІГ Г© ГўГ­ГЁГ§ Г±ГІГ°Г Г­ГЁГ¶Г», ГЁ Г­Г Г·ГЁГ­Г Г© Г°Г ГЎГ®ГІГ ГІГј Г± Г«ГЁГ¤Г Г¬ГЁ Г± ГЄГ®Г­Г¶ГҐ Г±ГЇГЁГ±ГЄГ , ГІ.ГҐ. Г± Г±Г Г¬Г»Г¬ГЁ Г±ГІГ Г°Г»Г¬ГЁ - ГЄГ®ГІГ®Г°Г»ГҐ ГЎГ»Г«ГЁ Г±Г¤ГҐГ«Г Г­Г» 3 ГЁ ГЎГ®Г«ГҐГҐ Г¬ГҐГ±ГїГ¶ГҐГў Г­Г Г§Г Г¤.\n" +
+                                    "\n" + "ГЏГ°Г®ГўГҐГ°Гј Г¤Г ГІГі, ГЄГ®ГЈГ¤Г  Г«ГЁГ¤ ГЎГ»Г« Г±Г®Г§Г¤Г Г­ \"CREATED ON\" ГЁ Г¤Г ГІГі, ГЄГ®ГЈГ¤Г  Г«ГЁГ¤Гі ГЎГ»Г« Г±Г¤ГҐГ«Г Г­ ГЇГ®Г±Г«ГҐГ¤Г­ГЁГ© Г ГЇГ¤ГҐГ©ГІ UPDATE ON. ГЋГЎГ°Г ГІГЁ ГўГ­ГЁГ¬Г Г­ГЁГҐ Г­Г  ГЄГ®Г¬Г¬ГҐГ­ГІГ Г°ГЁГЁ.")
                             .respond();
                     break;
                 case "updateHowMake":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Зайди в карту лида, и перейди по ссылке *Contact’s LinkedIn* на страничку лида в LinkedIn.\n" +
-                                    "Отправь ему повторный коннект вместе с шаблоном: connect-add note.\n" +
+                            .setContent("Г‡Г Г©Г¤ГЁ Гў ГЄГ Г°ГІГі Г«ГЁГ¤Г , ГЁ ГЇГҐГ°ГҐГ©Г¤ГЁ ГЇГ® Г±Г±Г»Г«ГЄГҐ *ContactВ’s LinkedIn* Г­Г  Г±ГІГ°Г Г­ГЁГ·ГЄГі Г«ГЁГ¤Г  Гў LinkedIn.\n" +
+                                    "ГЋГІГЇГ°Г ГўГј ГҐГ¬Гі ГЇГ®ГўГІГ®Г°Г­Г»Г© ГЄГ®Г­Г­ГҐГЄГІ ГўГ¬ГҐГ±ГІГҐ Г± ГёГ ГЎГ«Г®Г­Г®Г¬: connect-add note.\n" +
                                     "\n" +
-                                    "Далее в СРМ в карте лида нажми *Edit* и отредактируй информацию:\n" +
-                                    "- поле *Active Agents* - укажи свои данные, чтобы лид был засчитан именно тебе.\n" +
-                                    "- поле *LinkedIn Accounts* - укажи аккаунт с которого ты отправил коннект. \n" +
-                                    "- поле *Lead Status* - поставь статус Sent Request\n" +
-                                    "- поле *Note* - укажи комментарий - updated (лид обновлен)\n" +
-                                    "В завершение редактирования карты лида нажми *Update*.")
+                                    "Г„Г Г«ГҐГҐ Гў Г‘ГђГЊ Гў ГЄГ Г°ГІГҐ Г«ГЁГ¤Г  Г­Г Г¦Г¬ГЁ *Edit* ГЁ Г®ГІГ°ГҐГ¤Г ГЄГІГЁГ°ГіГ© ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ:\n" +
+                                    "- ГЇГ®Г«ГҐ *Active Agents* - ГіГЄГ Г¦ГЁ Г±ГўГ®ГЁ Г¤Г Г­Г­Г»ГҐ, Г·ГІГ®ГЎГ» Г«ГЁГ¤ ГЎГ»Г« Г§Г Г±Г·ГЁГІГ Г­ ГЁГ¬ГҐГ­Г­Г® ГІГҐГЎГҐ.\n" +
+                                    "- ГЇГ®Г«ГҐ *LinkedIn Accounts* - ГіГЄГ Г¦ГЁ Г ГЄГЄГ ГіГ­ГІ Г± ГЄГ®ГІГ®Г°Г®ГЈГ® ГІГ» Г®ГІГЇГ°Г ГўГЁГ« ГЄГ®Г­Г­ГҐГЄГІ. \n" +
+                                    "- ГЇГ®Г«ГҐ *Lead Status* - ГЇГ®Г±ГІГ ГўГј Г±ГІГ ГІГіГ± Sent Request\n" +
+                                    "- ГЇГ®Г«ГҐ *Note* - ГіГЄГ Г¦ГЁ ГЄГ®Г¬Г¬ГҐГ­ГІГ Г°ГЁГ© - updated (Г«ГЁГ¤ Г®ГЎГ­Г®ГўГ«ГҐГ­)\n" +
+                                    "Г‚ Г§Г ГўГҐГ°ГёГҐГ­ГЁГҐ Г°ГҐГ¤Г ГЄГІГЁГ°Г®ГўГ Г­ГЁГї ГЄГ Г°ГІГ» Г«ГЁГ¤Г  Г­Г Г¦Г¬ГЁ *Update*.")
                             .respond();
                     break;
 
                 case "updateDayNorm":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Норма апдейтов - 120+ компаний в день.")
+                            .setContent("ГЌГ®Г°Г¬Г  Г ГЇГ¤ГҐГ©ГІГ®Гў - 120+ ГЄГ®Г¬ГЇГ Г­ГЁГ© Гў Г¤ГҐГ­Гј.")
                             .respond();
                     break;
-                //ТУТ Тайм Трекер________________________________________________________
+                //Г’Г“Г’ Г’Г Г©Г¬ Г’Г°ГҐГЄГҐГ°________________________________________________________
 
                 case "timeTurnOn":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("\n" +"Зайди в СРМ.\n" +"\n" +"Нажми кнопку Login в правом верхнем углу экрана.\n" +
-                                    "\n" +"Введи свою электронную почту в поле Email и пароль в поле Password и нажми кнопку LOG IN.\n" +
-                                    "\n" +"При переходе на следующую страницу (вкладка Dashboard) браузер выведет окно запроса на *доступ к данным о твоем местоположении. Нажми “Разрешить”.*\n" +
-                                    "\n" +"Итог: *Начало рабочего дня >>> Clock In >>> Обеденный перерыв >>> Clock Out >>> Возвращение с обеденного перерыва >>> Clock In >>> Окончание рабочего дня >>> Clock Out*\n")
+                            .setContent("\n" +"Г‡Г Г©Г¤ГЁ Гў Г‘ГђГЊ.\n" +"\n" +"ГЌГ Г¦Г¬ГЁ ГЄГ­Г®ГЇГЄГі Login Гў ГЇГ°Г ГўГ®Г¬ ГўГҐГ°ГµГ­ГҐГ¬ ГіГЈГ«Гі ГЅГЄГ°Г Г­Г .\n" +
+                                    "\n" +"Г‚ГўГҐГ¤ГЁ Г±ГўГ®Гѕ ГЅГ«ГҐГЄГІГ°Г®Г­Г­ГіГѕ ГЇГ®Г·ГІГі Гў ГЇГ®Г«ГҐ Email ГЁ ГЇГ Г°Г®Г«Гј Гў ГЇГ®Г«ГҐ Password ГЁ Г­Г Г¦Г¬ГЁ ГЄГ­Г®ГЇГЄГі LOG IN.\n" +
+                                    "\n" +"ГЏГ°ГЁ ГЇГҐГ°ГҐГµГ®Г¤ГҐ Г­Г  Г±Г«ГҐГ¤ГіГѕГ№ГіГѕ Г±ГІГ°Г Г­ГЁГ¶Гі (ГўГЄГ«Г Г¤ГЄГ  Dashboard) ГЎГ°Г ГіГ§ГҐГ° ГўГ»ГўГҐГ¤ГҐГІ Г®ГЄГ­Г® Г§Г ГЇГ°Г®Г±Г  Г­Г  *Г¤Г®Г±ГІГіГЇ ГЄ Г¤Г Г­Г­Г»Г¬ Г® ГІГўГ®ГҐГ¬ Г¬ГҐГ±ГІГ®ГЇГ®Г«Г®Г¦ГҐГ­ГЁГЁ. ГЌГ Г¦Г¬ГЁ В“ГђГ Г§Г°ГҐГёГЁГІГјВ”.*\n" +
+                                    "\n" +"Г€ГІГ®ГЈ: *ГЌГ Г·Г Г«Г® Г°Г ГЎГ®Г·ГҐГЈГ® Г¤Г­Гї >>> Clock In >>> ГЋГЎГҐГ¤ГҐГ­Г­Г»Г© ГЇГҐГ°ГҐГ°Г»Гў >>> Clock Out >>> Г‚Г®Г§ГўГ°Г Г№ГҐГ­ГЁГҐ Г± Г®ГЎГҐГ¤ГҐГ­Г­Г®ГЈГ® ГЇГҐГ°ГҐГ°Г»ГўГ  >>> Clock In >>> ГЋГЄГ®Г­Г·Г Г­ГЁГҐ Г°Г ГЎГ®Г·ГҐГЈГ® Г¤Г­Гї >>> Clock Out*\n")
                             .respond();
                     break;
 
                 case "timeGoogleSetting":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Нажми кнопку _меню в правом верхнем углу окна браузера_, в появившемся списке нажми на вкладку *Настройки*.\n" +
-                                    "\n" +"В списке слева выбери *вкладку Конфиденциальность и безопасность*.\n" +
-                                    "\n" +"Пролистай немного вниз пока не встретишь *вкладку Настройки сайтов*, нажми на нее.\n" +
-                                    "\n" +"Нажми на *вкладку Посмотреть текущие разрешения и сохраненные данные сайтов*.\n" +
-                                    "\n" +"*В поисковой строке в правом верхнем углу введи crm.rh-s.com*, нажми на появившуюся кнопку с этим адресом.\n" +
-                                    "\n" +"В появившемся списке найди *строку Геоданные* и справа выбери вариант *Разрешить*.")
+                            .setContent("ГЌГ Г¦Г¬ГЁ ГЄГ­Г®ГЇГЄГі _Г¬ГҐГ­Гѕ Гў ГЇГ°Г ГўГ®Г¬ ГўГҐГ°ГµГ­ГҐГ¬ ГіГЈГ«Гі Г®ГЄГ­Г  ГЎГ°Г ГіГ§ГҐГ°Г _, Гў ГЇГ®ГїГўГЁГўГёГҐГ¬Г±Гї Г±ГЇГЁГ±ГЄГҐ Г­Г Г¦Г¬ГЁ Г­Г  ГўГЄГ«Г Г¤ГЄГі *ГЌГ Г±ГІГ°Г®Г©ГЄГЁ*.\n" +
+                                    "\n" +"Г‚ Г±ГЇГЁГ±ГЄГҐ Г±Г«ГҐГўГ  ГўГ»ГЎГҐГ°ГЁ *ГўГЄГ«Г Г¤ГЄГі ГЉГ®Г­ГґГЁГ¤ГҐГ­Г¶ГЁГ Г«ГјГ­Г®Г±ГІГј ГЁ ГЎГҐГ§Г®ГЇГ Г±Г­Г®Г±ГІГј*.\n" +
+                                    "\n" +"ГЏГ°Г®Г«ГЁГ±ГІГ Г© Г­ГҐГ¬Г­Г®ГЈГ® ГўГ­ГЁГ§ ГЇГ®ГЄГ  Г­ГҐ ГўГ±ГІГ°ГҐГІГЁГёГј *ГўГЄГ«Г Г¤ГЄГі ГЌГ Г±ГІГ°Г®Г©ГЄГЁ Г±Г Г©ГІГ®Гў*, Г­Г Г¦Г¬ГЁ Г­Г  Г­ГҐГҐ.\n" +
+                                    "\n" +"ГЌГ Г¦Г¬ГЁ Г­Г  *ГўГЄГ«Г Г¤ГЄГі ГЏГ®Г±Г¬Г®ГІГ°ГҐГІГј ГІГҐГЄГіГ№ГЁГҐ Г°Г Г§Г°ГҐГёГҐГ­ГЁГї ГЁ Г±Г®ГµГ°Г Г­ГҐГ­Г­Г»ГҐ Г¤Г Г­Г­Г»ГҐ Г±Г Г©ГІГ®Гў*.\n" +
+                                    "\n" +"*Г‚ ГЇГ®ГЁГ±ГЄГ®ГўГ®Г© Г±ГІГ°Г®ГЄГҐ Гў ГЇГ°Г ГўГ®Г¬ ГўГҐГ°ГµГ­ГҐГ¬ ГіГЈГ«Гі ГўГўГҐГ¤ГЁ crm.rh-s.com*, Г­Г Г¦Г¬ГЁ Г­Г  ГЇГ®ГїГўГЁГўГёГіГѕГ±Гї ГЄГ­Г®ГЇГЄГі Г± ГЅГІГЁГ¬ Г Г¤Г°ГҐГ±Г®Г¬.\n" +
+                                    "\n" +"Г‚ ГЇГ®ГїГўГЁГўГёГҐГ¬Г±Гї Г±ГЇГЁГ±ГЄГҐ Г­Г Г©Г¤ГЁ *Г±ГІГ°Г®ГЄГі ГѓГҐГ®Г¤Г Г­Г­Г»ГҐ* ГЁ Г±ГЇГ°Г ГўГ  ГўГ»ГЎГҐГ°ГЁ ГўГ Г°ГЁГ Г­ГІ *ГђГ Г§Г°ГҐГёГЁГІГј*.")
                             .respond();
 
                     break;
 
-                    //Тут бонусы________________________________________________________
+                    //Г’ГіГІ ГЎГ®Г­ГіГ±Г»________________________________________________________
                 case "bonusMy":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Мы предлагаем бонус за каждый назначенный и состоявшийся звонок. Детальнее разберем бонусную систему ниже.\n" +
-                                    "\n" +"200 грн - стандартный бонус за назначенный и состоявшийся звонок с клиентом.\n" +
-                                    "+200 грн - если вы назначили звонок, на котором сразу будет собеседование с конкретными кандидатами/кандидатом (без сейлзов).\n" +
-                                    "+500 грн - если совершена продажа нашего сотрудника.\n" +
-                                    "\n" +"Звонок засчитывается только если:\n" +"а) звонок с клиентом состоялся;\n" +
-                                    "б) клиент в полной мере понял, какие услуги мы предлагаем (т.е. Информация предоставлена клиенту корректно);\n" +
-                                    "в) лид релевантный.\n" +"\n" +"Бонусы подводятся в конце каждого месяца.\n" +
-                                    "Данные суммы не предел, все зависит от вас и ваших стараний.\n" +
-                                    "Данные бонусы могут быть первыми признаками вашего карьерного роста в нашей компании, но отнюдь не их пределом. \n")
+                            .setContent("ГЊГ» ГЇГ°ГҐГ¤Г«Г ГЈГ ГҐГ¬ ГЎГ®Г­ГіГ± Г§Г  ГЄГ Г¦Г¤Г»Г© Г­Г Г§Г­Г Г·ГҐГ­Г­Г»Г© ГЁ Г±Г®Г±ГІГ®ГїГўГёГЁГ©Г±Гї Г§ГўГ®Г­Г®ГЄ. Г„ГҐГІГ Г«ГјГ­ГҐГҐ Г°Г Г§ГЎГҐГ°ГҐГ¬ ГЎГ®Г­ГіГ±Г­ГіГѕ Г±ГЁГ±ГІГҐГ¬Гі Г­ГЁГ¦ГҐ.\n" +
+                                    "\n" +"200 ГЈГ°Г­ - Г±ГІГ Г­Г¤Г Г°ГІГ­Г»Г© ГЎГ®Г­ГіГ± Г§Г  Г­Г Г§Г­Г Г·ГҐГ­Г­Г»Г© ГЁ Г±Г®Г±ГІГ®ГїГўГёГЁГ©Г±Гї Г§ГўГ®Г­Г®ГЄ Г± ГЄГ«ГЁГҐГ­ГІГ®Г¬.\n" +
+                                    "+200 ГЈГ°Г­ - ГҐГ±Г«ГЁ ГўГ» Г­Г Г§Г­Г Г·ГЁГ«ГЁ Г§ГўГ®Г­Г®ГЄ, Г­Г  ГЄГ®ГІГ®Г°Г®Г¬ Г±Г°Г Г§Гі ГЎГіГ¤ГҐГІ Г±Г®ГЎГҐГ±ГҐГ¤Г®ГўГ Г­ГЁГҐ Г± ГЄГ®Г­ГЄГ°ГҐГІГ­Г»Г¬ГЁ ГЄГ Г­Г¤ГЁГ¤Г ГІГ Г¬ГЁ/ГЄГ Г­Г¤ГЁГ¤Г ГІГ®Г¬ (ГЎГҐГ§ Г±ГҐГ©Г«Г§Г®Гў).\n" +
+                                    "+500 ГЈГ°Г­ - ГҐГ±Г«ГЁ Г±Г®ГўГҐГ°ГёГҐГ­Г  ГЇГ°Г®Г¤Г Г¦Г  Г­Г ГёГҐГЈГ® Г±Г®ГІГ°ГіГ¤Г­ГЁГЄГ .\n" +
+                                    "\n" +"Г‡ГўГ®Г­Г®ГЄ Г§Г Г±Г·ГЁГІГ»ГўГ ГҐГІГ±Гї ГІГ®Г«ГјГЄГ® ГҐГ±Г«ГЁ:\n" +"Г ) Г§ГўГ®Г­Г®ГЄ Г± ГЄГ«ГЁГҐГ­ГІГ®Г¬ Г±Г®Г±ГІГ®ГїГ«Г±Гї;\n" +
+                                    "ГЎ) ГЄГ«ГЁГҐГ­ГІ Гў ГЇГ®Г«Г­Г®Г© Г¬ГҐГ°ГҐ ГЇГ®Г­ГїГ«, ГЄГ ГЄГЁГҐ ГіГ±Г«ГіГЈГЁ Г¬Г» ГЇГ°ГҐГ¤Г«Г ГЈГ ГҐГ¬ (ГІ.ГҐ. Г€Г­ГґГ®Г°Г¬Г Г¶ГЁГї ГЇГ°ГҐГ¤Г®Г±ГІГ ГўГ«ГҐГ­Г  ГЄГ«ГЁГҐГ­ГІГі ГЄГ®Г°Г°ГҐГЄГІГ­Г®);\n" +
+                                    "Гў) Г«ГЁГ¤ Г°ГҐГ«ГҐГўГ Г­ГІГ­Г»Г©.\n" +"\n" +"ГЃГ®Г­ГіГ±Г» ГЇГ®Г¤ГўГ®Г¤ГїГІГ±Гї Гў ГЄГ®Г­Г¶ГҐ ГЄГ Г¦Г¤Г®ГЈГ® Г¬ГҐГ±ГїГ¶Г .\n" +
+                                    "Г„Г Г­Г­Г»ГҐ Г±ГіГ¬Г¬Г» Г­ГҐ ГЇГ°ГҐГ¤ГҐГ«, ГўГ±ГҐ Г§Г ГўГЁГ±ГЁГІ Г®ГІ ГўГ Г± ГЁ ГўГ ГёГЁГµ Г±ГІГ Г°Г Г­ГЁГ©.\n" +
+                                    "Г„Г Г­Г­Г»ГҐ ГЎГ®Г­ГіГ±Г» Г¬Г®ГЈГіГІ ГЎГ»ГІГј ГЇГҐГ°ГўГ»Г¬ГЁ ГЇГ°ГЁГ§Г­Г ГЄГ Г¬ГЁ ГўГ ГёГҐГЈГ® ГЄГ Г°ГјГҐГ°Г­Г®ГЈГ® Г°Г®Г±ГІГ  Гў Г­Г ГёГҐГ© ГЄГ®Г¬ГЇГ Г­ГЁГЁ, Г­Г® Г®ГІГ­ГѕГ¤Гј Г­ГҐ ГЁГµ ГЇГ°ГҐГ¤ГҐГ«Г®Г¬. \n")
                             .respond();
                     break;
 
                 case "bonusWhen":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Зарплата начисляется два раза в месяц с 5 по 10 и с 20 по 25 числа каждого месяца на карточку или наличными.")
+                            .setContent("Г‡Г Г°ГЇГ«Г ГІГ  Г­Г Г·ГЁГ±Г«ГїГҐГІГ±Гї Г¤ГўГ  Г°Г Г§Г  Гў Г¬ГҐГ±ГїГ¶ Г± 5 ГЇГ® 10 ГЁ Г± 20 ГЇГ® 25 Г·ГЁГ±Г«Г  ГЄГ Г¦Г¤Г®ГЈГ® Г¬ГҐГ±ГїГ¶Г  Г­Г  ГЄГ Г°ГІГ®Г·ГЄГі ГЁГ«ГЁ Г­Г Г«ГЁГ·Г­Г»Г¬ГЁ.")
                             .respond();
                     break;
 
-                //Тут лиды________________________________________________________
+                //Г’ГіГІ Г«ГЁГ¤Г»________________________________________________________
                 case "leadWhichLead":
                 case "leadRight":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Обрати внимание:\n" + "\n" +"- на _род деятельности лида_.\n" +"*Добавляем: CEO, COO, Founder, CTO, Owner, Director, co-Founder* (хотя если есть возможность добавить не сооснователя, то отдайте предпочтение другой должности), *Entrepreneur*.\n" +
-                                    "\n" +"- на _страну лида_.\n" +"*Работаем с: Australia, Austria, Belgium, Canada, Denmark, Estonia, Finland, France, Germany, Ireland, Italy, Israel, Luxembourg, Netherlands, Norway, Spain, Sweden, Switzerland, United Kingdom, USA*.\n" +
-                                    "\n" +"- имя и внешность лида.\n" +"Если в профиле у человека стоит одна из вышеперечисленных стран, но тебя смущает его имя или внешность, например он вылитый индус или афроамериканец (упоминаю их, потому что они часто маскируются), то такие люди нам тоже не подходят.\n" +
-                                    "\n" +"- _наличие общих профилей_.\n" +"Может оказаться, что наши менеджеры уже с ним связывались, возможно, мы уже имеем с этим человеком какие-либо деловые отношения. Всегда проверяйте наличие компании, в которой работает лид, в нашей СРМ системе.\n" +
-                                    "Если общих профилей больше 8 – это не значит, что не стоит обращать на человека внимание. Все эти люди могут не относиться к нашей компании. Главное – проверить.\n" +
-                                    "Проверить можно, кликнув на строчку с количеством общих профилей.\n" +
-                                    "\n" +"Если все ок, то жми кнопку *Connect*.")
+                            .setContent("ГЋГЎГ°Г ГІГЁ ГўГ­ГЁГ¬Г Г­ГЁГҐ:\n" + "\n" +"- Г­Г  _Г°Г®Г¤ Г¤ГҐГїГІГҐГ«ГјГ­Г®Г±ГІГЁ Г«ГЁГ¤Г _.\n" +"*Г„Г®ГЎГ ГўГ«ГїГҐГ¬: CEO, COO, Founder, CTO, Owner, Director, co-Founder* (ГµГ®ГІГї ГҐГ±Г«ГЁ ГҐГ±ГІГј ГўГ®Г§Г¬Г®Г¦Г­Г®Г±ГІГј Г¤Г®ГЎГ ГўГЁГІГј Г­ГҐ Г±Г®Г®Г±Г­Г®ГўГ ГІГҐГ«Гї, ГІГ® Г®ГІГ¤Г Г©ГІГҐ ГЇГ°ГҐГ¤ГЇГ®Г·ГІГҐГ­ГЁГҐ Г¤Г°ГіГЈГ®Г© Г¤Г®Г«Г¦Г­Г®Г±ГІГЁ), *Entrepreneur*.\n" +
+                                    "\n" +"- Г­Г  _Г±ГІГ°Г Г­Гі Г«ГЁГ¤Г _.\n" +"*ГђГ ГЎГ®ГІГ ГҐГ¬ Г±: Australia, Austria, Belgium, Canada, Denmark, Estonia, Finland, France, Germany, Ireland, Italy, Israel, Luxembourg, Netherlands, Norway, Spain, Sweden, Switzerland, United Kingdom, USA*.\n" +
+                                    "\n" +"- ГЁГ¬Гї ГЁ ГўГ­ГҐГёГ­Г®Г±ГІГј Г«ГЁГ¤Г .\n" +"Г…Г±Г«ГЁ Гў ГЇГ°Г®ГґГЁГ«ГҐ Гі Г·ГҐГ«Г®ГўГҐГЄГ  Г±ГІГ®ГЁГІ Г®Г¤Г­Г  ГЁГ§ ГўГ»ГёГҐГЇГҐГ°ГҐГ·ГЁГ±Г«ГҐГ­Г­Г»Гµ Г±ГІГ°Г Г­, Г­Г® ГІГҐГЎГї Г±Г¬ГіГ№Г ГҐГІ ГҐГЈГ® ГЁГ¬Гї ГЁГ«ГЁ ГўГ­ГҐГёГ­Г®Г±ГІГј, Г­Г ГЇГ°ГЁГ¬ГҐГ° Г®Г­ ГўГ»Г«ГЁГІГ»Г© ГЁГ­Г¤ГіГ± ГЁГ«ГЁ Г ГґГ°Г®Г Г¬ГҐГ°ГЁГЄГ Г­ГҐГ¶ (ГіГЇГ®Г¬ГЁГ­Г Гѕ ГЁГµ, ГЇГ®ГІГ®Г¬Гі Г·ГІГ® Г®Г­ГЁ Г·Г Г±ГІГ® Г¬Г Г±ГЄГЁГ°ГіГѕГІГ±Гї), ГІГ® ГІГ ГЄГЁГҐ Г«ГѕГ¤ГЁ Г­Г Г¬ ГІГ®Г¦ГҐ Г­ГҐ ГЇГ®Г¤ГµГ®Г¤ГїГІ.\n" +
+                                    "\n" +"- _Г­Г Г«ГЁГ·ГЁГҐ Г®ГЎГ№ГЁГµ ГЇГ°Г®ГґГЁГ«ГҐГ©_.\n" +"ГЊГ®Г¦ГҐГІ Г®ГЄГ Г§Г ГІГјГ±Гї, Г·ГІГ® Г­Г ГёГЁ Г¬ГҐГ­ГҐГ¤Г¦ГҐГ°Г» ГіГ¦ГҐ Г± Г­ГЁГ¬ Г±ГўГїГ§Г»ГўГ Г«ГЁГ±Гј, ГўГ®Г§Г¬Г®Г¦Г­Г®, Г¬Г» ГіГ¦ГҐ ГЁГ¬ГҐГҐГ¬ Г± ГЅГІГЁГ¬ Г·ГҐГ«Г®ГўГҐГЄГ®Г¬ ГЄГ ГЄГЁГҐ-Г«ГЁГЎГ® Г¤ГҐГ«Г®ГўГ»ГҐ Г®ГІГ­Г®ГёГҐГ­ГЁГї. Г‚Г±ГҐГЈГ¤Г  ГЇГ°Г®ГўГҐГ°ГїГ©ГІГҐ Г­Г Г«ГЁГ·ГЁГҐ ГЄГ®Г¬ГЇГ Г­ГЁГЁ, Гў ГЄГ®ГІГ®Г°Г®Г© Г°Г ГЎГ®ГІГ ГҐГІ Г«ГЁГ¤, Гў Г­Г ГёГҐГ© Г‘ГђГЊ Г±ГЁГ±ГІГҐГ¬ГҐ.\n" +
+                                    "Г…Г±Г«ГЁ Г®ГЎГ№ГЁГµ ГЇГ°Г®ГґГЁГ«ГҐГ© ГЎГ®Г«ГјГёГҐ 8 В– ГЅГІГ® Г­ГҐ Г§Г­Г Г·ГЁГІ, Г·ГІГ® Г­ГҐ Г±ГІГ®ГЁГІ Г®ГЎГ°Г Г№Г ГІГј Г­Г  Г·ГҐГ«Г®ГўГҐГЄГ  ГўГ­ГЁГ¬Г Г­ГЁГҐ. Г‚Г±ГҐ ГЅГІГЁ Г«ГѕГ¤ГЁ Г¬Г®ГЈГіГІ Г­ГҐ Г®ГІГ­Г®Г±ГЁГІГјГ±Гї ГЄ Г­Г ГёГҐГ© ГЄГ®Г¬ГЇГ Г­ГЁГЁ. ГѓГ«Г ГўГ­Г®ГҐ В– ГЇГ°Г®ГўГҐГ°ГЁГІГј.\n" +
+                                    "ГЏГ°Г®ГўГҐГ°ГЁГІГј Г¬Г®Г¦Г­Г®, ГЄГ«ГЁГЄГ­ГіГў Г­Г  Г±ГІГ°Г®Г·ГЄГі Г± ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ®Г¬ Г®ГЎГ№ГЁГµ ГЇГ°Г®ГґГЁГ«ГҐГ©.\n" +
+                                    "\n" +"Г…Г±Г«ГЁ ГўГ±ГҐ Г®ГЄ, ГІГ® Г¦Г¬ГЁ ГЄГ­Г®ГЇГЄГі *Connect*.")
                             .respond();
                     break;
                 case "leadInfoFrom":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Если клиент заинтересован и хочет назначить звонок, твоя задача уточнить у него:\n" +
-                                    "- *время*, когда ему будет удобно созвониться\n" +"- *временную зону или город* в котором он находится\n" +"- *почту*, куда отправить приглашение на звонок\n" +"- где ему удобней было бы созвониться: Skype, Whatsapp, Hangout, Zoom.\n" +
-                                    "\n" +"Также *не забывай всю информацию о лиде (компания, страна, любые контакты, и тд - все, что может быть полезно для последу.щей коммуникации с клиентом)*.")
+                            .setContent("Г…Г±Г«ГЁ ГЄГ«ГЁГҐГ­ГІ Г§Г ГЁГ­ГІГҐГ°ГҐГ±Г®ГўГ Г­ ГЁ ГµГ®Г·ГҐГІ Г­Г Г§Г­Г Г·ГЁГІГј Г§ГўГ®Г­Г®ГЄ, ГІГўГ®Гї Г§Г Г¤Г Г·Г  ГіГІГ®Г·Г­ГЁГІГј Гі Г­ГҐГЈГ®:\n" +
+                                    "- *ГўГ°ГҐГ¬Гї*, ГЄГ®ГЈГ¤Г  ГҐГ¬Гі ГЎГіГ¤ГҐГІ ГіГ¤Г®ГЎГ­Г® Г±Г®Г§ГўГ®Г­ГЁГІГјГ±Гї\n" +"- *ГўГ°ГҐГ¬ГҐГ­Г­ГіГѕ Г§Г®Г­Гі ГЁГ«ГЁ ГЈГ®Г°Г®Г¤* Гў ГЄГ®ГІГ®Г°Г®Г¬ Г®Г­ Г­Г ГµГ®Г¤ГЁГІГ±Гї\n" +"- *ГЇГ®Г·ГІГі*, ГЄГіГ¤Г  Г®ГІГЇГ°Г ГўГЁГІГј ГЇГ°ГЁГЈГ«Г ГёГҐГ­ГЁГҐ Г­Г  Г§ГўГ®Г­Г®ГЄ\n" +"- ГЈГ¤ГҐ ГҐГ¬Гі ГіГ¤Г®ГЎГ­ГҐГ© ГЎГ»Г«Г® ГЎГ» Г±Г®Г§ГўГ®Г­ГЁГІГјГ±Гї: Skype, Whatsapp, Hangout, Zoom.\n" +
+                                    "\n" +"Г’Г ГЄГ¦ГҐ *Г­ГҐ Г§Г ГЎГ»ГўГ Г© ГўГ±Гѕ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ Г® Г«ГЁГ¤ГҐ (ГЄГ®Г¬ГЇГ Г­ГЁГї, Г±ГІГ°Г Г­Г , Г«ГѕГЎГ»ГҐ ГЄГ®Г­ГІГ ГЄГІГ», ГЁ ГІГ¤ - ГўГ±ГҐ, Г·ГІГ® Г¬Г®Г¦ГҐГІ ГЎГ»ГІГј ГЇГ®Г«ГҐГ§Г­Г® Г¤Г«Гї ГЇГ®Г±Г«ГҐГ¤Гі.Г№ГҐГ© ГЄГ®Г¬Г¬ГіГ­ГЁГЄГ Г¶ГЁГЁ Г± ГЄГ«ГЁГҐГ­ГІГ®Г¬)*.")
                             .respond();
                     break;
 
                 case "leadAdd":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Чтобы добавить лида в СРМ:\n" +
-                                    "\n" +"Открой СРМ\n" +"Перейди на вкладку *Leads*, в правом верхнем углу нажми на кнопку *Add new lead*.\n" +
-                                    "\n" +"Заполни необходимую информацию о лиде.\n" +
-                                    "Поля помеченые красной звездочкой* обязательно должны быть заполнены, иначе новый лид не будет сохранен.\n" +
-                                    "\n" +"Поля, которые *заполняются автоматически: LG Manager, Lead Source, Lead Status и Country*.\n" +
-                                    "\n" +"В *поле Linkedin accounts* выбери аккаунт на котором сейчас работаешь.\n" +
-                                    "\n" +"В *поле Company* добавь компанию лида.\n" +
-                                    "\n" +"В *Company Size, Industry и Position* выбери подходящий вариант из выпадающего списка.\n" +
-                                    "\n" +"Нажми *Save*.")
+                            .setContent("Г—ГІГ®ГЎГ» Г¤Г®ГЎГ ГўГЁГІГј Г«ГЁГ¤Г  Гў Г‘ГђГЊ:\n" +
+                                    "\n" +"ГЋГІГЄГ°Г®Г© Г‘ГђГЊ\n" +"ГЏГҐГ°ГҐГ©Г¤ГЁ Г­Г  ГўГЄГ«Г Г¤ГЄГі *Leads*, Гў ГЇГ°Г ГўГ®Г¬ ГўГҐГ°ГµГ­ГҐГ¬ ГіГЈГ«Гі Г­Г Г¦Г¬ГЁ Г­Г  ГЄГ­Г®ГЇГЄГі *Add new lead*.\n" +
+                                    "\n" +"Г‡Г ГЇГ®Г«Г­ГЁ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬ГіГѕ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ Г® Г«ГЁГ¤ГҐ.\n" +
+                                    "ГЏГ®Г«Гї ГЇГ®Г¬ГҐГ·ГҐГ­Г»ГҐ ГЄГ°Г Г±Г­Г®Г© Г§ГўГҐГ§Г¤Г®Г·ГЄГ®Г©* Г®ГЎГїГ§Г ГІГҐГ«ГјГ­Г® Г¤Г®Г«Г¦Г­Г» ГЎГ»ГІГј Г§Г ГЇГ®Г«Г­ГҐГ­Г», ГЁГ­Г Г·ГҐ Г­Г®ГўГ»Г© Г«ГЁГ¤ Г­ГҐ ГЎГіГ¤ГҐГІ Г±Г®ГµГ°Г Г­ГҐГ­.\n" +
+                                    "\n" +"ГЏГ®Г«Гї, ГЄГ®ГІГ®Г°Г»ГҐ *Г§Г ГЇГ®Г«Г­ГїГѕГІГ±Гї Г ГўГІГ®Г¬Г ГІГЁГ·ГҐГ±ГЄГЁ: LG Manager, Lead Source, Lead Status ГЁ Country*.\n" +
+                                    "\n" +"Г‚ *ГЇГ®Г«ГҐ Linkedin accounts* ГўГ»ГЎГҐГ°ГЁ Г ГЄГЄГ ГіГ­ГІ Г­Г  ГЄГ®ГІГ®Г°Г®Г¬ Г±ГҐГ©Г·Г Г± Г°Г ГЎГ®ГІГ ГҐГёГј.\n" +
+                                    "\n" +"Г‚ *ГЇГ®Г«ГҐ Company* Г¤Г®ГЎГ ГўГј ГЄГ®Г¬ГЇГ Г­ГЁГѕ Г«ГЁГ¤Г .\n" +
+                                    "\n" +"Г‚ *Company Size, Industry ГЁ Position* ГўГ»ГЎГҐГ°ГЁ ГЇГ®Г¤ГµГ®Г¤ГїГ№ГЁГ© ГўГ Г°ГЁГ Г­ГІ ГЁГ§ ГўГ»ГЇГ Г¤Г ГѕГ№ГҐГЈГ® Г±ГЇГЁГ±ГЄГ .\n" +
+                                    "\n" +"ГЌГ Г¦Г¬ГЁ *Save*.")
                             .respond();
                     break;
 
                 case "leadCardFill":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("*В карту нового лида необходимо внести всю информацию о нем, которую тебе удалось собрать в процессе коммуникации.*\n" +
-                                    "Поля помеченые красной звездочкой* обязательно должны быть заполнены, иначе новый лид не будет сохранен.\n" +
-                                    "\n" +"*Поля, которые заполняются автоматически*: LG Manager, Lead Source, Lead Status и Country.\n" +
-                                    "\n" +"В *поле Linkedin accounts* выбери аккаунт на котором сейчас работаешь.\n" +
-                                    "\n" +"В *поле Company* добавь компанию лида.\n" +"\n" +"В *Company Size, Industry и Position* выбери подходящий вариант из выпадающего списка.\n" +
-                                    "\n" +"Нажми *Save*.")
+                            .setContent("*Г‚ ГЄГ Г°ГІГі Г­Г®ГўГ®ГЈГ® Г«ГЁГ¤Г  Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГўГ­ГҐГ±ГІГЁ ГўГ±Гѕ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ Г® Г­ГҐГ¬, ГЄГ®ГІГ®Г°ГіГѕ ГІГҐГЎГҐ ГіГ¤Г Г«Г®Г±Гј Г±Г®ГЎГ°Г ГІГј Гў ГЇГ°Г®Г¶ГҐГ±Г±ГҐ ГЄГ®Г¬Г¬ГіГ­ГЁГЄГ Г¶ГЁГЁ.*\n" +
+                                    "ГЏГ®Г«Гї ГЇГ®Г¬ГҐГ·ГҐГ­Г»ГҐ ГЄГ°Г Г±Г­Г®Г© Г§ГўГҐГ§Г¤Г®Г·ГЄГ®Г©* Г®ГЎГїГ§Г ГІГҐГ«ГјГ­Г® Г¤Г®Г«Г¦Г­Г» ГЎГ»ГІГј Г§Г ГЇГ®Г«Г­ГҐГ­Г», ГЁГ­Г Г·ГҐ Г­Г®ГўГ»Г© Г«ГЁГ¤ Г­ГҐ ГЎГіГ¤ГҐГІ Г±Г®ГµГ°Г Г­ГҐГ­.\n" +
+                                    "\n" +"*ГЏГ®Г«Гї, ГЄГ®ГІГ®Г°Г»ГҐ Г§Г ГЇГ®Г«Г­ГїГѕГІГ±Гї Г ГўГІГ®Г¬Г ГІГЁГ·ГҐГ±ГЄГЁ*: LG Manager, Lead Source, Lead Status ГЁ Country.\n" +
+                                    "\n" +"Г‚ *ГЇГ®Г«ГҐ Linkedin accounts* ГўГ»ГЎГҐГ°ГЁ Г ГЄГЄГ ГіГ­ГІ Г­Г  ГЄГ®ГІГ®Г°Г®Г¬ Г±ГҐГ©Г·Г Г± Г°Г ГЎГ®ГІГ ГҐГёГј.\n" +
+                                    "\n" +"Г‚ *ГЇГ®Г«ГҐ Company* Г¤Г®ГЎГ ГўГј ГЄГ®Г¬ГЇГ Г­ГЁГѕ Г«ГЁГ¤Г .\n" +"\n" +"Г‚ *Company Size, Industry ГЁ Position* ГўГ»ГЎГҐГ°ГЁ ГЇГ®Г¤ГµГ®Г¤ГїГ№ГЁГ© ГўГ Г°ГЁГ Г­ГІ ГЁГ§ ГўГ»ГЇГ Г¤Г ГѕГ№ГҐГЈГ® Г±ГЇГЁГ±ГЄГ .\n" +
+                                    "\n" +"ГЌГ Г¦Г¬ГЁ *Save*.")
                             .respond();
                     break;
 
                 case "leadWhoFollowUp":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("*Если клиент просит связаться с ним позже или отвечает, что сейчас наши услуги не актуальны, но через пару месяцев он начинает новый проект и они понадобятся, нужно ставить клиента на фоллоу ап*.\n" +
-                                    "\n" +"Если ты отправлял презентацию, этот инструмент также может пригодиться чтобы спросить, что клиент о ней думает.")
+                            .setContent("*Г…Г±Г«ГЁ ГЄГ«ГЁГҐГ­ГІ ГЇГ°Г®Г±ГЁГІ Г±ГўГїГ§Г ГІГјГ±Гї Г± Г­ГЁГ¬ ГЇГ®Г§Г¦ГҐ ГЁГ«ГЁ Г®ГІГўГҐГ·Г ГҐГІ, Г·ГІГ® Г±ГҐГ©Г·Г Г± Г­Г ГёГЁ ГіГ±Г«ГіГЈГЁ Г­ГҐ Г ГЄГІГіГ Г«ГјГ­Г», Г­Г® Г·ГҐГ°ГҐГ§ ГЇГ Г°Гі Г¬ГҐГ±ГїГ¶ГҐГў Г®Г­ Г­Г Г·ГЁГ­Г ГҐГІ Г­Г®ГўГ»Г© ГЇГ°Г®ГҐГЄГІ ГЁ Г®Г­ГЁ ГЇГ®Г­Г Г¤Г®ГЎГїГІГ±Гї, Г­ГіГ¦Г­Г® Г±ГІГ ГўГЁГІГј ГЄГ«ГЁГҐГ­ГІГ  Г­Г  ГґГ®Г«Г«Г®Гі Г ГЇ*.\n" +
+                                    "\n" +"Г…Г±Г«ГЁ ГІГ» Г®ГІГЇГ°Г ГўГ«ГїГ« ГЇГ°ГҐГ§ГҐГ­ГІГ Г¶ГЁГѕ, ГЅГІГ®ГІ ГЁГ­Г±ГІГ°ГіГ¬ГҐГ­ГІ ГІГ ГЄГ¦ГҐ Г¬Г®Г¦ГҐГІ ГЇГ°ГЁГЈГ®Г¤ГЁГІГјГ±Гї Г·ГІГ®ГЎГ» Г±ГЇГ°Г®Г±ГЁГІГј, Г·ГІГ® ГЄГ«ГЁГҐГ­ГІ Г® Г­ГҐГ© Г¤ГіГ¬Г ГҐГІ.")
                             .respond();
                     break;
 
                 case "leadHowMuch":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Зайди в свою СРМ. Открой вкладку *Lead Reports*.\n" +
-                                    "\n" +"Используя фильтры ты можешь просмотреть всех лидов, которых ты внес в СРМ.")
+                            .setContent("Г‡Г Г©Г¤ГЁ Гў Г±ГўГ®Гѕ Г‘ГђГЊ. ГЋГІГЄГ°Г®Г© ГўГЄГ«Г Г¤ГЄГі *Lead Reports*.\n" +
+                                    "\n" +"Г€Г±ГЇГ®Г«ГјГ§ГіГї ГґГЁГ«ГјГІГ°Г» ГІГ» Г¬Г®Г¦ГҐГёГј ГЇГ°Г®Г±Г¬Г®ГІГ°ГҐГІГј ГўГ±ГҐГµ Г«ГЁГ¤Г®Гў, ГЄГ®ГІГ®Г°Г»Гµ ГІГ» ГўГ­ГҐГ± Гў Г‘ГђГЊ.")
                             .respond();
                     break;
 
                 case "leadDayNorm":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Норма - *40-50 лидов в день*.")
+                            .setContent("ГЌГ®Г°Г¬Г  - *40-50 Г«ГЁГ¤Г®Гў Гў Г¤ГҐГ­Гј*.")
                             .respond();
                     break;
 
                 case "leadHowFind":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Всех лидов ты можешь просмотреть во вкладке *Leads* в своей СРМ.\n" +
-                                    "Для того, чтобы найти конкретного лида, используй фильтры.")
+                            .setContent("Г‚Г±ГҐГµ Г«ГЁГ¤Г®Гў ГІГ» Г¬Г®Г¦ГҐГёГј ГЇГ°Г®Г±Г¬Г®ГІГ°ГҐГІГј ГўГ® ГўГЄГ«Г Г¤ГЄГҐ *Leads* Гў Г±ГўГ®ГҐГ© Г‘ГђГЊ.\n" +
+                                    "Г„Г«Гї ГІГ®ГЈГ®, Г·ГІГ®ГЎГ» Г­Г Г©ГІГЁ ГЄГ®Г­ГЄГ°ГҐГІГ­Г®ГЈГ® Г«ГЁГ¤Г , ГЁГ±ГЇГ®Г«ГјГ§ГіГ© ГґГЁГ«ГјГІГ°Г».")
                             .respond();
                     break;
 
-                //Тут Шаблоны________________________________________________________
+                //Г’ГіГІ ГГ ГЎГ«Г®Г­Г»________________________________________________________
 
                 case "blueFirstCon":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Приветствие:\n" +
+                            .setContent("ГЏГ°ГЁГўГҐГІГ±ГІГўГЁГҐ:\n" +
                                     "Hello %Name%,\n" +
                                     "Would you like to hire our Remote Marketing Employees from Ukraine part-time or full-time? Can we connect?\n")
                             .respond();
@@ -928,11 +916,11 @@ public class Main
 
                 case "blueSecondCon":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Варианты коннекта:\n" + "Второе сообщение после коннекта: \n" + "What information are you interested in?\n" +
+                            .setContent("Г‚Г Г°ГЁГ Г­ГІГ» ГЄГ®Г­Г­ГҐГЄГІГ :\n" + "Г‚ГІГ®Г°Г®ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ ГЇГ®Г±Г«ГҐ ГЄГ®Г­Г­ГҐГЄГІГ : \n" + "What information are you interested in?\n" +
                                     "1) more info about our company;\n" +"2) available positions to choose from (departments)\n" +
                                     "3) prices and conditions\n" + "4) Do you want to share your company needs?\n" +
                                     "Appreciate your answer,\n" +"Remote Helpers,\n" +"https://www.rh-s.com\n" +
-                                    "Второе сообщение (негативный ответ/отказ):\n" +"Ok, thanks your answer \n" +
+                                    "Г‚ГІГ®Г°Г®ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ (Г­ГҐГЈГ ГІГЁГўГ­Г»Г© Г®ГІГўГҐГІ/Г®ГІГЄГ Г§):\n" +"Ok, thanks your answer \n" +
                                     "May I ask you for an email to send our presentation in case of your future needs?\n")
                             .respond();
 
@@ -941,9 +929,9 @@ public class Main
                 case "blueThirdCon":
 
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Третье сообщение (после ответа на второе сообщение):\n" +
-                                    "Мы описываем для тебя несколько вариантов ответов, в зависимости от того, о чем тебя может спросить клиент.\n" +
-                                    "Презентация - https://docs.google.com/presentation/d/e/2PACX-1vSleEpaKL1TOz8NV7d2OY7wtS111idiEdrSM_f88_GiCe-F4pqdzX7SUwZn3vDOog/pub?start=true&loop=true&delayms=15000&slide=id.g1180199a397_3_22\n" +
+                            .setContent("Г’Г°ГҐГІГјГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ (ГЇГ®Г±Г«ГҐ Г®ГІГўГҐГІГ  Г­Г  ГўГІГ®Г°Г®ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ):\n" +
+                                    "ГЊГ» Г®ГЇГЁГ±Г»ГўГ ГҐГ¬ Г¤Г«Гї ГІГҐГЎГї Г­ГҐГ±ГЄГ®Г«ГјГЄГ® ГўГ Г°ГЁГ Г­ГІГ®Гў Г®ГІГўГҐГІГ®Гў, Гў Г§Г ГўГЁГ±ГЁГ¬Г®Г±ГІГЁ Г®ГІ ГІГ®ГЈГ®, Г® Г·ГҐГ¬ ГІГҐГЎГї Г¬Г®Г¦ГҐГІ Г±ГЇГ°Г®Г±ГЁГІГј ГЄГ«ГЁГҐГ­ГІ.\n" +
+                                    "ГЏГ°ГҐГ§ГҐГ­ГІГ Г¶ГЁГї - https://docs.google.com/presentation/d/e/2PACX-1vSleEpaKL1TOz8NV7d2OY7wtS111idiEdrSM_f88_GiCe-F4pqdzX7SUwZn3vDOog/pub?start=true&loop=true&delayms=15000&slide=id.g1180199a397_3_22\n" +
                                     "We have candidates:\n" + "-Sales (lead generation managers (B2B), sales)\n" +
                                     "-Admin (project managers, administrators, personal assistants, finance)\n" +
                                     "-Creative (designers, illustrators, video editors, motion designers)\n" +
@@ -957,20 +945,20 @@ public class Main
 
                 case "blueAbout":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Если *клиент спрашивает о специальностях*, вариант твоего ответа:\n" +
+                            .setContent("Г…Г±Г«ГЁ *ГЄГ«ГЁГҐГ­ГІ Г±ГЇГ°Г ГёГЁГўГ ГҐГІ Г® Г±ГЇГҐГ¶ГЁГ Г«ГјГ­Г®Г±ГІГїГµ*, ГўГ Г°ГЁГ Г­ГІ ГІГўГ®ГҐГЈГ® Г®ГІГўГҐГІГ :\n" +
                                     "\n" +"Candidates we offer you to hire can work in the following positions: Lead Generation Managers, Customer Support, Personal Assistants, Social Media Managers, Designers, Media Buyers, PPC, SEO, AdOps, English teachers etc. Can we set a call to see if we can find a fit for you?\n" +
-                                    "\n" +"*Следующее сообщение может использоваться в случаях, когда клиент спрашивает про частичную занятость или о конкретном заказе*. Например клиент интересуется не могли бы мы сделать для него сайт?\n" +
-                                    "\n" +"“To keep price advantages comparing to freelancers that charge minimum 15€ per hour, our maximum cost is 7,5€ per hour. But there should be enough work for a full time – it is 160 hours a month, 5 days a week,  8 hours a day. So the final prices are 1200€ for designers, 1200€ for marketers and 1000€ for managers per month. Can we set a call to discuss all the details?”")
+                                    "\n" +"*Г‘Г«ГҐГ¤ГіГѕГ№ГҐГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ Г¬Г®Г¦ГҐГІ ГЁГ±ГЇГ®Г«ГјГ§Г®ГўГ ГІГјГ±Гї Гў Г±Г«ГіГ·Г ГїГµ, ГЄГ®ГЈГ¤Г  ГЄГ«ГЁГҐГ­ГІ Г±ГЇГ°Г ГёГЁГўГ ГҐГІ ГЇГ°Г® Г·Г Г±ГІГЁГ·Г­ГіГѕ Г§Г Г­ГїГІГ®Г±ГІГј ГЁГ«ГЁ Г® ГЄГ®Г­ГЄГ°ГҐГІГ­Г®Г¬ Г§Г ГЄГ Г§ГҐ*. ГЌГ ГЇГ°ГЁГ¬ГҐГ° ГЄГ«ГЁГҐГ­ГІ ГЁГ­ГІГҐГ°ГҐГ±ГіГҐГІГ±Гї Г­ГҐ Г¬Г®ГЈГ«ГЁ ГЎГ» Г¬Г» Г±Г¤ГҐГ«Г ГІГј Г¤Г«Гї Г­ГҐГЈГ® Г±Г Г©ГІ?\n" +
+                                    "\n" +"В“To keep price advantages comparing to freelancers that charge minimum 15В€ per hour, our maximum cost is 7,5В€ per hour. But there should be enough work for a full time В– it is 160 hours a month, 5 days a week,  8 hours a day. So the final prices are 1200В€ for designers, 1200В€ for marketers and 1000В€ for managers per month. Can we set a call to discuss all the details?В”")
                             .respond();
                     break;
 
                 case "blueExp":
                     step2MessageCompInteraction.createImmediateResponder()
                             .setContent("How much experience do they have? Can you send me some CVs?\n" +
-                                    "“Most of our employees have a good knowledge of English, worked a while in digital marketing, but still there should be a team lead from your side to run training. Each company has its own specifics and employees need time to get into things.”\n" +
+                                    "В“Most of our employees have a good knowledge of English, worked a while in digital marketing, but still there should be a team lead from your side to run training. Each company has its own specifics and employees need time to get into things.В”\n" +
                                     "Anyway you can find CVs of available employees on our Telegram channel or website:\n" +
                                     "https://t.me/RemoteHelpers\n" +"https://www.rh-s.com/\n" +
-                                    "Подбор кандидатов:\n" +"Let me share the most suitable candidates for you, you can look through their CVs and let me know who is the best match for you:\n" +
+                                    "ГЏГ®Г¤ГЎГ®Г° ГЄГ Г­Г¤ГЁГ¤Г ГІГ®Гў:\n" +"Let me share the most suitable candidates for you, you can look through their CVs and let me know who is the best match for you:\n" +
                                     "...link\n" +"...link\n" +"...link\n" +
                                     "What about setting up a call with candidates? This will be the best way to get to know them and learn more about their experience, skills, and so on.\n")
                             .respond();
@@ -978,31 +966,31 @@ public class Main
 
                 case "blueClientBad":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Если *клиент написал, что не заинтересован в нашем предложении*, твой ответ:\n" +
-                                    "\n" +"“Thank you for the reply. May I send you our presentation and prices in case you will need our services in the future?”\n" +
-                                    "\n" +"*Отправляй информацию, а потом уточни у клиента получил ли он наше письмо, есть ли какие-то вопросы*. \n" +
-                                    "Нужно отправлять письма всегда, после того как клиент дал свою почту, так он не потеряет наши контакты и сможет обратиться в нужный момент.\n" +
-                                    "И конечно же, *не забудь поставить в календаре ивент на FollowUp*, чтобы не потерять контакт, а связаться с ним в будущем +статус FollowUp и дату в CRM.")
+                            .setContent("Г…Г±Г«ГЁ *ГЄГ«ГЁГҐГ­ГІ Г­Г ГЇГЁГ±Г Г«, Г·ГІГ® Г­ГҐ Г§Г ГЁГ­ГІГҐГ°ГҐГ±Г®ГўГ Г­ Гў Г­Г ГёГҐГ¬ ГЇГ°ГҐГ¤Г«Г®Г¦ГҐГ­ГЁГЁ*, ГІГўГ®Г© Г®ГІГўГҐГІ:\n" +
+                                    "\n" +"В“Thank you for the reply. May I send you our presentation and prices in case you will need our services in the future?В”\n" +
+                                    "\n" +"*ГЋГІГЇГ°Г ГўГ«ГїГ© ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ, Г  ГЇГ®ГІГ®Г¬ ГіГІГ®Г·Г­ГЁ Гі ГЄГ«ГЁГҐГ­ГІГ  ГЇГ®Г«ГіГ·ГЁГ« Г«ГЁ Г®Г­ Г­Г ГёГҐ ГЇГЁГ±ГјГ¬Г®, ГҐГ±ГІГј Г«ГЁ ГЄГ ГЄГЁГҐ-ГІГ® ГўГ®ГЇГ°Г®Г±Г»*. \n" +
+                                    "ГЌГіГ¦Г­Г® Г®ГІГЇГ°Г ГўГ«ГїГІГј ГЇГЁГ±ГјГ¬Г  ГўГ±ГҐГЈГ¤Г , ГЇГ®Г±Г«ГҐ ГІГ®ГЈГ® ГЄГ ГЄ ГЄГ«ГЁГҐГ­ГІ Г¤Г Г« Г±ГўГ®Гѕ ГЇГ®Г·ГІГі, ГІГ ГЄ Г®Г­ Г­ГҐ ГЇГ®ГІГҐГ°ГїГҐГІ Г­Г ГёГЁ ГЄГ®Г­ГІГ ГЄГІГ» ГЁ Г±Г¬Г®Г¦ГҐГІ Г®ГЎГ°Г ГІГЁГІГјГ±Гї Гў Г­ГіГ¦Г­Г»Г© Г¬Г®Г¬ГҐГ­ГІ.\n" +
+                                    "Г€ ГЄГ®Г­ГҐГ·Г­Г® Г¦ГҐ, *Г­ГҐ Г§Г ГЎГіГ¤Гј ГЇГ®Г±ГІГ ГўГЁГІГј Гў ГЄГ Г«ГҐГ­Г¤Г Г°ГҐ ГЁГўГҐГ­ГІ Г­Г  FollowUp*, Г·ГІГ®ГЎГ» Г­ГҐ ГЇГ®ГІГҐГ°ГїГІГј ГЄГ®Г­ГІГ ГЄГІ, Г  Г±ГўГїГ§Г ГІГјГ±Гї Г± Г­ГЁГ¬ Гў ГЎГіГ¤ГіГ№ГҐГ¬ +Г±ГІГ ГІГіГ± FollowUp ГЁ Г¤Г ГІГі Гў CRM.")
                             .respond();
                     break;
 
                 case "blueClientGood":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("\n" +"Если *клиент заинтересован и хочет назначить звонок*, твоя задача уточнить у него:\n" +
-                                    "- время, когда ему будет удобно созвониться\n" +
-                                    "- часовую зону или город в котором он находится\n" +
-                                    "- почту, куда отправить приглашение на звонок\n" +
-                                    "- где ему удобней было бы созвониться: скайп, вотсап, хэнгаут, zoom\n" +
-                                    "После чего, нужно будет сравнить сколько это будет по нашему времени и создать ивент в календаре\n")
+                            .setContent("\n" +"Г…Г±Г«ГЁ *ГЄГ«ГЁГҐГ­ГІ Г§Г ГЁГ­ГІГҐГ°ГҐГ±Г®ГўГ Г­ ГЁ ГµГ®Г·ГҐГІ Г­Г Г§Г­Г Г·ГЁГІГј Г§ГўГ®Г­Г®ГЄ*, ГІГўГ®Гї Г§Г Г¤Г Г·Г  ГіГІГ®Г·Г­ГЁГІГј Гі Г­ГҐГЈГ®:\n" +
+                                    "- ГўГ°ГҐГ¬Гї, ГЄГ®ГЈГ¤Г  ГҐГ¬Гі ГЎГіГ¤ГҐГІ ГіГ¤Г®ГЎГ­Г® Г±Г®Г§ГўГ®Г­ГЁГІГјГ±Гї\n" +
+                                    "- Г·Г Г±Г®ГўГіГѕ Г§Г®Г­Гі ГЁГ«ГЁ ГЈГ®Г°Г®Г¤ Гў ГЄГ®ГІГ®Г°Г®Г¬ Г®Г­ Г­Г ГµГ®Г¤ГЁГІГ±Гї\n" +
+                                    "- ГЇГ®Г·ГІГі, ГЄГіГ¤Г  Г®ГІГЇГ°Г ГўГЁГІГј ГЇГ°ГЁГЈГ«Г ГёГҐГ­ГЁГҐ Г­Г  Г§ГўГ®Г­Г®ГЄ\n" +
+                                    "- ГЈГ¤ГҐ ГҐГ¬Гі ГіГ¤Г®ГЎГ­ГҐГ© ГЎГ»Г«Г® ГЎГ» Г±Г®Г§ГўГ®Г­ГЁГІГјГ±Гї: Г±ГЄГ Г©ГЇ, ГўГ®ГІГ±Г ГЇ, ГµГЅГ­ГЈГ ГіГІ, zoom\n" +
+                                    "ГЏГ®Г±Г«ГҐ Г·ГҐГЈГ®, Г­ГіГ¦Г­Г® ГЎГіГ¤ГҐГІ Г±Г°Г ГўГ­ГЁГІГј Г±ГЄГ®Г«ГјГЄГ® ГЅГІГ® ГЎГіГ¤ГҐГІ ГЇГ® Г­Г ГёГҐГ¬Гі ГўГ°ГҐГ¬ГҐГ­ГЁ ГЁ Г±Г®Г§Г¤Г ГІГј ГЁГўГҐГ­ГІ Гў ГЄГ Г«ГҐГ­Г¤Г Г°ГҐ\n")
                             .respond();
                     break;
 
-                //Тут начинается Коннект_______________________________________________________________
+                //Г’ГіГІ Г­Г Г·ГЁГ­Г ГҐГІГ±Гї ГЉГ®Г­Г­ГҐГЄГІ_______________________________________________________________
 
                 case "conFirstCon":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Приветствие:\n" +"Hello %Name%,\n" +
-                                    "\n" +"Варианты коннекта:\n" +
+                            .setContent("ГЏГ°ГЁГўГҐГІГ±ГІГўГЁГҐ:\n" +"Hello %Name%,\n" +
+                                    "\n" +"Г‚Г Г°ГЁГ Г­ГІГ» ГЄГ®Г­Г­ГҐГЄГІГ :\n" +
                                     "\n" +"Would you consider hiring Ukrainian remote marketing employees for 1000EUR per full-time month? You may find CVs on our website https://bit.ly/3kyi4Ro\n" +
                                     "\n" +"Would you consider hiring Ukrainian remote marketing employees on a full/part time basis for a reasonable price?\n" +
                                     "\n" +"We offer to hire Ukrainian remote employees in marketing and design field to promote your business for a very reasonable price. Do you want to hear more information?\n" +
@@ -1016,11 +1004,11 @@ public class Main
 
                 case "conSecondCon":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Варианты коннекта:\n" +"Второе сообщение после коннекта:\n" +"What information are you interested in?\n" +
+                            .setContent("Г‚Г Г°ГЁГ Г­ГІГ» ГЄГ®Г­Г­ГҐГЄГІГ :\n" +"Г‚ГІГ®Г°Г®ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ ГЇГ®Г±Г«ГҐ ГЄГ®Г­Г­ГҐГЄГІГ :\n" +"What information are you interested in?\n" +
                                     "1) more info about our company;\n" +"2) available positions to choose from (departments)\n" +
                                     "3) prices and conditions\n" +"4) Do you want to share your company needs?\n" +
                                     "Appreciate your answer,\n" +"Remote Helpers,\n" +
-                                    "https://www.rh-s.com\n" +"Второе сообщение (негативный ответ/отказ):\n" +
+                                    "https://www.rh-s.com\n" +"Г‚ГІГ®Г°Г®ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ (Г­ГҐГЈГ ГІГЁГўГ­Г»Г© Г®ГІГўГҐГІ/Г®ГІГЄГ Г§):\n" +
                                     "Ok, thanks your answer \n" + "May I ask you for an email to send our presentation in case of your future needs?\n")
                             .respond();
                         break;
@@ -1028,9 +1016,9 @@ public class Main
                 case "conThirdCon":
 
                     step2MessageCompInteraction.createFollowupMessageBuilder()
-                            .setContent("Третье сообщение (после ответа на второе сообщение):\n" +
-                                    "Мы описываем для тебя несколько вариантов ответов, в зависимости от того, о чем тебя может спросить клиент.\n" +
-                                    "Презентация - https://docs.google.com/presentation/d/e/2PACX-1vSleEpaKL1TOz8NV7d2OY7wtS111idiEdrSM_f88_GiCe-F4pqdzX7SUwZn3vDOog/pub?start=true&loop=true&delayms=15000&slide=id.g1180199a397_3_22\n" +
+                            .setContent("Г’Г°ГҐГІГјГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ (ГЇГ®Г±Г«ГҐ Г®ГІГўГҐГІГ  Г­Г  ГўГІГ®Г°Г®ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ):\n" +
+                                    "ГЊГ» Г®ГЇГЁГ±Г»ГўГ ГҐГ¬ Г¤Г«Гї ГІГҐГЎГї Г­ГҐГ±ГЄГ®Г«ГјГЄГ® ГўГ Г°ГЁГ Г­ГІГ®Гў Г®ГІГўГҐГІГ®Гў, Гў Г§Г ГўГЁГ±ГЁГ¬Г®Г±ГІГЁ Г®ГІ ГІГ®ГЈГ®, Г® Г·ГҐГ¬ ГІГҐГЎГї Г¬Г®Г¦ГҐГІ Г±ГЇГ°Г®Г±ГЁГІГј ГЄГ«ГЁГҐГ­ГІ.\n" +
+                                    "ГЏГ°ГҐГ§ГҐГ­ГІГ Г¶ГЁГї - https://docs.google.com/presentation/d/e/2PACX-1vSleEpaKL1TOz8NV7d2OY7wtS111idiEdrSM_f88_GiCe-F4pqdzX7SUwZn3vDOog/pub?start=true&loop=true&delayms=15000&slide=id.g1180199a397_3_22\n" +
                                     "We have candidates:\n" + "-Sales (lead generation managers (B2B), sales)\n" +
                                     "-Admin (project managers, administrators, personal assistants, finance)\n" +
                                     "-Creative (designers, illustrators, video editors, motion designers)\n" +
@@ -1044,136 +1032,136 @@ public class Main
 
                 case "conToLead":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Зайди на свою страницу в Линкедин, затем во вкладку My Network, расположенную на верхней панели сайта.\n" +
-                                    "\n" +"Внизу страницы ты найдешь все профили (connections), которые могут быть тебе полезны.\n" +
-                                    "\n" +"Обрати внимание:\n" +"\n" +"- на _род деятельности лида_.\n" +
-                                    "*Добавляем: CEO, COO, Founder, CTO, Owner, Director, co-Founder* (хотя если есть возможность добавить не сооснователя, то отдайте предпочтение другой должности), *Entrepreneur*.\n" +
-                                    "\n" +"- на _страну лида_.\n" +"*Работаем с: Australia, Austria, Belgium, Canada, Denmark, Estonia, Finland, France, Germany, Ireland, Italy, Israel, Luxembourg, Netherlands, Norway, Spain, Sweden, Switzerland, United Kingdom, USA*.\n" +
-                                    "\n" +"- имя и внешность лида.\n" +"Если в профиле у человека стоит одна из вышеперечисленных стран, но тебя смущает его имя или внешность, например он вылитый индус или афроамериканец (упоминаю их, потому что они часто маскируются), то такие люди нам тоже не подходят.\n" +
-                                    "\n" +"- _наличие общих профилей_.\n" +"Может оказаться, что наши менеджеры уже с ним связывались, возможно, мы уже имеем с этим человеком какие-либо деловые отношения. Всегда проверяйте наличие компании, в которой работает лид, в нашей СРМ системе.\n" +
-                                    "Если общих профилей больше 8 – это не значит, что не стоит обращать на человека внимание. Все эти люди могут не относиться к нашей компании. Главное – проверить.\n" +
-                                    "Проверить можно, кликнув на строчку с количеством общих профилей.\n" +
-                                    "\n" +"Если все ок, то жми кнопку *Connect*.")
+                            .setContent("Г‡Г Г©Г¤ГЁ Г­Г  Г±ГўГ®Гѕ Г±ГІГ°Г Г­ГЁГ¶Гі Гў Г‹ГЁГ­ГЄГҐГ¤ГЁГ­, Г§Г ГІГҐГ¬ ГўГ® ГўГЄГ«Г Г¤ГЄГі My Network, Г°Г Г±ГЇГ®Г«Г®Г¦ГҐГ­Г­ГіГѕ Г­Г  ГўГҐГ°ГµГ­ГҐГ© ГЇГ Г­ГҐГ«ГЁ Г±Г Г©ГІГ .\n" +
+                                    "\n" +"Г‚Г­ГЁГ§Гі Г±ГІГ°Г Г­ГЁГ¶Г» ГІГ» Г­Г Г©Г¤ГҐГёГј ГўГ±ГҐ ГЇГ°Г®ГґГЁГ«ГЁ (connections), ГЄГ®ГІГ®Г°Г»ГҐ Г¬Г®ГЈГіГІ ГЎГ»ГІГј ГІГҐГЎГҐ ГЇГ®Г«ГҐГ§Г­Г».\n" +
+                                    "\n" +"ГЋГЎГ°Г ГІГЁ ГўГ­ГЁГ¬Г Г­ГЁГҐ:\n" +"\n" +"- Г­Г  _Г°Г®Г¤ Г¤ГҐГїГІГҐГ«ГјГ­Г®Г±ГІГЁ Г«ГЁГ¤Г _.\n" +
+                                    "*Г„Г®ГЎГ ГўГ«ГїГҐГ¬: CEO, COO, Founder, CTO, Owner, Director, co-Founder* (ГµГ®ГІГї ГҐГ±Г«ГЁ ГҐГ±ГІГј ГўГ®Г§Г¬Г®Г¦Г­Г®Г±ГІГј Г¤Г®ГЎГ ГўГЁГІГј Г­ГҐ Г±Г®Г®Г±Г­Г®ГўГ ГІГҐГ«Гї, ГІГ® Г®ГІГ¤Г Г©ГІГҐ ГЇГ°ГҐГ¤ГЇГ®Г·ГІГҐГ­ГЁГҐ Г¤Г°ГіГЈГ®Г© Г¤Г®Г«Г¦Г­Г®Г±ГІГЁ), *Entrepreneur*.\n" +
+                                    "\n" +"- Г­Г  _Г±ГІГ°Г Г­Гі Г«ГЁГ¤Г _.\n" +"*ГђГ ГЎГ®ГІГ ГҐГ¬ Г±: Australia, Austria, Belgium, Canada, Denmark, Estonia, Finland, France, Germany, Ireland, Italy, Israel, Luxembourg, Netherlands, Norway, Spain, Sweden, Switzerland, United Kingdom, USA*.\n" +
+                                    "\n" +"- ГЁГ¬Гї ГЁ ГўГ­ГҐГёГ­Г®Г±ГІГј Г«ГЁГ¤Г .\n" +"Г…Г±Г«ГЁ Гў ГЇГ°Г®ГґГЁГ«ГҐ Гі Г·ГҐГ«Г®ГўГҐГЄГ  Г±ГІГ®ГЁГІ Г®Г¤Г­Г  ГЁГ§ ГўГ»ГёГҐГЇГҐГ°ГҐГ·ГЁГ±Г«ГҐГ­Г­Г»Гµ Г±ГІГ°Г Г­, Г­Г® ГІГҐГЎГї Г±Г¬ГіГ№Г ГҐГІ ГҐГЈГ® ГЁГ¬Гї ГЁГ«ГЁ ГўГ­ГҐГёГ­Г®Г±ГІГј, Г­Г ГЇГ°ГЁГ¬ГҐГ° Г®Г­ ГўГ»Г«ГЁГІГ»Г© ГЁГ­Г¤ГіГ± ГЁГ«ГЁ Г ГґГ°Г®Г Г¬ГҐГ°ГЁГЄГ Г­ГҐГ¶ (ГіГЇГ®Г¬ГЁГ­Г Гѕ ГЁГµ, ГЇГ®ГІГ®Г¬Гі Г·ГІГ® Г®Г­ГЁ Г·Г Г±ГІГ® Г¬Г Г±ГЄГЁГ°ГіГѕГІГ±Гї), ГІГ® ГІГ ГЄГЁГҐ Г«ГѕГ¤ГЁ Г­Г Г¬ ГІГ®Г¦ГҐ Г­ГҐ ГЇГ®Г¤ГµГ®Г¤ГїГІ.\n" +
+                                    "\n" +"- _Г­Г Г«ГЁГ·ГЁГҐ Г®ГЎГ№ГЁГµ ГЇГ°Г®ГґГЁГ«ГҐГ©_.\n" +"ГЊГ®Г¦ГҐГІ Г®ГЄГ Г§Г ГІГјГ±Гї, Г·ГІГ® Г­Г ГёГЁ Г¬ГҐГ­ГҐГ¤Г¦ГҐГ°Г» ГіГ¦ГҐ Г± Г­ГЁГ¬ Г±ГўГїГ§Г»ГўГ Г«ГЁГ±Гј, ГўГ®Г§Г¬Г®Г¦Г­Г®, Г¬Г» ГіГ¦ГҐ ГЁГ¬ГҐГҐГ¬ Г± ГЅГІГЁГ¬ Г·ГҐГ«Г®ГўГҐГЄГ®Г¬ ГЄГ ГЄГЁГҐ-Г«ГЁГЎГ® Г¤ГҐГ«Г®ГўГ»ГҐ Г®ГІГ­Г®ГёГҐГ­ГЁГї. Г‚Г±ГҐГЈГ¤Г  ГЇГ°Г®ГўГҐГ°ГїГ©ГІГҐ Г­Г Г«ГЁГ·ГЁГҐ ГЄГ®Г¬ГЇГ Г­ГЁГЁ, Гў ГЄГ®ГІГ®Г°Г®Г© Г°Г ГЎГ®ГІГ ГҐГІ Г«ГЁГ¤, Гў Г­Г ГёГҐГ© Г‘ГђГЊ Г±ГЁГ±ГІГҐГ¬ГҐ.\n" +
+                                    "Г…Г±Г«ГЁ Г®ГЎГ№ГЁГµ ГЇГ°Г®ГґГЁГ«ГҐГ© ГЎГ®Г«ГјГёГҐ 8 В– ГЅГІГ® Г­ГҐ Г§Г­Г Г·ГЁГІ, Г·ГІГ® Г­ГҐ Г±ГІГ®ГЁГІ Г®ГЎГ°Г Г№Г ГІГј Г­Г  Г·ГҐГ«Г®ГўГҐГЄГ  ГўГ­ГЁГ¬Г Г­ГЁГҐ. Г‚Г±ГҐ ГЅГІГЁ Г«ГѕГ¤ГЁ Г¬Г®ГЈГіГІ Г­ГҐ Г®ГІГ­Г®Г±ГЁГІГјГ±Гї ГЄ Г­Г ГёГҐГ© ГЄГ®Г¬ГЇГ Г­ГЁГЁ. ГѓГ«Г ГўГ­Г®ГҐ В– ГЇГ°Г®ГўГҐГ°ГЁГІГј.\n" +
+                                    "ГЏГ°Г®ГўГҐГ°ГЁГІГј Г¬Г®Г¦Г­Г®, ГЄГ«ГЁГЄГ­ГіГў Г­Г  Г±ГІГ°Г®Г·ГЄГі Г± ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ®Г¬ Г®ГЎГ№ГЁГµ ГЇГ°Г®ГґГЁГ«ГҐГ©.\n" +
+                                    "\n" +"Г…Г±Г«ГЁ ГўГ±ГҐ Г®ГЄ, ГІГ® Г¦Г¬ГЁ ГЄГ­Г®ГЇГЄГі *Connect*.")
                             .respond();
                     break;
 
-                //Тут начинает Фоллу-ап
+                //Г’ГіГІ Г­Г Г·ГЁГ­Г ГҐГІ Г”Г®Г«Г«Гі-Г ГЇ
 
                 case "followupWhat":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Фоллоу-ап -это такой удобный инструмент, чтобы напомнить о себе человеку, который, возможно, о нас забыл. *Фоллоу-ап необходим для того, чтобы поддерживать интерес заказчика, ведь вероятность того, что сделка совершится, больше, если между нами и клиентом выстроены доверительные отношения.*\n" +
-                                    "\n" +"*Если какой-либо клиент просит связаться с ним позже или отвечает, что сейчас наши услуги не актуальны, но через пару месяцев он начинает новый проект и они понадобятся, нужно ставить клиента на фоллоу ап.*\n" +
-                                    "\n" +"Если вы отправляли презентацию, этот инструмент также может пригодиться чтоб спросить, что клиент о ней думает.")
+                            .setContent("Г”Г®Г«Г«Г®Гі-Г ГЇ -ГЅГІГ® ГІГ ГЄГ®Г© ГіГ¤Г®ГЎГ­Г»Г© ГЁГ­Г±ГІГ°ГіГ¬ГҐГ­ГІ, Г·ГІГ®ГЎГ» Г­Г ГЇГ®Г¬Г­ГЁГІГј Г® Г±ГҐГЎГҐ Г·ГҐГ«Г®ГўГҐГЄГі, ГЄГ®ГІГ®Г°Г»Г©, ГўГ®Г§Г¬Г®Г¦Г­Г®, Г® Г­Г Г± Г§Г ГЎГ»Г«. *Г”Г®Г«Г«Г®Гі-Г ГЇ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬ Г¤Г«Гї ГІГ®ГЈГ®, Г·ГІГ®ГЎГ» ГЇГ®Г¤Г¤ГҐГ°Г¦ГЁГўГ ГІГј ГЁГ­ГІГҐГ°ГҐГ± Г§Г ГЄГ Г§Г·ГЁГЄГ , ГўГҐГ¤Гј ГўГҐГ°Г®ГїГІГ­Г®Г±ГІГј ГІГ®ГЈГ®, Г·ГІГ® Г±Г¤ГҐГ«ГЄГ  Г±Г®ГўГҐГ°ГёГЁГІГ±Гї, ГЎГ®Г«ГјГёГҐ, ГҐГ±Г«ГЁ Г¬ГҐГ¦Г¤Гі Г­Г Г¬ГЁ ГЁ ГЄГ«ГЁГҐГ­ГІГ®Г¬ ГўГ»Г±ГІГ°Г®ГҐГ­Г» Г¤Г®ГўГҐГ°ГЁГІГҐГ«ГјГ­Г»ГҐ Г®ГІГ­Г®ГёГҐГ­ГЁГї.*\n" +
+                                    "\n" +"*Г…Г±Г«ГЁ ГЄГ ГЄГ®Г©-Г«ГЁГЎГ® ГЄГ«ГЁГҐГ­ГІ ГЇГ°Г®Г±ГЁГІ Г±ГўГїГ§Г ГІГјГ±Гї Г± Г­ГЁГ¬ ГЇГ®Г§Г¦ГҐ ГЁГ«ГЁ Г®ГІГўГҐГ·Г ГҐГІ, Г·ГІГ® Г±ГҐГ©Г·Г Г± Г­Г ГёГЁ ГіГ±Г«ГіГЈГЁ Г­ГҐ Г ГЄГІГіГ Г«ГјГ­Г», Г­Г® Г·ГҐГ°ГҐГ§ ГЇГ Г°Гі Г¬ГҐГ±ГїГ¶ГҐГў Г®Г­ Г­Г Г·ГЁГ­Г ГҐГІ Г­Г®ГўГ»Г© ГЇГ°Г®ГҐГЄГІ ГЁ Г®Г­ГЁ ГЇГ®Г­Г Г¤Г®ГЎГїГІГ±Гї, Г­ГіГ¦Г­Г® Г±ГІГ ГўГЁГІГј ГЄГ«ГЁГҐГ­ГІГ  Г­Г  ГґГ®Г«Г«Г®Гі Г ГЇ.*\n" +
+                                    "\n" +"Г…Г±Г«ГЁ ГўГ» Г®ГІГЇГ°Г ГўГ«ГїГ«ГЁ ГЇГ°ГҐГ§ГҐГ­ГІГ Г¶ГЁГѕ, ГЅГІГ®ГІ ГЁГ­Г±ГІГ°ГіГ¬ГҐГ­ГІ ГІГ ГЄГ¦ГҐ Г¬Г®Г¦ГҐГІ ГЇГ°ГЁГЈГ®Г¤ГЁГІГјГ±Гї Г·ГІГ®ГЎ Г±ГЇГ°Г®Г±ГЁГІГј, Г·ГІГ® ГЄГ«ГЁГҐГ­ГІ Г® Г­ГҐГ© Г¤ГіГ¬Г ГҐГІ.")
                             .respond();
                     break;
 
 
                 case "followupCal":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Открой *Гугл-календарь*. Создай *новое напоминание*.\n" +
-                                    "Заголовок календарного события – *“название компании” FollowUp*\n" +
-                                    "\n" +"*Выбери дату на которую надо сделать напоминание и продолжительность: ставь галочку НА ВЕСЬ ДЕНЬ*. Так твои ивенты будут отображаться вверху календаря.\n" +
-                                    "\n" +"Важно: в календаре *выделяем фоллоу-апы ОРАНЖЕВЫМ цветом*.\n" +
-                                    "\n" +"*Заполни карточку напоминания*\n" +
-                                    "- в описании укажи все описание о клиенте, его вопросах/ответах, его контакты.\n" +
-                                    "- обязательно укажи Manager - себя, чтобы мы знали, кто привел лида.\n" +
-                                    "- в Guests - обязательно добавь почту sales@rh-s.com чтобы твое напоминание отобразилось и у ребят, которые непосредственно созваниваются с клиентами.")
+                            .setContent("ГЋГІГЄГ°Г®Г© *ГѓГіГЈГ«-ГЄГ Г«ГҐГ­Г¤Г Г°Гј*. Г‘Г®Г§Г¤Г Г© *Г­Г®ГўГ®ГҐ Г­Г ГЇГ®Г¬ГЁГ­Г Г­ГЁГҐ*.\n" +
+                                    "Г‡Г ГЈГ®Г«Г®ГўГ®ГЄ ГЄГ Г«ГҐГ­Г¤Г Г°Г­Г®ГЈГ® Г±Г®ГЎГ»ГІГЁГї В– *В“Г­Г Г§ГўГ Г­ГЁГҐ ГЄГ®Г¬ГЇГ Г­ГЁГЁВ” FollowUp*\n" +
+                                    "\n" +"*Г‚Г»ГЎГҐГ°ГЁ Г¤Г ГІГі Г­Г  ГЄГ®ГІГ®Г°ГіГѕ Г­Г Г¤Г® Г±Г¤ГҐГ«Г ГІГј Г­Г ГЇГ®Г¬ГЁГ­Г Г­ГЁГҐ ГЁ ГЇГ°Г®Г¤Г®Г«Г¦ГЁГІГҐГ«ГјГ­Г®Г±ГІГј: Г±ГІГ ГўГј ГЈГ Г«Г®Г·ГЄГі ГЌГЂ Г‚Г…Г‘Гњ Г„Г…ГЌГњ*. Г’Г ГЄ ГІГўГ®ГЁ ГЁГўГҐГ­ГІГ» ГЎГіГ¤ГіГІ Г®ГІГ®ГЎГ°Г Г¦Г ГІГјГ±Гї ГўГўГҐГ°ГµГі ГЄГ Г«ГҐГ­Г¤Г Г°Гї.\n" +
+                                    "\n" +"Г‚Г Г¦Г­Г®: Гў ГЄГ Г«ГҐГ­Г¤Г Г°ГҐ *ГўГ»Г¤ГҐГ«ГїГҐГ¬ ГґГ®Г«Г«Г®Гі-Г ГЇГ» ГЋГђГЂГЌГ†Г…Г‚Г›ГЊ Г¶ГўГҐГІГ®Г¬*.\n" +
+                                    "\n" +"*Г‡Г ГЇГ®Г«Г­ГЁ ГЄГ Г°ГІГ®Г·ГЄГі Г­Г ГЇГ®Г¬ГЁГ­Г Г­ГЁГї*\n" +
+                                    "- Гў Г®ГЇГЁГ±Г Г­ГЁГЁ ГіГЄГ Г¦ГЁ ГўГ±ГҐ Г®ГЇГЁГ±Г Г­ГЁГҐ Г® ГЄГ«ГЁГҐГ­ГІГҐ, ГҐГЈГ® ГўГ®ГЇГ°Г®Г±Г Гµ/Г®ГІГўГҐГІГ Гµ, ГҐГЈГ® ГЄГ®Г­ГІГ ГЄГІГ».\n" +
+                                    "- Г®ГЎГїГ§Г ГІГҐГ«ГјГ­Г® ГіГЄГ Г¦ГЁ Manager - Г±ГҐГЎГї, Г·ГІГ®ГЎГ» Г¬Г» Г§Г­Г Г«ГЁ, ГЄГІГ® ГЇГ°ГЁГўГҐГ« Г«ГЁГ¤Г .\n" +
+                                    "- Гў Guests - Г®ГЎГїГ§Г ГІГҐГ«ГјГ­Г® Г¤Г®ГЎГ ГўГј ГЇГ®Г·ГІГі sales@rh-s.com Г·ГІГ®ГЎГ» ГІГўГ®ГҐ Г­Г ГЇГ®Г¬ГЁГ­Г Г­ГЁГҐ Г®ГІГ®ГЎГ°Г Г§ГЁГ«Г®Г±Гј ГЁ Гі Г°ГҐГЎГїГІ, ГЄГ®ГІГ®Г°Г»ГҐ Г­ГҐГЇГ®Г±Г°ГҐГ¤Г±ГІГўГҐГ­Г­Г® Г±Г®Г§ГўГ Г­ГЁГўГ ГѕГІГ±Гї Г± ГЄГ«ГЁГҐГ­ГІГ Г¬ГЁ.")
                             .respond();
                     break;
 
                 case "counIWork":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("*Каждый менеджер лидогенерации работает с определенной страной*. Т.е. за тобой уже закреплена определенная страна, в которой тебе нужно искать лидов.\n" +
-                                         "\n" +"Для того, чтобы ты начал поиск лидов, нужно узнать, с какой страной ты работаешь на определенном аккаунте. Для этого:\n" +
-                                         "\n" +"- зайди в свою СРМ\n" +
-                                         "\n" +"- нажми кнопку *Add new lead*\n" +
-                                         "- *выбери Линкедин-аккаунт, который закреплен за тобой* (аккаунт, который тебе выдал аккаунт-менеджер специально для работы)\n" +
-                                         "- *в СРМ в поле \"Country\" появится название страны, с которой тебе нужно работать*\n" +
-                                         "Это поле нельзя отредактировать. Его настраивает аккаунт-менеджер.")
+                            .setContent("*ГЉГ Г¦Г¤Г»Г© Г¬ГҐГ­ГҐГ¤Г¦ГҐГ° Г«ГЁГ¤Г®ГЈГҐГ­ГҐГ°Г Г¶ГЁГЁ Г°Г ГЎГ®ГІГ ГҐГІ Г± Г®ГЇГ°ГҐГ¤ГҐГ«ГҐГ­Г­Г®Г© Г±ГІГ°Г Г­Г®Г©*. Г’.ГҐ. Г§Г  ГІГ®ГЎГ®Г© ГіГ¦ГҐ Г§Г ГЄГ°ГҐГЇГ«ГҐГ­Г  Г®ГЇГ°ГҐГ¤ГҐГ«ГҐГ­Г­Г Гї Г±ГІГ°Г Г­Г , Гў ГЄГ®ГІГ®Г°Г®Г© ГІГҐГЎГҐ Г­ГіГ¦Г­Г® ГЁГ±ГЄГ ГІГј Г«ГЁГ¤Г®Гў.\n" +
+                                         "\n" +"Г„Г«Гї ГІГ®ГЈГ®, Г·ГІГ®ГЎГ» ГІГ» Г­Г Г·Г Г« ГЇГ®ГЁГ±ГЄ Г«ГЁГ¤Г®Гў, Г­ГіГ¦Г­Г® ГіГ§Г­Г ГІГј, Г± ГЄГ ГЄГ®Г© Г±ГІГ°Г Г­Г®Г© ГІГ» Г°Г ГЎГ®ГІГ ГҐГёГј Г­Г  Г®ГЇГ°ГҐГ¤ГҐГ«ГҐГ­Г­Г®Г¬ Г ГЄГЄГ ГіГ­ГІГҐ. Г„Г«Гї ГЅГІГ®ГЈГ®:\n" +
+                                         "\n" +"- Г§Г Г©Г¤ГЁ Гў Г±ГўГ®Гѕ Г‘ГђГЊ\n" +
+                                         "\n" +"- Г­Г Г¦Г¬ГЁ ГЄГ­Г®ГЇГЄГі *Add new lead*\n" +
+                                         "- *ГўГ»ГЎГҐГ°ГЁ Г‹ГЁГ­ГЄГҐГ¤ГЁГ­-Г ГЄГЄГ ГіГ­ГІ, ГЄГ®ГІГ®Г°Г»Г© Г§Г ГЄГ°ГҐГЇГ«ГҐГ­ Г§Г  ГІГ®ГЎГ®Г©* (Г ГЄГЄГ ГіГ­ГІ, ГЄГ®ГІГ®Г°Г»Г© ГІГҐГЎГҐ ГўГ»Г¤Г Г« Г ГЄГЄГ ГіГ­ГІ-Г¬ГҐГ­ГҐГ¤Г¦ГҐГ° Г±ГЇГҐГ¶ГЁГ Г«ГјГ­Г® Г¤Г«Гї Г°Г ГЎГ®ГІГ»)\n" +
+                                         "- *Гў Г‘ГђГЊ Гў ГЇГ®Г«ГҐ \"Country\" ГЇГ®ГїГўГЁГІГ±Гї Г­Г Г§ГўГ Г­ГЁГҐ Г±ГІГ°Г Г­Г», Г± ГЄГ®ГІГ®Г°Г®Г© ГІГҐГЎГҐ Г­ГіГ¦Г­Г® Г°Г ГЎГ®ГІГ ГІГј*\n" +
+                                         "ГќГІГ® ГЇГ®Г«ГҐ Г­ГҐГ«ГјГ§Гї Г®ГІГ°ГҐГ¤Г ГЄГІГЁГ°Г®ГўГ ГІГј. Г…ГЈГ® Г­Г Г±ГІГ°Г ГЁГўГ ГҐГІ Г ГЄГЄГ ГіГ­ГІ-Г¬ГҐГ­ГҐГ¤Г¦ГҐГ°.")
                             .respond();
                     break;
 
                 case "counCanChange":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Твой аккаунт Линкедин закреплен за определенной страной. Эти данные может заменить только аккаунт-менеджер.")
+                            .setContent("Г’ГўГ®Г© Г ГЄГЄГ ГіГ­ГІ Г‹ГЁГ­ГЄГҐГ¤ГЁГ­ Г§Г ГЄГ°ГҐГЇГ«ГҐГ­ Г§Г  Г®ГЇГ°ГҐГ¤ГҐГ«ГҐГ­Г­Г®Г© Г±ГІГ°Г Г­Г®Г©. ГќГІГЁ Г¤Г Г­Г­Г»ГҐ Г¬Г®Г¦ГҐГІ Г§Г Г¬ГҐГ­ГЁГІГј ГІГ®Г«ГјГЄГ® Г ГЄГЄГ ГіГ­ГІ-Г¬ГҐГ­ГҐГ¤Г¦ГҐГ°.")
                             .respond();
                     break;
 
                 case "counNotWork":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Страны, которые *мало интересны*\n" +
-                                    "_Japan, Singapore, Cyprus, China_. Так как коммуникация с азиатами трудновата из-за плохого английского, рассматриваем каждый случай отдельно.\n" +
-                                    "\n" +"Страны, с которыми *не работаем*\n" +"Andorra, Argentina, Bahamas, Belarus, Bolivia, Brazil, Brunei, Bulgaria, Chile, Colombia, Costa, Rica, Dominican Republic, Ecuador, Egypt, Fiji, Guyana, Indonesia, Kazakhstan, Macao, Malaysia, Mexico, Morocco, Nepal, Oman, Panama, Paraguay, Peru, Philippines, Puerto, Rico, Qatar, Republic of Korea (South), Romania, Russian Federation, Saudi Arabia, South, Africa, Thailand, Turkey, Ukraine, " +
+                            .setContent("Г‘ГІГ°Г Г­Г», ГЄГ®ГІГ®Г°Г»ГҐ *Г¬Г Г«Г® ГЁГ­ГІГҐГ°ГҐГ±Г­Г»*\n" +
+                                    "_Japan, Singapore, Cyprus, China_. Г’Г ГЄ ГЄГ ГЄ ГЄГ®Г¬Г¬ГіГ­ГЁГЄГ Г¶ГЁГї Г± Г Г§ГЁГ ГІГ Г¬ГЁ ГІГ°ГіГ¤Г­Г®ГўГ ГІГ  ГЁГ§-Г§Г  ГЇГ«Г®ГµГ®ГЈГ® Г Г­ГЈГ«ГЁГ©Г±ГЄГ®ГЈГ®, Г°Г Г±Г±Г¬Г ГІГ°ГЁГўГ ГҐГ¬ ГЄГ Г¦Г¤Г»Г© Г±Г«ГіГ·Г Г© Г®ГІГ¤ГҐГ«ГјГ­Г®.\n" +
+                                    "\n" +"Г‘ГІГ°Г Г­Г», Г± ГЄГ®ГІГ®Г°Г»Г¬ГЁ *Г­ГҐ Г°Г ГЎГ®ГІГ ГҐГ¬*\n" +"Andorra, Argentina, Bahamas, Belarus, Bolivia, Brazil, Brunei, Bulgaria, Chile, Colombia, Costa, Rica, Dominican Republic, Ecuador, Egypt, Fiji, Guyana, Indonesia, Kazakhstan, Macao, Malaysia, Mexico, Morocco, Nepal, Oman, Panama, Paraguay, Peru, Philippines, Puerto, Rico, Qatar, Republic of Korea (South), Romania, Russian Federation, Saudi Arabia, South, Africa, Thailand, Turkey, Ukraine, " +
                                     "United Arab Emirates, Uruguay, Vanuatu, Albania, Algeria, Angola, Armenia, " + "Azerbaijan, Bahrain, Bangladesh, Barbados, Belize, Benin, Botswana, Burkina, Faso, Burundi, Cambodia, Cameroon," +
                                     " Cape Verde, Chad, Comoros, Congo, El Salvador, Ethiopia, Gabon, Georgia, Guatemala, Guinea, Haiti, Honduras, " +
                                     "India, Iraq, Jamaica, Jordan, Kenya, Kuwait, Kyrgyzstan, Laos, Lebanon, Lesotho, Macedonia, Madagascar, Mali, Mauritania, Mauritius, Moldova, Mongolia, Mozambique, Namibia, Nicaragua, Niger, Nigeria, Pakistan, Senegal, Sri Lanka, Suriname, Swaziland, Tajikistan, Tanzania, Togo, Trinidad and Tobago, Tunisia, Turkmenistan, Uganda, Uzbekistan, Vietnam, Zambia.\n" +
-                                    "\n" +"Страны СНГ – Украина, Россия, Беларусь, Молдова, Казахстан, Грузия, Азербайджан, Армения, Узбекистан, Таджикистан.\n" +
-                                    "Практически все страны Африки и некоторые страны Азии – также являются неактуальными для нашего бизнеса.")
+                                    "\n" +"Г‘ГІГ°Г Г­Г» Г‘ГЌГѓ В– Г“ГЄГ°Г ГЁГ­Г , ГђГ®Г±Г±ГЁГї, ГЃГҐГ«Г Г°ГіГ±Гј, ГЊГ®Г«Г¤Г®ГўГ , ГЉГ Г§Г ГµГ±ГІГ Г­, ГѓГ°ГіГ§ГЁГї, ГЂГ§ГҐГ°ГЎГ Г©Г¤Г¦Г Г­, ГЂГ°Г¬ГҐГ­ГЁГї, Г“Г§ГЎГҐГЄГЁГ±ГІГ Г­, Г’Г Г¤Г¦ГЁГЄГЁГ±ГІГ Г­.\n" +
+                                    "ГЏГ°Г ГЄГІГЁГ·ГҐГ±ГЄГЁ ГўГ±ГҐ Г±ГІГ°Г Г­Г» ГЂГґГ°ГЁГЄГЁ ГЁ Г­ГҐГЄГ®ГІГ®Г°Г»ГҐ Г±ГІГ°Г Г­Г» ГЂГ§ГЁГЁ В– ГІГ ГЄГ¦ГҐ ГїГўГ«ГїГѕГІГ±Гї Г­ГҐГ ГЄГІГіГ Г«ГјГ­Г»Г¬ГЁ Г¤Г«Гї Г­Г ГёГҐГЈГ® ГЎГЁГ§Г­ГҐГ±Г .")
                             .respond();
 
                     break;
 
                 case "counWork":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Страны, с которыми мы работаем:\n" +"_Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Ireland, Italy, Luxembourg, Netherlands, Norway, Spain, Sweden, Switzerland, United Kingdom, United States of America, Israel, Latvia, Lithuania, Estonia, Czech Republic_")
+                            .setContent("Г‘ГІГ°Г Г­Г», Г± ГЄГ®ГІГ®Г°Г»Г¬ГЁ Г¬Г» Г°Г ГЎГ®ГІГ ГҐГ¬:\n" +"_Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Ireland, Italy, Luxembourg, Netherlands, Norway, Spain, Sweden, Switzerland, United Kingdom, United States of America, Israel, Latvia, Lithuania, Estonia, Czech Republic_")
                             .respond();
 
                     break;
 
-                //ТУт начинаются Статусы
+                //Г’Г“ГІ Г­Г Г·ГЁГ­Г ГѕГІГ±Гї Г‘ГІГ ГІГіГ±Г»
 
                 case "statEvent":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Статус лида в СРМ при назначении ивента - *Event*")
+                            .setContent("Г‘ГІГ ГІГіГ± Г«ГЁГ¤Г  Гў Г‘ГђГЊ ГЇГ°ГЁ Г­Г Г§Г­Г Г·ГҐГ­ГЁГЁ ГЁГўГҐГ­ГІГ  - *Event*")
                             .respond();
                     break;
 
                 case "statUpdate":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Если ты ищешь лидов в СРМ для апдейта, то в Lead Status выбери все статусы, кроме Call.\n" +
-                                    "\n" +"Если уже сделал апдейт, то в карте лида, в поле Lead Status поставь - *Sent Request*.")
+                            .setContent("Г…Г±Г«ГЁ ГІГ» ГЁГ№ГҐГёГј Г«ГЁГ¤Г®Гў Гў Г‘ГђГЊ Г¤Г«Гї Г ГЇГ¤ГҐГ©ГІГ , ГІГ® Гў Lead Status ГўГ»ГЎГҐГ°ГЁ ГўГ±ГҐ Г±ГІГ ГІГіГ±Г», ГЄГ°Г®Г¬ГҐ Call.\n" +
+                                    "\n" +"Г…Г±Г«ГЁ ГіГ¦ГҐ Г±Г¤ГҐГ«Г Г« Г ГЇГ¤ГҐГ©ГІ, ГІГ® Гў ГЄГ Г°ГІГҐ Г«ГЁГ¤Г , Гў ГЇГ®Г«ГҐ Lead Status ГЇГ®Г±ГІГ ГўГј - *Sent Request*.")
                             .respond();
                     break;
 
                 case "statCrm":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("*sent request* - отправлена заявка на коннект\n" +
-                                    "\n" +"*connected* - лид принял твою заявку на коннект, и у тебя есть его контакты (почта и телефон)\n" +
-                                    "\n" +"*interested* - лид ответил на твое сообщение и заинтересовался нашим предложением\n" +
-                                    "\n" +"*not interested* - лид ответил, что наше предложение его не интересует\n" +
-                                    "\n" +"*ignoring* - лид общался с тобой некоторое время, а потом перестал отвечать на сообщения\n" +
-                                    "\n" +"*follow up* - лид ответил, что в данный момент не заинтересован в нашем предложении, но возможно рассмотрит его в будущем\n" +
-                                    "\n" +"*event* - лид согласился на звонок и мы делаем ивент в календаре\n" +
-                                    "\n" +"*call* - когда сейлз менеджер сообщил тебе, что звонок состоялся\n" +
-                                    "\n" +"*not relevant for us* - когда случайно добавил в СРМ лида, который нам не подходит")
+                            .setContent("*sent request* - Г®ГІГЇГ°Г ГўГ«ГҐГ­Г  Г§Г ГїГўГЄГ  Г­Г  ГЄГ®Г­Г­ГҐГЄГІ\n" +
+                                    "\n" +"*connected* - Г«ГЁГ¤ ГЇГ°ГЁГ­ГїГ« ГІГўГ®Гѕ Г§Г ГїГўГЄГі Г­Г  ГЄГ®Г­Г­ГҐГЄГІ, ГЁ Гі ГІГҐГЎГї ГҐГ±ГІГј ГҐГЈГ® ГЄГ®Г­ГІГ ГЄГІГ» (ГЇГ®Г·ГІГ  ГЁ ГІГҐГ«ГҐГґГ®Г­)\n" +
+                                    "\n" +"*interested* - Г«ГЁГ¤ Г®ГІГўГҐГІГЁГ« Г­Г  ГІГўГ®ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ ГЁ Г§Г ГЁГ­ГІГҐГ°ГҐГ±Г®ГўГ Г«Г±Гї Г­Г ГёГЁГ¬ ГЇГ°ГҐГ¤Г«Г®Г¦ГҐГ­ГЁГҐГ¬\n" +
+                                    "\n" +"*not interested* - Г«ГЁГ¤ Г®ГІГўГҐГІГЁГ«, Г·ГІГ® Г­Г ГёГҐ ГЇГ°ГҐГ¤Г«Г®Г¦ГҐГ­ГЁГҐ ГҐГЈГ® Г­ГҐ ГЁГ­ГІГҐГ°ГҐГ±ГіГҐГІ\n" +
+                                    "\n" +"*ignoring* - Г«ГЁГ¤ Г®ГЎГ№Г Г«Г±Гї Г± ГІГ®ГЎГ®Г© Г­ГҐГЄГ®ГІГ®Г°Г®ГҐ ГўГ°ГҐГ¬Гї, Г  ГЇГ®ГІГ®Г¬ ГЇГҐГ°ГҐГ±ГІГ Г« Г®ГІГўГҐГ·Г ГІГј Г­Г  Г±Г®Г®ГЎГ№ГҐГ­ГЁГї\n" +
+                                    "\n" +"*follow up* - Г«ГЁГ¤ Г®ГІГўГҐГІГЁГ«, Г·ГІГ® Гў Г¤Г Г­Г­Г»Г© Г¬Г®Г¬ГҐГ­ГІ Г­ГҐ Г§Г ГЁГ­ГІГҐГ°ГҐГ±Г®ГўГ Г­ Гў Г­Г ГёГҐГ¬ ГЇГ°ГҐГ¤Г«Г®Г¦ГҐГ­ГЁГЁ, Г­Г® ГўГ®Г§Г¬Г®Г¦Г­Г® Г°Г Г±Г±Г¬Г®ГІГ°ГЁГІ ГҐГЈГ® Гў ГЎГіГ¤ГіГ№ГҐГ¬\n" +
+                                    "\n" +"*event* - Г«ГЁГ¤ Г±Г®ГЈГ«Г Г±ГЁГ«Г±Гї Г­Г  Г§ГўГ®Г­Г®ГЄ ГЁ Г¬Г» Г¤ГҐГ«Г ГҐГ¬ ГЁГўГҐГ­ГІ Гў ГЄГ Г«ГҐГ­Г¤Г Г°ГҐ\n" +
+                                    "\n" +"*call* - ГЄГ®ГЈГ¤Г  Г±ГҐГ©Г«Г§ Г¬ГҐГ­ГҐГ¤Г¦ГҐГ° Г±Г®Г®ГЎГ№ГЁГ« ГІГҐГЎГҐ, Г·ГІГ® Г§ГўГ®Г­Г®ГЄ Г±Г®Г±ГІГ®ГїГ«Г±Гї\n" +
+                                    "\n" +"*not relevant for us* - ГЄГ®ГЈГ¤Г  Г±Г«ГіГ·Г Г©Г­Г® Г¤Г®ГЎГ ГўГЁГ« Гў Г‘ГђГЊ Г«ГЁГ¤Г , ГЄГ®ГІГ®Г°Г»Г© Г­Г Г¬ Г­ГҐ ГЇГ®Г¤ГµГ®Г¤ГЁГІ")
                             .respond();
                     break;
 
-                //Тут начинается "Ещё"
+                //Г’ГіГІ Г­Г Г·ГЁГ­Г ГҐГІГ±Гї "Г…Г№Вё"
                      case "menu":
                      case "moreBack":
                      case "employeeOld":
                     step2MessageCompInteraction.createImmediateResponder()
-                            .setContent("Привет!\n" +
-                                    "Ты находишься в меню, в котором собраны ответы на популярные вопросы по работе отдела LeadGeneration.\n" +
+                            .setContent("ГЏГ°ГЁГўГҐГІ!\n" +
+                                    "Г’Г» Г­Г ГµГ®Г¤ГЁГёГјГ±Гї Гў Г¬ГҐГ­Гѕ, Гў ГЄГ®ГІГ®Г°Г®Г¬ Г±Г®ГЎГ°Г Г­Г» Г®ГІГўГҐГІГ» Г­Г  ГЇГ®ГЇГіГ«ГїГ°Г­Г»ГҐ ГўГ®ГЇГ°Г®Г±Г» ГЇГ® Г°Г ГЎГ®ГІГҐ Г®ГІГ¤ГҐГ«Г  LeadGeneration.\n" +
                                     "\n" +
-                                    "Выбери категорию своего вопроса:")
+                                    "Г‚Г»ГЎГҐГ°ГЁ ГЄГ ГІГҐГЈГ®Г°ГЁГѕ Г±ГўГ®ГҐГЈГ® ГўГ®ГЇГ°Г®Г±Г :")
                             .addComponents(
-                                    ActionRow.of(Button.primary("google", "Гугл"),
-                                            Button.primary("linked", "Линкедин"),
+                                    ActionRow.of(Button.primary("google", "ГѓГіГЈГ«"),
+                                            Button.primary("linked", "Г‹ГЁГ­ГЄГҐГ¤ГЁГ­"),
                                             Button.primary("CRM", "CPM")),
-                                    ActionRow.of(Button.primary("calendar", "Календарь"),
-                                            Button.primary("update", "Апдейт"),
-                                            Button.primary("timetrack", "Тайм-треккер")),
-                                    ActionRow.of(Button.primary("contacts", "Контакты"),
-                                            Button.primary("bonus", "Бонусы и ЗП"),
-                                            Button.primary("leads","Лиды")),
-                                    ActionRow.of(Button.primary("blueprints","Шаблоны"),
-                                            Button.primary("connect","Коннект"),
-                                            Button.primary("followup","Фоллоуап")),
-                                    ActionRow.of(Button.primary("country","Страна"),
-                                            Button.primary("status","Статус"),
-                                            Button.primary("more","Ещё")))
+                                    ActionRow.of(Button.primary("calendar", "ГЉГ Г«ГҐГ­Г¤Г Г°Гј"),
+                                            Button.primary("update", "ГЂГЇГ¤ГҐГ©ГІ"),
+                                            Button.primary("timetrack", "Г’Г Г©Г¬-ГІГ°ГҐГЄГЄГҐГ°")),
+                                    ActionRow.of(Button.primary("contacts", "ГЉГ®Г­ГІГ ГЄГІГ»"),
+                                            Button.primary("bonus", "ГЃГ®Г­ГіГ±Г» ГЁ Г‡ГЏ"),
+                                            Button.primary("leads","Г‹ГЁГ¤Г»")),
+                                    ActionRow.of(Button.primary("blueprints","ГГ ГЎГ«Г®Г­Г»"),
+                                            Button.primary("connect","ГЉГ®Г­Г­ГҐГЄГІ"),
+                                            Button.primary("followup","Г”Г®Г«Г«Г®ГіГ ГЇ")),
+                                    ActionRow.of(Button.primary("country","Г‘ГІГ°Г Г­Г "),
+                                            Button.primary("status","Г‘ГІГ ГІГіГ±"),
+                                            Button.primary("more","Г…Г№Вё")))
                             .respond();
                     break;
 
@@ -1183,9 +1171,9 @@ public class Main
                 default:
                     System.out.println("asd");
                     if (SHOULDSEND)
-                    { // TODO: переименовать в главное меню и "назад"
+                    { // TODO: ГЇГҐГ°ГҐГЁГ¬ГҐГ­Г®ГўГ ГІГј Гў ГЈГ«Г ГўГ­Г®ГҐ Г¬ГҐГ­Гѕ ГЁ "Г­Г Г§Г Г¤"
                     step2MessageCompInteraction.createFollowupMessageBuilder().addComponents(
-                            ActionRow.of(Button.primary("menu", "Обратно в глав. меню"), Button.primary("menu2", "Обратно в пред. меню"))).send()
+                            ActionRow.of(Button.primary("menu", "ГЋГЎГ°Г ГІГ­Г® Гў ГЈГ«Г Гў. Г¬ГҐГ­Гѕ"), Button.primary("menu2", "ГЋГЎГ°Г ГІГ­Г® Гў ГЇГ°ГҐГ¤. Г¬ГҐГ­Гѕ"))).send()
                     ;}
                 }
                 });
@@ -1203,7 +1191,7 @@ public class Main
                         case "feedback":
 
                             SHOULDSEND = false;
-                            feedBackloop.respondWithModal("feedbackResponseModal","Ваш отзыв:",ActionRow.of(TextInput.create(TextInputStyle.SHORT, "feedbackResponse", "Отзыв")));
+                            feedBackloop.respondWithModal("feedbackResponseModal","Г‚Г Гё Г®ГІГ§Г»Гў:",ActionRow.of(TextInput.create(TextInputStyle.SHORT, "feedbackResponse", "ГЋГІГ§Г»Гў")));
 
 
                             break;
@@ -1212,23 +1200,23 @@ public class Main
                             SHOULDSEND = false;
                             nameRecord = true;
 
-                            String modalTest = "Добро пожаловать в компанию!";
+                            String modalTest = "Г„Г®ГЎГ°Г® ГЇГ®Г¦Г Г«Г®ГўГ ГІГј Гў ГЄГ®Г¬ГЇГ Г­ГЁГѕ!";
 
 
-                            feedBackloop.respondWithModal("mFeedback", modalTest,ActionRow.of(TextInput.create(TextInputStyle.SHORT, "mName", "Имя")),ActionRow.of(TextInput.create(TextInputStyle.SHORT, "mSure", "Фамилия")), ActionRow.of(TextInput.create(TextInputStyle.SHORT, "mPhone", "Телефон")));
+                            feedBackloop.respondWithModal("mFeedback", modalTest,ActionRow.of(TextInput.create(TextInputStyle.SHORT, "mName", "Г€Г¬Гї")),ActionRow.of(TextInput.create(TextInputStyle.SHORT, "mSure", "Г”Г Г¬ГЁГ«ГЁГї")), ActionRow.of(TextInput.create(TextInputStyle.SHORT, "mPhone", "Г’ГҐГ«ГҐГґГ®Г­")));
 
                             /*
                             feedBackloop.createImmediateResponder()
-                                    .setContent("Если есть проблемы/вопросы/предложения")
-                                    .addComponents(ActionRow.of(Button.primary("feedback", "Обратная связь")))
+                                    .setContent("Г…Г±Г«ГЁ ГҐГ±ГІГј ГЇГ°Г®ГЎГ«ГҐГ¬Г»/ГўГ®ГЇГ°Г®Г±Г»/ГЇГ°ГҐГ¤Г«Г®Г¦ГҐГ­ГЁГї")
+                                    .addComponents(ActionRow.of(Button.primary("feedback", "ГЋГЎГ°Г ГІГ­Г Гї Г±ГўГїГ§Гј")))
                                     .respond();
 
                             feedBackloop.createFollowupMessageBuilder()
-                                    .setContent("Продолжаем")
+                                    .setContent("ГЏГ°Г®Г¤Г®Г«Г¦Г ГҐГ¬")
                                     .addComponents(
-                                            ActionRow.of(Button.primary("employeeNew","Новый сотрудник")),
-                                            ActionRow.of(Button.primary("employeeOld","Уже работаешь с нами")),
-                                            ActionRow.of(Button.primary("feedback", "Вернуться назад"))) */
+                                            ActionRow.of(Button.primary("employeeNew","ГЌГ®ГўГ»Г© Г±Г®ГІГ°ГіГ¤Г­ГЁГЄ")),
+                                            ActionRow.of(Button.primary("employeeOld","Г“Г¦ГҐ Г°Г ГЎГ®ГІГ ГҐГёГј Г± Г­Г Г¬ГЁ")),
+                                            ActionRow.of(Button.primary("feedback", "Г‚ГҐГ°Г­ГіГІГјГ±Гї Г­Г Г§Г Г¤"))) */
                             break;
 
 
@@ -1237,9 +1225,9 @@ public class Main
 
                         case "employeeNew":
                             SHOULDSEND = false;
-                            feedBackloop.createImmediateResponder().setContent("Ты подписал *договор и заполнил карту сотрудника*?")
-                                    .addComponents(ActionRow.of(Button.primary("empnew1", "Сделано! Что дальше?")),
-                                            ActionRow.of(Button.primary("notyet1", "Ещё нет.")))
+                            feedBackloop.createImmediateResponder().setContent("Г’Г» ГЇГ®Г¤ГЇГЁГ±Г Г« *Г¤Г®ГЈГ®ГўГ®Г° ГЁ Г§Г ГЇГ®Г«Г­ГЁГ« ГЄГ Г°ГІГі Г±Г®ГІГ°ГіГ¤Г­ГЁГЄГ *?")
+                                    .addComponents(ActionRow.of(Button.primary("empnew1", "Г‘Г¤ГҐГ«Г Г­Г®! Г—ГІГ® Г¤Г Г«ГјГёГҐ?")),
+                                            ActionRow.of(Button.primary("notyet1", "Г…Г№Вё Г­ГҐГІ.")))
                                     .respond();
 
                             break;
@@ -1247,8 +1235,8 @@ public class Main
                         case "notyet1":
                             SHOULDSEND = false;
                             feedBackloop.createImmediateResponder()
-                                    .setContent("Пожалуйста, напиши рекрутеру, который с тобой общался.")
-                                    .addComponents(ActionRow.of(Button.primary("empnew1","Далее")))
+                                    .setContent("ГЏГ®Г¦Г Г«ГіГ©Г±ГІГ , Г­Г ГЇГЁГёГЁ Г°ГҐГЄГ°ГіГІГҐГ°Гі, ГЄГ®ГІГ®Г°Г»Г© Г± ГІГ®ГЎГ®Г© Г®ГЎГ№Г Г«Г±Гї.")
+                                    .addComponents(ActionRow.of(Button.primary("empnew1","Г„Г Г«ГҐГҐ")))
                                     .respond();
 
                             break;
@@ -1256,17 +1244,17 @@ public class Main
                         case "empnew1":
                             SHOULDSEND = false;
                             feedBackloop.createImmediateResponder()
-                                    .setContent("Ты уже создал *Гугл-почту*?")
-                                    .addComponents(ActionRow.of(Button.primary("empnew2", "Сделано! Что дальше?")),
-                                            ActionRow.of(Button.primary("notyet2", "Ещё нет. Покажи как")))
+                                    .setContent("Г’Г» ГіГ¦ГҐ Г±Г®Г§Г¤Г Г« *ГѓГіГЈГ«-ГЇГ®Г·ГІГі*?")
+                                    .addComponents(ActionRow.of(Button.primary("empnew2", "Г‘Г¤ГҐГ«Г Г­Г®! Г—ГІГ® Г¤Г Г«ГјГёГҐ?")),
+                                            ActionRow.of(Button.primary("notyet2", "Г…Г№Вё Г­ГҐГІ. ГЏГ®ГЄГ Г¦ГЁ ГЄГ ГЄ")))
                                     .respond();
                             break;
 
                         case "notyet2":
 
                             feedBackloop.createImmediateResponder()
-                                    .setContent("Окей. Я помогу тебе это сделать." + "\n" + "*Зайди на Gmail и нажми \"Создать аккаунт\"*" + "\n" + "Далее следуй инструкции Gmail...")
-                                    .addComponents(ActionRow.of(Button.primary("notyet2_continue", "Что дальше?")))
+                                    .setContent("ГЋГЄГҐГ©. Гџ ГЇГ®Г¬Г®ГЈГі ГІГҐГЎГҐ ГЅГІГ® Г±Г¤ГҐГ«Г ГІГј." + "\n" + "*Г‡Г Г©Г¤ГЁ Г­Г  Gmail ГЁ Г­Г Г¦Г¬ГЁ \"Г‘Г®Г§Г¤Г ГІГј Г ГЄГЄГ ГіГ­ГІ\"*" + "\n" + "Г„Г Г«ГҐГҐ Г±Г«ГҐГ¤ГіГ© ГЁГ­Г±ГІГ°ГіГЄГ¶ГЁГЁ Gmail...")
+                                    .addComponents(ActionRow.of(Button.primary("notyet2_continue", "Г—ГІГ® Г¤Г Г«ГјГёГҐ?")))
                                     .append("https://www.google.com/intl/uk/gmail/about/")
                                     .respond();
                             break;
@@ -1274,27 +1262,27 @@ public class Main
                         case "notyet2_continue":
 
                             feedBackloop.createImmediateResponder()
-                                    .setContent("Запрос на закрепление номера телефона к аккаунту - нажми \"Пропустить\""+ "\n" + "*Номер телефона не указывай!*\n" +
-                                            "\n" + "Как резервную почту, можешь указать - niko@rh-s.com\n" +
-                                            "\n" + "Укажи свою дату рождения и свой пол." +"\n"+ "*Принимай правила Google*, пролистывай их до конца.\n" +
+                                    .setContent("Г‡Г ГЇГ°Г®Г± Г­Г  Г§Г ГЄГ°ГҐГЇГ«ГҐГ­ГЁГҐ Г­Г®Г¬ГҐГ°Г  ГІГҐГ«ГҐГґГ®Г­Г  ГЄ Г ГЄГЄГ ГіГ­ГІГі - Г­Г Г¦Г¬ГЁ \"ГЏГ°Г®ГЇГіГ±ГІГЁГІГј\""+ "\n" + "*ГЌГ®Г¬ГҐГ° ГІГҐГ«ГҐГґГ®Г­Г  Г­ГҐ ГіГЄГ Г§Г»ГўГ Г©!*\n" +
+                                            "\n" + "ГЉГ ГЄ Г°ГҐГ§ГҐГ°ГўГ­ГіГѕ ГЇГ®Г·ГІГі, Г¬Г®Г¦ГҐГёГј ГіГЄГ Г§Г ГІГј - niko@rh-s.com\n" +
+                                            "\n" + "Г“ГЄГ Г¦ГЁ Г±ГўГ®Гѕ Г¤Г ГІГі Г°Г®Г¦Г¤ГҐГ­ГЁГї ГЁ Г±ГўГ®Г© ГЇГ®Г«." +"\n"+ "*ГЏГ°ГЁГ­ГЁГ¬Г Г© ГЇГ°Г ГўГЁГ«Г  Google*, ГЇГ°Г®Г«ГЁГ±ГІГ»ГўГ Г© ГЁГµ Г¤Г® ГЄГ®Г­Г¶Г .\n" +
                                             "\n" +"https://youtu.be/7rVH13AHp5o")
-                                    .addComponents(ActionRow.of(Button.primary("empnew2", "Круто! Что дальше?")),
-                                            ActionRow.of(Button.primary("feedback", "Обратная связь")))
+                                    .addComponents(ActionRow.of(Button.primary("empnew2", "ГЉГ°ГіГІГ®! Г—ГІГ® Г¤Г Г«ГјГёГҐ?")),
+                                            ActionRow.of(Button.primary("feedback", "ГЋГЎГ°Г ГІГ­Г Гї Г±ГўГїГ§Гј")))
                                     .respond();
                             break;
 
                         case "empnew2":
                             feedBackloop.createImmediateResponder()
-                                    .setContent("Ты уже настроил Хром-пользователя?")
-                                    .addComponents(ActionRow.of(Button.primary("empnew3", "Сделано, Что дальше?")),
-                                            ActionRow.of(Button.primary("notyet3", "Нет, покажи как.")))
+                                    .setContent("Г’Г» ГіГ¦ГҐ Г­Г Г±ГІГ°Г®ГЁГ« Г•Г°Г®Г¬-ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гї?")
+                                    .addComponents(ActionRow.of(Button.primary("empnew3", "Г‘Г¤ГҐГ«Г Г­Г®, Г—ГІГ® Г¤Г Г«ГјГёГҐ?")),
+                                            ActionRow.of(Button.primary("notyet3", "ГЌГҐГІ, ГЇГ®ГЄГ Г¦ГЁ ГЄГ ГЄ.")))
                                     .respond();
                             break;
 
                         case "notyet3":
 
                             feedBackloop.createImmediateResponder()
-                                    .setContent("Я помогу тебе это сделать.\n" + "*Открой браузер Гугл Хром*. Нажми на окошко пользователя в верхнем правом углу. Кликай *Управлять пользователями*.\n")
+                                    .setContent("Гџ ГЇГ®Г¬Г®ГЈГі ГІГҐГЎГҐ ГЅГІГ® Г±Г¤ГҐГ«Г ГІГј.\n" + "*ГЋГІГЄГ°Г®Г© ГЎГ°Г ГіГ§ГҐГ° ГѓГіГЈГ« Г•Г°Г®Г¬*. ГЌГ Г¦Г¬ГЁ Г­Г  Г®ГЄГ®ГёГЄГ® ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гї Гў ГўГҐГ°ГµГ­ГҐГ¬ ГЇГ°Г ГўГ®Г¬ ГіГЈГ«Гі. ГЉГ«ГЁГЄГ Г© *Г“ГЇГ°Г ГўГ«ГїГІГј ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«ГїГ¬ГЁ*.\n")
                                     .respond();
                             feedBackloop.createFollowupMessageBuilder()
                                     .addAttachment(new File(path+ "/chromeuser1.png"))
@@ -1303,124 +1291,124 @@ public class Main
 
 
                             feedBackloop.createFollowupMessageBuilder()
-                                    .setContent("Выбери *Добавить пользователя* в нижнем правом углу.\n" +
-                                            "Назови своего пользователя так *ИМЯ_LinkedIn*.\n" + "Добавь аватарку.\n" +
-                                            "Поставь галочку *Создать ярлык этого профиля на рабочем столе*.\n" + "Нажми *Добавить*.")
+                                    .setContent("Г‚Г»ГЎГҐГ°ГЁ *Г„Г®ГЎГ ГўГЁГІГј ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гї* Гў Г­ГЁГ¦Г­ГҐГ¬ ГЇГ°Г ГўГ®Г¬ ГіГЈГ«Гі.\n" +
+                                            "ГЌГ Г§Г®ГўГЁ Г±ГўГ®ГҐГЈГ® ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гї ГІГ ГЄ *Г€ГЊГџ_LinkedIn*.\n" + "Г„Г®ГЎГ ГўГј Г ГўГ ГІГ Г°ГЄГі.\n" +
+                                            "ГЏГ®Г±ГІГ ГўГј ГЈГ Г«Г®Г·ГЄГі *Г‘Г®Г§Г¤Г ГІГј ГїГ°Г«Г»ГЄ ГЅГІГ®ГЈГ® ГЇГ°Г®ГґГЁГ«Гї Г­Г  Г°Г ГЎГ®Г·ГҐГ¬ Г±ГІГ®Г«ГҐ*.\n" + "ГЌГ Г¦Г¬ГЁ *Г„Г®ГЎГ ГўГЁГІГј*.")
 
                                     .addAttachment(new File(path+ "/chromeuser3.png"))
                                     .send().join();
                             feedBackloop.createFollowupMessageBuilder()
-                                    .setContent("Подключи рабочую почту, которую ты создал, к Хром-пользователю. \n" + "Вуаля! Новый пользователь ГуглХром готов.\n" +
-                                            "\n" + "_Автоматически откроется новая вкладка Хрома под новым пользователем_.\n" +
-                                            "\n" + "_На рабочем столе появился ярлык для входа именно в этого пользователя_.")
-                                    .addComponents(ActionRow.of(Button.primary("empnew3", "Круто! Что дальше?")),
-                                    ActionRow.of(Button.primary("feedback", "Обратная связь")))
+                                    .setContent("ГЏГ®Г¤ГЄГ«ГѕГ·ГЁ Г°Г ГЎГ®Г·ГіГѕ ГЇГ®Г·ГІГі, ГЄГ®ГІГ®Г°ГіГѕ ГІГ» Г±Г®Г§Г¤Г Г«, ГЄ Г•Г°Г®Г¬-ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гѕ. \n" + "Г‚ГіГ Г«Гї! ГЌГ®ГўГ»Г© ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гј ГѓГіГЈГ«Г•Г°Г®Г¬ ГЈГ®ГІГ®Гў.\n" +
+                                            "\n" + "_ГЂГўГІГ®Г¬Г ГІГЁГ·ГҐГ±ГЄГЁ Г®ГІГЄГ°Г®ГҐГІГ±Гї Г­Г®ГўГ Гї ГўГЄГ«Г Г¤ГЄГ  Г•Г°Г®Г¬Г  ГЇГ®Г¤ Г­Г®ГўГ»Г¬ ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«ГҐГ¬_.\n" +
+                                            "\n" + "_ГЌГ  Г°Г ГЎГ®Г·ГҐГ¬ Г±ГІГ®Г«ГҐ ГЇГ®ГїГўГЁГ«Г±Гї ГїГ°Г«Г»ГЄ Г¤Г«Гї ГўГµГ®Г¤Г  ГЁГ¬ГҐГ­Г­Г® Гў ГЅГІГ®ГЈГ® ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гї_.")
+                                    .addComponents(ActionRow.of(Button.primary("empnew3", "ГЉГ°ГіГІГ®! Г—ГІГ® Г¤Г Г«ГјГёГҐ?")),
+                                    ActionRow.of(Button.primary("feedback", "ГЋГЎГ°Г ГІГ­Г Гї Г±ГўГїГ§Гј")))
                                     .send();
                             break;
 
 
                         case"empnew3":
                             feedBackloop.createImmediateResponder()
-                                    .setContent("Молодец! \n" +"\n" +"А *Линкедин-аккаунт* уже сделал?")
-                                    .addComponents(ActionRow.of(Button.primary("empnew4", "Круто! Что дальше?")),
-                                            ActionRow.of(Button.primary("notyet4", "Ещё нет, покажи как.")))
+                                    .setContent("ГЊГ®Г«Г®Г¤ГҐГ¶! \n" +"\n" +"ГЂ *Г‹ГЁГ­ГЄГҐГ¤ГЁГ­-Г ГЄГЄГ ГіГ­ГІ* ГіГ¦ГҐ Г±Г¤ГҐГ«Г Г«?")
+                                    .addComponents(ActionRow.of(Button.primary("empnew4", "ГЉГ°ГіГІГ®! Г—ГІГ® Г¤Г Г«ГјГёГҐ?")),
+                                            ActionRow.of(Button.primary("notyet4", "Г…Г№Вё Г­ГҐГІ, ГЇГ®ГЄГ Г¦ГЁ ГЄГ ГЄ.")))
                                     .respond();
                             break;
 
                         case"notyet4":
                             feedBackloop.createImmediateResponder()
-                                    .setContent("Окей, я помогу тебе создать аккаунт на Линкедин \n" +
-                                            "\n" + "_Нажми на кнопку_")
-                                    .addComponents(ActionRow.of(Button.primary("notyet4_1","Шаг Первый")))
+                                    .setContent("ГЋГЄГҐГ©, Гї ГЇГ®Г¬Г®ГЈГі ГІГҐГЎГҐ Г±Г®Г§Г¤Г ГІГј Г ГЄГЄГ ГіГ­ГІ Г­Г  Г‹ГЁГ­ГЄГҐГ¤ГЁГ­ \n" +
+                                            "\n" + "_ГЌГ Г¦Г¬ГЁ Г­Г  ГЄГ­Г®ГЇГЄГі_")
+                                    .addComponents(ActionRow.of(Button.primary("notyet4_1","ГГ ГЈ ГЏГҐГ°ГўГ»Г©")))
                                     .respond();
                             break;
 
                         case "notyet4_1":
                             feedBackloop.createImmediateResponder()
-                                    .setContent("1) Зайди на LinkedIn.\n" +
-                                            "\n" +"2) Начни регистрацию.\n" +
-                                            "\n" +"3) *Зарегистрируй профиль Линкедин на Гугл-почту, которую ты создал ранее*.\n" +
-                                            "ВАЖНО: *вся информация в твоем профиле должна быть на английском* так, как вся переписка с лидами ведется именно на этом языке.\n" +
-                                            "\n" +"https://youtu.be/SlvxQQTFFxg"+ "\n" +"\n"+ "Готов?\n" +
-                                            "Переходи ко второму шагу")
-                                    .addComponents(ActionRow.of(Button.primary("notyet4_2","Шаг Второй")))
+                                    .setContent("1) Г‡Г Г©Г¤ГЁ Г­Г  LinkedIn.\n" +
+                                            "\n" +"2) ГЌГ Г·Г­ГЁ Г°ГҐГЈГЁГ±ГІГ°Г Г¶ГЁГѕ.\n" +
+                                            "\n" +"3) *Г‡Г Г°ГҐГЈГЁГ±ГІГ°ГЁГ°ГіГ© ГЇГ°Г®ГґГЁГ«Гј Г‹ГЁГ­ГЄГҐГ¤ГЁГ­ Г­Г  ГѓГіГЈГ«-ГЇГ®Г·ГІГі, ГЄГ®ГІГ®Г°ГіГѕ ГІГ» Г±Г®Г§Г¤Г Г« Г°Г Г­ГҐГҐ*.\n" +
+                                            "Г‚ГЂГ†ГЌГЋ: *ГўГ±Гї ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГї Гў ГІГўГ®ГҐГ¬ ГЇГ°Г®ГґГЁГ«ГҐ Г¤Г®Г«Г¦Г­Г  ГЎГ»ГІГј Г­Г  Г Г­ГЈГ«ГЁГ©Г±ГЄГ®Г¬* ГІГ ГЄ, ГЄГ ГЄ ГўГ±Гї ГЇГҐГ°ГҐГЇГЁГ±ГЄГ  Г± Г«ГЁГ¤Г Г¬ГЁ ГўГҐГ¤ГҐГІГ±Гї ГЁГ¬ГҐГ­Г­Г® Г­Г  ГЅГІГ®Г¬ ГїГ§Г»ГЄГҐ.\n" +
+                                            "\n" +"https://youtu.be/SlvxQQTFFxg"+ "\n" +"\n"+ "ГѓГ®ГІГ®Гў?\n" +
+                                            "ГЏГҐГ°ГҐГµГ®Г¤ГЁ ГЄГ® ГўГІГ®Г°Г®Г¬Гі ГёГ ГЈГі")
+                                    .addComponents(ActionRow.of(Button.primary("notyet4_2","ГГ ГЈ Г‚ГІГ®Г°Г®Г©")))
                                     .respond();
                             break;
 
                         case "notyet4_2":
 
                             feedBackloop.createImmediateResponder()
-                                    .setContent("*Укажи свои настоящие имя и фамилию на английском языке*.\n" +
-                                            "Запрещено: указывать никнеймы или сокращения имени.\n" +
+                                    .setContent("*Г“ГЄГ Г¦ГЁ Г±ГўГ®ГЁ Г­Г Г±ГІГ®ГїГ№ГЁГҐ ГЁГ¬Гї ГЁ ГґГ Г¬ГЁГ«ГЁГѕ Г­Г  Г Г­ГЈГ«ГЁГ©Г±ГЄГ®Г¬ ГїГ§Г»ГЄГҐ*.\n" +
+                                            "Г‡Г ГЇГ°ГҐГ№ГҐГ­Г®: ГіГЄГ Г§Г»ГўГ ГІГј Г­ГЁГЄГ­ГҐГ©Г¬Г» ГЁГ«ГЁ Г±Г®ГЄГ°Г Г№ГҐГ­ГЁГї ГЁГ¬ГҐГ­ГЁ.\n" +
                                             "\n" +
-                                            "*Загрузи свое фото* \n" +
-                                            "Параметры фото: портрет, без лишнего фона, желательно более официальное.\n" +
-                                            "\n" +"*Переведи профиль на английский язык*\n" +
-                                            "Как это сделать:\n" +
-                                            "- в правом верхнем углу ты видишь свое фото\n" +
-                                            "- нажми на стрелочку под фото\n" +
-                                            "- откроется меню\n" +
-                                            "- выбери \"Язык/Language\"\n" +
-                                            "\n" +"Если готов, переходи к третьему шагу")
-                                    .addComponents(ActionRow.of(Button.primary("notyet4_3","Шаг Третий")))
+                                            "*Г‡Г ГЈГ°ГіГ§ГЁ Г±ГўГ®ГҐ ГґГ®ГІГ®* \n" +
+                                            "ГЏГ Г°Г Г¬ГҐГІГ°Г» ГґГ®ГІГ®: ГЇГ®Г°ГІГ°ГҐГІ, ГЎГҐГ§ Г«ГЁГёГ­ГҐГЈГ® ГґГ®Г­Г , Г¦ГҐГ«Г ГІГҐГ«ГјГ­Г® ГЎГ®Г«ГҐГҐ Г®ГґГЁГ¶ГЁГ Г«ГјГ­Г®ГҐ.\n" +
+                                            "\n" +"*ГЏГҐГ°ГҐГўГҐГ¤ГЁ ГЇГ°Г®ГґГЁГ«Гј Г­Г  Г Г­ГЈГ«ГЁГ©Г±ГЄГЁГ© ГїГ§Г»ГЄ*\n" +
+                                            "ГЉГ ГЄ ГЅГІГ® Г±Г¤ГҐГ«Г ГІГј:\n" +
+                                            "- Гў ГЇГ°Г ГўГ®Г¬ ГўГҐГ°ГµГ­ГҐГ¬ ГіГЈГ«Гі ГІГ» ГўГЁГ¤ГЁГёГј Г±ГўГ®ГҐ ГґГ®ГІГ®\n" +
+                                            "- Г­Г Г¦Г¬ГЁ Г­Г  Г±ГІГ°ГҐГ«Г®Г·ГЄГі ГЇГ®Г¤ ГґГ®ГІГ®\n" +
+                                            "- Г®ГІГЄГ°Г®ГҐГІГ±Гї Г¬ГҐГ­Гѕ\n" +
+                                            "- ГўГ»ГЎГҐГ°ГЁ \"ГџГ§Г»ГЄ/Language\"\n" +
+                                            "\n" +"Г…Г±Г«ГЁ ГЈГ®ГІГ®Гў, ГЇГҐГ°ГҐГµГ®Г¤ГЁ ГЄ ГІГ°ГҐГІГјГҐГ¬Гі ГёГ ГЈГі")
+                                    .addComponents(ActionRow.of(Button.primary("notyet4_3","ГГ ГЈ Г’Г°ГҐГІГЁГ©")))
                                     .respond();
                             break;
 
                         case "notyet4_3":
                             feedBackloop.createImmediateResponder()
-                                    .setContent("Поле *Образование/Education*\n" +
-                                            "Укажи актуальные данные о своем высшем образовании на английском языке.\n" +
-                                            "\n" +"Если ты еще студент, в поле \"Дата окончания\" укажи 2020 год или более ранний, а в поле \"Дата начала\" - год на 4-5 лет раньше.\n" +
-                                            "\n" +"Готов? Жми кнопку\n")
-                                    .addComponents(ActionRow.of(Button.primary("notyet4_4","Шаг Четвёртый")))
+                                    .setContent("ГЏГ®Г«ГҐ *ГЋГЎГ°Г Г§Г®ГўГ Г­ГЁГҐ/Education*\n" +
+                                            "Г“ГЄГ Г¦ГЁ Г ГЄГІГіГ Г«ГјГ­Г»ГҐ Г¤Г Г­Г­Г»ГҐ Г® Г±ГўГ®ГҐГ¬ ГўГ»Г±ГёГҐГ¬ Г®ГЎГ°Г Г§Г®ГўГ Г­ГЁГЁ Г­Г  Г Г­ГЈГ«ГЁГ©Г±ГЄГ®Г¬ ГїГ§Г»ГЄГҐ.\n" +
+                                            "\n" +"Г…Г±Г«ГЁ ГІГ» ГҐГ№ГҐ Г±ГІГіГ¤ГҐГ­ГІ, Гў ГЇГ®Г«ГҐ \"Г„Г ГІГ  Г®ГЄГ®Г­Г·Г Г­ГЁГї\" ГіГЄГ Г¦ГЁ 2020 ГЈГ®Г¤ ГЁГ«ГЁ ГЎГ®Г«ГҐГҐ Г°Г Г­Г­ГЁГ©, Г  Гў ГЇГ®Г«ГҐ \"Г„Г ГІГ  Г­Г Г·Г Г«Г \" - ГЈГ®Г¤ Г­Г  4-5 Г«ГҐГІ Г°Г Г­ГјГёГҐ.\n" +
+                                            "\n" +"ГѓГ®ГІГ®Гў? Г†Г¬ГЁ ГЄГ­Г®ГЇГЄГі\n")
+                                    .addComponents(ActionRow.of(Button.primary("notyet4_4","ГГ ГЈ Г—ГҐГІГўВёГ°ГІГ»Г©")))
                                     .respond();
                             break;
 
                         case "notyet4_4":
 
                             feedBackloop.createImmediateResponder()
-                                    .setContent("Поле *Опыт работы/Edit experience*\n" +
+                                    .setContent("ГЏГ®Г«ГҐ *ГЋГЇГ»ГІ Г°Г ГЎГ®ГІГ»/Edit experience*\n" +
                                             "\n" +
-                                            "*Заполни в точности по инструкции*\n" +
+                                            "*Г‡Г ГЇГ®Г«Г­ГЁ Гў ГІГ®Г·Г­Г®Г±ГІГЁ ГЇГ® ГЁГ­Г±ГІГ°ГіГЄГ¶ГЁГЁ*\n" +
                                             "\n" +
-                                            "- должность: Account manager\n" +
-                                            "- график работы: Full-time\n" +
-                                            "- компания: Remote Helpers\n" +
-                                            "- локация: твое текущее местоположение (Город, Украина)\n" +
-                                            "- время работы в компании: любой месяц/год до настоящего времени + поставь галочку to present.\n" +
-                                            "\n" +"Готово? Жми кнопку")
-                                    .addComponents(ActionRow.of(Button.primary("notyet4_5","Шаг Пятый")))
+                                            "- Г¤Г®Г«Г¦Г­Г®Г±ГІГј: Account manager\n" +
+                                            "- ГЈГ°Г ГґГЁГЄ Г°Г ГЎГ®ГІГ»: Full-time\n" +
+                                            "- ГЄГ®Г¬ГЇГ Г­ГЁГї: Remote Helpers\n" +
+                                            "- Г«Г®ГЄГ Г¶ГЁГї: ГІГўГ®ГҐ ГІГҐГЄГіГ№ГҐГҐ Г¬ГҐГ±ГІГ®ГЇГ®Г«Г®Г¦ГҐГ­ГЁГҐ (ГѓГ®Г°Г®Г¤, Г“ГЄГ°Г ГЁГ­Г )\n" +
+                                            "- ГўГ°ГҐГ¬Гї Г°Г ГЎГ®ГІГ» Гў ГЄГ®Г¬ГЇГ Г­ГЁГЁ: Г«ГѕГЎГ®Г© Г¬ГҐГ±ГїГ¶/ГЈГ®Г¤ Г¤Г® Г­Г Г±ГІГ®ГїГ№ГҐГЈГ® ГўГ°ГҐГ¬ГҐГ­ГЁ + ГЇГ®Г±ГІГ ГўГј ГЈГ Г«Г®Г·ГЄГі to present.\n" +
+                                            "\n" +"ГѓГ®ГІГ®ГўГ®? Г†Г¬ГЁ ГЄГ­Г®ГЇГЄГі")
+                                    .addComponents(ActionRow.of(Button.primary("notyet4_5","ГГ ГЈ ГЏГїГІГ»Г©")))
                                     .respond();
                             break;
 
                         case "notyet4_5":
                             feedBackloop.createImmediateResponder()
-                                    .setContent("Поле *Навыки/Skills*\n" +
-                                            "*Указывай скиллы на английском языке*.\n" +
-                                            "\n" +"Список твоих возможных скиллов:\n" +
+                                    .setContent("ГЏГ®Г«ГҐ *ГЌГ ГўГ»ГЄГЁ/Skills*\n" +
+                                            "*Г“ГЄГ Г§Г»ГўГ Г© Г±ГЄГЁГ«Г«Г» Г­Г  Г Г­ГЈГ«ГЁГ©Г±ГЄГ®Г¬ ГїГ§Г»ГЄГҐ*.\n" +
+                                            "\n" +"Г‘ГЇГЁГ±Г®ГЄ ГІГўГ®ГЁГµ ГўГ®Г§Г¬Г®Г¦Г­Г»Гµ Г±ГЄГЁГ«Г«Г®Гў:\n" +
                                             "- Email marketing\n" +"- Lead Generation\n" +
                                             "- Social media marketing\n" +"- Online Advertising\n" +"- Data Analysis\n" +
                                             "- Searching skills\n" +"- Targeting\n" +"- WordPress\n"
-                                            +"- English language\n" +"- Design\n" +"- и другие навыки из выпадающего списка.\n" +
-                                            "\n" +"*Используй штук 5-8*\n" +
-                                            "\n" +"Готово? Жми кнопку")
-                                    .addComponents(ActionRow.of(Button.primary("notyet4_6","Шаг Шестой")))
+                                            +"- English language\n" +"- Design\n" +"- ГЁ Г¤Г°ГіГЈГЁГҐ Г­Г ГўГ»ГЄГЁ ГЁГ§ ГўГ»ГЇГ Г¤Г ГѕГ№ГҐГЈГ® Г±ГЇГЁГ±ГЄГ .\n" +
+                                            "\n" +"*Г€Г±ГЇГ®Г«ГјГ§ГіГ© ГёГІГіГЄ 5-8*\n" +
+                                            "\n" +"ГѓГ®ГІГ®ГўГ®? Г†Г¬ГЁ ГЄГ­Г®ГЇГЄГі")
+                                    .addComponents(ActionRow.of(Button.primary("notyet4_6","ГГ ГЈ ГГҐГ±ГІГ®Г©")))
                                     .respond();
                             break;
 
                         case "notyet4_6":
 
                             feedBackloop.createImmediateResponder()
-                                    .setContent("Замени *статус профиля*.\n" +
-                                            "Как это сделать:\n" +
-                                            "- открой свой профиль\n" +"- нажми на карандашик справа от фото профиля\n" +
-                                            "- замени поле *Headline/Статус*\n" +"\n" +"Варианты замены:\n" +
+                                    .setContent("Г‡Г Г¬ГҐГ­ГЁ *Г±ГІГ ГІГіГ± ГЇГ°Г®ГґГЁГ«Гї*.\n" +
+                                            "ГЉГ ГЄ ГЅГІГ® Г±Г¤ГҐГ«Г ГІГј:\n" +
+                                            "- Г®ГІГЄГ°Г®Г© Г±ГўГ®Г© ГЇГ°Г®ГґГЁГ«Гј\n" +"- Г­Г Г¦Г¬ГЁ Г­Г  ГЄГ Г°Г Г­Г¤Г ГёГЁГЄ Г±ГЇГ°Г ГўГ  Г®ГІ ГґГ®ГІГ® ГЇГ°Г®ГґГЁГ«Гї\n" +
+                                            "- Г§Г Г¬ГҐГ­ГЁ ГЇГ®Г«ГҐ *Headline/Г‘ГІГ ГІГіГ±*\n" +"\n" +"Г‚Г Г°ГЁГ Г­ГІГ» Г§Г Г¬ГҐГ­Г»:\n" +
                                             "\n" +"_Hire online full-time remote employees| Marketing| Content Managers| SMM| Designers| Devs_\n" +
                                             "\n" +"_Dedicated virtual assistants in Ukraine: Lead Generation| SMM| Media| Design| Developers_\n" +
                                             "\n" +"_Build your online team in few clicks| Lead Generation| Marketing| Media| Design| Devs_\n" +
-                                            "\n" +"Тебе не обязательно копировать слово в слово. Основной посыл: мы предлагаем клиентам расширить их команду, наняв удаленных сотрудников из Украины, специальности видите выше.\n" +
-                                            "\n" +"Готово? Жми кнопку")
-                                    .addComponents(ActionRow.of(Button.primary("notyet4_7","Шаг Седьмой")))
+                                            "\n" +"Г’ГҐГЎГҐ Г­ГҐ Г®ГЎГїГ§Г ГІГҐГ«ГјГ­Г® ГЄГ®ГЇГЁГ°Г®ГўГ ГІГј Г±Г«Г®ГўГ® Гў Г±Г«Г®ГўГ®. ГЋГ±Г­Г®ГўГ­Г®Г© ГЇГ®Г±Г»Г«: Г¬Г» ГЇГ°ГҐГ¤Г«Г ГЈГ ГҐГ¬ ГЄГ«ГЁГҐГ­ГІГ Г¬ Г°Г Г±ГёГЁГ°ГЁГІГј ГЁГµ ГЄГ®Г¬Г Г­Г¤Гі, Г­Г Г­ГїГў ГіГ¤Г Г«ГҐГ­Г­Г»Гµ Г±Г®ГІГ°ГіГ¤Г­ГЁГЄГ®Гў ГЁГ§ Г“ГЄГ°Г ГЁГ­Г», Г±ГЇГҐГ¶ГЁГ Г«ГјГ­Г®Г±ГІГЁ ГўГЁГ¤ГЁГІГҐ ГўГ»ГёГҐ.\n" +
+                                            "\n" +"ГѓГ®ГІГ®ГўГ®? Г†Г¬ГЁ ГЄГ­Г®ГЇГЄГі")
+                                    .addComponents(ActionRow.of(Button.primary("notyet4_7","ГГ ГЈ Г‘ГҐГ¤ГјГ¬Г®Г©")))
                                     .respond();
                             break;
 
@@ -1428,16 +1416,16 @@ public class Main
                         case "notyet4_7":
 
                             feedBackloop.createImmediateResponder()
-                                    .setContent("*Красивая ссылка на твой профиль*\n" +
-                                            "\n" +"Как это сделать:\n" +"- зайди на свою страницу\n" +
-                                            "- _в правом верхнем углу наведи мышку на свое фото, откроется выпадающий список_\n" +
-                                            "- выбери на нем _View profile_\n" +
-                                            "- на открывшейся странице в правом верхнем углу нажимаем _Edit public profile & URL_\n" +
-                                            "- снова в правом верхнем углу нажми на _Edit your custom URL_, внизу будет твоя ссылка и значок карандаша\n" +
-                                            "- нажми на карандашик и удали все ненужные цифры и символы. Оставь только свое имя и фамилию.\n" +
-                                            "- нажми _Save_.\n" +"\n" +"URL обновится в течении нескольких минут.\n" +
-                                            "\n" +"Готово? Жми кнопку")
-                                    .addComponents(ActionRow.of(Button.primary("notyet4_8","Шаг Восьмой")))
+                                    .setContent("*ГЉГ°Г Г±ГЁГўГ Гї Г±Г±Г»Г«ГЄГ  Г­Г  ГІГўГ®Г© ГЇГ°Г®ГґГЁГ«Гј*\n" +
+                                            "\n" +"ГЉГ ГЄ ГЅГІГ® Г±Г¤ГҐГ«Г ГІГј:\n" +"- Г§Г Г©Г¤ГЁ Г­Г  Г±ГўГ®Гѕ Г±ГІГ°Г Г­ГЁГ¶Гі\n" +
+                                            "- _Гў ГЇГ°Г ГўГ®Г¬ ГўГҐГ°ГµГ­ГҐГ¬ ГіГЈГ«Гі Г­Г ГўГҐГ¤ГЁ Г¬Г»ГёГЄГі Г­Г  Г±ГўГ®ГҐ ГґГ®ГІГ®, Г®ГІГЄГ°Г®ГҐГІГ±Гї ГўГ»ГЇГ Г¤Г ГѕГ№ГЁГ© Г±ГЇГЁГ±Г®ГЄ_\n" +
+                                            "- ГўГ»ГЎГҐГ°ГЁ Г­Г  Г­ГҐГ¬ _View profile_\n" +
+                                            "- Г­Г  Г®ГІГЄГ°Г»ГўГёГҐГ©Г±Гї Г±ГІГ°Г Г­ГЁГ¶ГҐ Гў ГЇГ°Г ГўГ®Г¬ ГўГҐГ°ГµГ­ГҐГ¬ ГіГЈГ«Гі Г­Г Г¦ГЁГ¬Г ГҐГ¬ _Edit public profile & URL_\n" +
+                                            "- Г±Г­Г®ГўГ  Гў ГЇГ°Г ГўГ®Г¬ ГўГҐГ°ГµГ­ГҐГ¬ ГіГЈГ«Гі Г­Г Г¦Г¬ГЁ Г­Г  _Edit your custom URL_, ГўГ­ГЁГ§Гі ГЎГіГ¤ГҐГІ ГІГўГ®Гї Г±Г±Г»Г«ГЄГ  ГЁ Г§Г­Г Г·Г®ГЄ ГЄГ Г°Г Г­Г¤Г ГёГ \n" +
+                                            "- Г­Г Г¦Г¬ГЁ Г­Г  ГЄГ Г°Г Г­Г¤Г ГёГЁГЄ ГЁ ГіГ¤Г Г«ГЁ ГўГ±ГҐ Г­ГҐГ­ГіГ¦Г­Г»ГҐ Г¶ГЁГґГ°Г» ГЁ Г±ГЁГ¬ГўГ®Г«Г». ГЋГ±ГІГ ГўГј ГІГ®Г«ГјГЄГ® Г±ГўГ®ГҐ ГЁГ¬Гї ГЁ ГґГ Г¬ГЁГ«ГЁГѕ.\n" +
+                                            "- Г­Г Г¦Г¬ГЁ _Save_.\n" +"\n" +"URL Г®ГЎГ­Г®ГўГЁГІГ±Гї Гў ГІГҐГ·ГҐГ­ГЁГЁ Г­ГҐГ±ГЄГ®Г«ГјГЄГЁГµ Г¬ГЁГ­ГіГІ.\n" +
+                                            "\n" +"ГѓГ®ГІГ®ГўГ®? Г†Г¬ГЁ ГЄГ­Г®ГЇГЄГі")
+                                    .addComponents(ActionRow.of(Button.primary("notyet4_8","ГГ ГЈ Г‚Г®Г±ГјГ¬Г®Г©")))
                                     .respond();
 
                             break;
@@ -1445,18 +1433,18 @@ public class Main
                         case "notyet4_8":
 
                             feedBackloop.createImmediateResponder()
-                                    .setContent("Расширь сеть своих контактов. Добавь в друзья своих коллег.\n" +
+                                    .setContent("ГђГ Г±ГёГЁГ°Гј Г±ГҐГІГј Г±ГўГ®ГЁГµ ГЄГ®Г­ГІГ ГЄГІГ®Гў. Г„Г®ГЎГ ГўГј Гў Г¤Г°ГіГ§ГјГї Г±ГўГ®ГЁГµ ГЄГ®Г«Г«ГҐГЈ.\n" +
                                             "\n" +
-                                            "*Вариант 1 - зайди на страницу компании Remote Helpers в Линкедин, в раздел сотрудники*\n" +
+                                            "*Г‚Г Г°ГЁГ Г­ГІ 1 - Г§Г Г©Г¤ГЁ Г­Г  Г±ГІГ°Г Г­ГЁГ¶Гі ГЄГ®Г¬ГЇГ Г­ГЁГЁ Remote Helpers Гў Г‹ГЁГ­ГЄГҐГ¤ГЁГ­, Гў Г°Г Г§Г¤ГҐГ« Г±Г®ГІГ°ГіГ¤Г­ГЁГЄГЁ*\n" +
                                              "https://www.linkedin.com/search/results/people/?currentCompany=%5B%2210127817%22%5D&origin=COMPANY_PAGE_CANNED_SEARCH&sid=cst" + "\n"+
-                                            "*Вариант 2 - используй поиск в Гугл*\n" +
+                                            "*Г‚Г Г°ГЁГ Г­ГІ 2 - ГЁГ±ГЇГ®Г«ГјГ§ГіГ© ГЇГ®ГЁГ±ГЄ Гў ГѓГіГЈГ«*\n" +
                                             "https://www.google.com/search?q=site%3Alinkedin.com+remote+helpers&oq=site%3Alinkedin.com+remote+helpers")
 
                                     .respond();
 
                             feedBackloop.createFollowupMessageBuilder()
-                                    .setContent("Вуаля! Профиль в Линкедин готов!")
-                                    .addComponents(ActionRow.of(Button.primary("empnew4", "Далее! Что дальше?")))
+                                    .setContent("Г‚ГіГ Г«Гї! ГЏГ°Г®ГґГЁГ«Гј Гў Г‹ГЁГ­ГЄГҐГ¤ГЁГ­ ГЈГ®ГІГ®Гў!")
+                                    .addComponents(ActionRow.of(Button.primary("empnew4", "Г„Г Г«ГҐГҐ! Г—ГІГ® Г¤Г Г«ГјГёГҐ?")))
                                     .send().join();
                             break;
 
@@ -1465,7 +1453,7 @@ public class Main
                         case "empnew4":
                             nameRecord = true;
 
-                            feedBackloop.respondWithModal("accountEnter", "Отправь доступы к Гугл и ЛинкедИн",ActionRow.of(TextInput.create(TextInputStyle.SHORT,"gName","Гугл меил")),ActionRow.of(TextInput.create(TextInputStyle.SHORT,"gPass","Гугл пароль")),ActionRow.of(TextInput.create(TextInputStyle.SHORT,"lName","Linked In меил:")), ActionRow.of(TextInput.create(TextInputStyle.SHORT,"lPass","LinkedIn пароль")));
+                            feedBackloop.respondWithModal("accountEnter", "ГЋГІГЇГ°Г ГўГј Г¤Г®Г±ГІГіГЇГ» ГЄ ГѓГіГЈГ« ГЁ Г‹ГЁГ­ГЄГҐГ¤Г€Г­",ActionRow.of(TextInput.create(TextInputStyle.SHORT,"gName","ГѓГіГЈГ« Г¬ГҐГЁГ«")),ActionRow.of(TextInput.create(TextInputStyle.SHORT,"gPass","ГѓГіГЈГ« ГЇГ Г°Г®Г«Гј")),ActionRow.of(TextInput.create(TextInputStyle.SHORT,"lName","Linked In Г¬ГҐГЁГ«:")), ActionRow.of(TextInput.create(TextInputStyle.SHORT,"lPass","LinkedIn ГЇГ Г°Г®Г«Гј")));
 
                             break;
 
@@ -1481,11 +1469,11 @@ public class Main
                                 if(Objects.equals(modalInteractionCustomId, "mFeedback"))
                                 {
                                     SHOULDSEND = false;
-                                    modalInteraction.createImmediateResponder().setContent("Продолжаем")
+                                    modalInteraction.createImmediateResponder().setContent("ГЏГ°Г®Г¤Г®Г«Г¦Г ГҐГ¬")
                                             .addComponents(
-                                                    ActionRow.of(Button.primary("employeeNew","Новый сотрудник")),
-                                                    ActionRow.of(Button.primary("employeeOld","Уже работаешь с нами")),
-                                                    ActionRow.of(Button.primary("feedback", "Вернуться назад")))
+                                                    ActionRow.of(Button.primary("employeeNew","ГЌГ®ГўГ»Г© Г±Г®ГІГ°ГіГ¤Г­ГЁГЄ")),
+                                                    ActionRow.of(Button.primary("employeeOld","Г“Г¦ГҐ Г°Г ГЎГ®ГІГ ГҐГёГј Г± Г­Г Г¬ГЁ")),
+                                                    ActionRow.of(Button.primary("feedback", "Г‚ГҐГ°Г­ГіГІГјГ±Гї Г­Г Г§Г Г¤")))
                                             .respond();
 
                                     User user = modalInteraction.getUser();
@@ -1501,7 +1489,7 @@ public class Main
                                     if (modalName.equals("") || modalSure.equals("") || modalPhone.equals(""))
                                     {
                                         System.out.println("ERROR");
-                                        modalInteraction.createImmediateResponder().setContent("У вас ошибка!"+"\n"+ " Пожалуйста, нажмите на предыдущую кнопку и полностью заполните поля.").respond();
+                                        modalInteraction.createImmediateResponder().setContent("Г“ ГўГ Г± Г®ГёГЁГЎГЄГ !"+"\n"+ " ГЏГ®Г¦Г Г«ГіГ©Г±ГІГ , Г­Г Г¦Г¬ГЁГІГҐ Г­Г  ГЇГ°ГҐГ¤Г»Г¤ГіГ№ГіГѕ ГЄГ­Г®ГЇГЄГі ГЁ ГЇГ®Г«Г­Г®Г±ГІГјГѕ Г§Г ГЇГ®Г«Г­ГЁГІГҐ ГЇГ®Г«Гї.").respond();
                                     }
 
                                     else
@@ -1536,7 +1524,7 @@ public class Main
                                     if (modalGName.equals("") || modalGPass.equals("") || modalLName.equals("") || modalLPass.equals(""))
                                     {
                                         System.out.println("ERROR");
-                                        modalInteraction.createImmediateResponder().setContent("У вас ошибка!"+"\n"+ " Пожалуйста, нажмите на предыдущую кнопку и полностью заполните поля.").respond();
+                                        modalInteraction.createImmediateResponder().setContent("Г“ ГўГ Г± Г®ГёГЁГЎГЄГ !"+"\n"+ " ГЏГ®Г¦Г Г«ГіГ©Г±ГІГ , Г­Г Г¦Г¬ГЁГІГҐ Г­Г  ГЇГ°ГҐГ¤Г»Г¤ГіГ№ГіГѕ ГЄГ­Г®ГЇГЄГі ГЁ ГЇГ®Г«Г­Г®Г±ГІГјГѕ Г§Г ГЇГ®Г«Г­ГЁГІГҐ ГЇГ®Г«Гї.").respond();
                                     }
 
                                     else
@@ -1553,11 +1541,11 @@ public class Main
                                             throw new RuntimeException(e);
                                         }
 
-                                        modalInteraction.createImmediateResponder().setContent("Продолжаем")
+                                        modalInteraction.createImmediateResponder().setContent("ГЏГ°Г®Г¤Г®Г«Г¦Г ГҐГ¬")
                                                 .addComponents(
-                                                        ActionRow.of(Button.primary("employeeNew","Новый сотрудник")),
-                                                        ActionRow.of(Button.primary("employeeOld","Уже работаешь с нами")),
-                                                        ActionRow.of(Button.primary("feedback", "Вернуться назад")))
+                                                        ActionRow.of(Button.primary("employeeNew","ГЌГ®ГўГ»Г© Г±Г®ГІГ°ГіГ¤Г­ГЁГЄ")),
+                                                        ActionRow.of(Button.primary("employeeOld","Г“Г¦ГҐ Г°Г ГЎГ®ГІГ ГҐГёГј Г± Г­Г Г¬ГЁ")),
+                                                        ActionRow.of(Button.primary("feedback", "Г‚ГҐГ°Г­ГіГІГјГ±Гї Г­Г Г§Г Г¤")))
                                                 .respond();
                                     }
                                 }
@@ -1582,7 +1570,7 @@ public class Main
                                     //modalInteraction.createImmediateResponder().setContent("asd").respond();
                                     //FeedbackResponder.modalResponder(stage, modalInteraction);
                                     modalInteraction.createImmediateResponder().setContent("").respond();
-                                    modalInteraction.createFollowupMessageBuilder().setContent("Спасибо за Ваш отзыв! После рассмотрения, мы свяжемся с Вами!").send();
+                                    modalInteraction.createFollowupMessageBuilder().setContent("Г‘ГЇГ Г±ГЁГЎГ® Г§Г  Г‚Г Гё Г®ГІГ§Г»Гў! ГЏГ®Г±Г«ГҐ Г°Г Г±Г±Г¬Г®ГІГ°ГҐГ­ГЁГї, Г¬Г» Г±ГўГїГ¦ГҐГ¬Г±Гї Г± Г‚Г Г¬ГЁ!").send();
                                 }
 
 
@@ -1592,7 +1580,7 @@ public class Main
         System.out.println("You can invite the bot by using the following url: " + api.createBotInvite());
 
 
-        //TODO: Бот, проверяющий присутствие человека он-лайн, через личку, с таймером в 5 минут. Если не отметился в дискорде, то ответ в вайбер
+        //TODO: ГЃГ®ГІ, ГЇГ°Г®ГўГҐГ°ГїГѕГ№ГЁГ© ГЇГ°ГЁГ±ГіГІГ±ГІГўГЁГҐ Г·ГҐГ«Г®ГўГҐГЄГ  Г®Г­-Г«Г Г©Г­, Г·ГҐГ°ГҐГ§ Г«ГЁГ·ГЄГі, Г± ГІГ Г©Г¬ГҐГ°Г®Г¬ Гў 5 Г¬ГЁГ­ГіГІ. Г…Г±Г«ГЁ Г­ГҐ Г®ГІГ¬ГҐГІГЁГ«Г±Гї Гў Г¤ГЁГ±ГЄГ®Г°Г¤ГҐ, ГІГ® Г®ГІГўГҐГІ Гў ГўГ Г©ГЎГҐГ°
 
     }
 
